@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+
+# HuggingFace downloads (embedder, reranker, tokenizers), redirected here by environment.py
+.hf_cache/
+
+# corporate-proxy CA bundle, generated locally by tools/ca_bundle_windows.py, machine-specific
+.certs/
+
+# everything the stages build (a directory, or on Colab a symlink to Drive -- hence no
+# trailing slash, which would only match a directory): documents, chunks, embeddings, indexes, results, caches.
+# Large, regenerable, and checked against manifests on load -- never committed.
+/artifacts
+
+# raw corpus downloads (git clones, archives, dumps) -- never vendored
+/corpora
+
+# local build outputs
+_build/

@@ -1,0 +1,31 @@
+# OPTIONAL frameworks -- only for a stage or thread that maps your from-scratch pipeline onto
+# one of them. Nothing in the core pipeline needs these.
+#
+#     pip install -r requirements-extras.txt
+#
+# Resolved together with requirements.txt (Python 3.13, Linux) without moving any core pin.
+#
+# Every one of these defaults to a PAID model or embedder when you don't say otherwise, and
+# some talk to Ollama's OpenAI-compatible /v1 endpoint, which can't set num_ctx per request
+# (so the server's default applies: 4,096 tokens on a T4). Declare the local LLM, the local
+# embedder and num_ctx explicitly -- and whether to think (reasoning=False for ChatOllama).
+# A framework that asks you for an API key has silently defaulted.
+
+# --- LangGraph / LangChain 1.x (memory: checkpointers, stores, SummarizationMiddleware) ----
+langgraph==1.2.12
+langchain==1.4.2
+langchain-ollama==1.1.0       # pass num_ctx and reasoning=False explicitly
+
+# --- RAGAS (LLM-judged RAG metrics) ----------------------------------------------------------
+ragas==0.3.9                  # 0.4.x deprecated ragas.metrics and the LangChain wrappers
+langchain-community==0.4.1    # 0.4.2 removed chat_models.vertexai, which ragas 0.3.9 imports
+
+# --- LlamaIndex (Memory with memory blocks; hierarchical nodes; auto-merging retrieval) -----
+llama-index-core==0.14.24
+llama-index-embeddings-huggingface==0.8.0
+llama-index-llms-ollama==0.11.0
+llama-index-postprocessor-sbert-rerank==0.6.0
+
+# --- vector stores (the core pipeline uses a plain numpy matrix) ------------------------------
+chromadb==1.5.9               # pass embeddings explicitly: its default embedding function is an English MiniLM
+faiss-cpu==1.15.1

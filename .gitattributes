@@ -1,0 +1,23 @@
+# Everything text is stored and checked out with LF, on every platform. The notebook
+# generator compares bytes (`--check`), so a CRLF checkout on Windows would make every
+# notebook look stale; .po / .jsonl / .md files are hashed downstream for the same reason.
+* text=auto eol=lf
+*.py      text eol=lf
+*.md      text eol=lf
+*.ipynb   text eol=lf
+*.json    text eol=lf
+*.jsonl   text eol=lf
+*.txt     text eol=lf
+*.cfg     text eol=lf
+*.toml    text eol=lf
+
+# Binary: never normalized, never diffed as text.
+*.png     binary
+*.jpg     binary
+*.npy     binary
+*.npz     binary
+*.pdf     binary
+*.zip     binary
+*.7z      binary
+*.gz      binary
+*.parquet binary

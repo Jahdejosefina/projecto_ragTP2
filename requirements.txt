@@ -1,0 +1,42 @@
+# Core dependencies of the Retrieval & Memory Lab.
+#
+# Three kinds of line, on purpose:
+#   ==  exact pins for what this lab adds and Colab doesn't ship -- a different version of
+#       these changes behaviour you'd otherwise attribute to your own design;
+#   ==  pins MATCHED TO COLAB for pure-Python packages Colab already ships, so installing
+#       is a no-op there and your local venv behaves like the runtime you'll be graded on;
+#   >=  ranges for compiled packages Colab ships (torch, numpy): an exact pin that misses
+#       Colab's build reinstalls ~2.5 GB of CUDA wheels or forces a runtime restart.
+#
+# Per-corpus parsers are in requirements-corpora.txt; optional frameworks (LangChain,
+# LangGraph, LlamaIndex, RAGAS, Chroma, FAISS) in requirements-extras.txt. Your group's
+# own additions go in requirements-group.txt, which the Colab bootstrap installs if present.
+#
+# The LLM runs in Ollama (a separate server, not a pip package); llm.py talks to it over
+# HTTP with `requests`.
+
+# --- retrieval --------------------------------------------------------------------------
+sentence-transformers==5.7.0  # the embedder (bi-encoder) and the reranker (CrossEncoder)
+bm25s==0.3.11                 # the lexical channel. Imports jax if installed: environment.py sets the JAX guard first
+PyStemmer==3.1.0              # Snowball Spanish stemmer for BM25 (C extension)
+
+# --- corpus parsing used by the worked Stage 0 (python-docs-es) ---------------------------
+polib==1.2.0                  # .po files: multi-line strings, fuzzy flags, obsolete entries
+beautifulsoup4==4.15.0        # built HTML documentation
+lxml==6.1.3                   # fast HTML/XML parser backend for BeautifulSoup
+
+# --- shipped by Colab, pure Python: pinned to what a Colab T4 runtime resolved (2026-09) ---
+# (re-check each term: `pip list | grep -iE "^(transformers|huggingface)"` in a fresh runtime)
+transformers==5.16.1          # the generator's tokenizer + chat template, for counting prompt tokens
+huggingface_hub==1.29.0       # model downloads (embedder, reranker, tokenizers)
+
+# --- shipped by Colab, compiled: ranges ----------------------------------------------------
+torch>=2.6
+numpy>=2.0,<3
+
+# --- utilities -----------------------------------------------------------------------------
+pydantic>=2.7,<3              # schemas; model_json_schema() is what Ollama's `format=` takes
+requests>=2.31                # llm.py <-> Ollama REST API; corpus downloads
+matplotlib>=3.8
+psutil>=5.9
+tqdm>=4.66
