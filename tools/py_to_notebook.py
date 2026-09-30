@@ -63,10 +63,10 @@ CELL_MARKER = re.compile(r"^#\s*%%(.*)$")
 
 # --- Colab bootstrap: EDIT THESE when you publish (the only place they appear) ----------
 URL_PLACEHOLDER = "CHANGEME"
-REPO_URL = "https://github.com/solidgoldmagickarp/retrieval_memory_lab.git"
+REPO_URL = "https://github.com/solidgoldmagickarp/projecto_rag.git"
 REPO_BRANCH = ""          # "" = the repository's default branch
-REPO_DIR = "retrieval_memory_lab"
-DRIVE_DIR = "retrieval_memory_lab"   # folder under MyDrive used when USE_DRIVE = True
+REPO_DIR = "projecto_rag"
+DRIVE_DIR = "projecto_rag"   # folder under MyDrive used when USE_DRIVE = True
 
 BOOTSTRAP_TEMPLATE = '''# --- Bootstrap de Colab (no hace nada fuera de Colab) --------------------------------
 # Colab arranca en /content con un entorno vacío: sin esta celda, el `import environment`

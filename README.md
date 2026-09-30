@@ -11,7 +11,7 @@ modelos abiertos -- cómo conviene repartir una ventana de contexto finita entre
 corpus y lo que se dijo en la conversación.
 
 ## Empezá por acá
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/solidgoldmagickarp/retrieval_memory_lab/blob/master/00_corpus_audit.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/solidgoldmagickarp/projecto_rag/blob/master/00_corpus_audit.ipynb)
 
 - **[assignment.md](assignment.md)** — el enunciado: la idea, ocho etapas, las trampas, las
   preguntas para tu informe y la rúbrica (§5).
