@@ -11,7 +11,7 @@ modelos abiertos -- cómo conviene repartir una ventana de contexto finita entre
 corpus y lo que se dijo en la conversación.
 
 ## Empezá por acá
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/solidgoldmagickarp/projecto_rag/blob/master/00_corpus_audit.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/solidgoldmagickarp/projecto_rag/blob/main/00_corpus_audit.ipynb)
 
 - **[assignment.md](assignment.md)** — el enunciado: la idea, ocho etapas, las trampas, las
   preguntas para tu informe y la rúbrica (§5).
@@ -64,8 +64,8 @@ largas, no dejes que la computadora entre en suspensión.
 ### Localmente (para corridas `SMOKE_TEST` en CPU)
 
 ```bash
-git clone https://github.com/solidgoldmagickarp/retrieval_memory_lab.git
-cd retrieval_memory_lab
+git clone https://github.com/solidgoldmagickarp/projecto_rag.git
+cd projecto_rag
 
 python -m venv .venv
 .venv\Scripts\Activate.ps1          # Windows (PowerShell)
@@ -130,7 +130,7 @@ Los notebooks clonan *este* repositorio. Tu propio código también tiene que ll
 Este repositorio te da la plomería y una Etapa 0 resuelta sobre un corpus. **Tu Etapa 0 y las
 Etapas 1–7 son tuyas**: los documentos, el conjunto de evaluación, el pipeline de recuperación,
 la generación de respuestas, el loop de conversación y la memoria. `assignment.md` tiene
-fragmentos de código adaptables para cada etapa y, en §3b, los nombres de archivo con los que
+fragmentos de código adaptables para cada etapa y, en §4, los nombres de archivo con los que
 las etapas se pasan los artefactos. Los módulos auxiliares son infraestructura: mueven
 archivos, cuentan tokens y hablan con el servidor -- ninguno toma una decisión de diseño por vos.
 
