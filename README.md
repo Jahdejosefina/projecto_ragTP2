@@ -17,7 +17,7 @@ corpus y lo que se dijo en la conversación.
   preguntas para tu informe y la rúbrica (§5).
 - **[corpora.md](corpora.md)** — el menú de corpus (cinco opciones, o traé el tuyo).
 - **`00_corpus_audit`** — la Etapa 0 resuelta, una auditoría de uno de los corpus del menú.
-  Corrélo primero; también es el smoke test de tu entorno.
+  Correlo primero; también es el smoke test de tu entorno.
 
 ## Puesta en marcha
 

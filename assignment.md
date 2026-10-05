@@ -25,9 +25,9 @@ decisiones y los artefactos que nos permiten recalcular tus tablas. Detalle en �
 | 2 · La vara de medir | Escribís y congelás el conjunto de evaluación | **obligatoria** | los ids de sección de la Etapa 1 |
 | 3 · Recuperación sobre tu corpus | Construís el índice y medís qué piezas se ganan su costo | a tu criterio | Etapas 1 y 2 |
 | 4 · Respuestas fundamentadas | Armás prompts dentro de un presupuesto de tokens verificado y puntuás las respuestas | a tu criterio | *cualquier* configuración de la Etapa 3 |
-| 5 · La conversación | Medís con qué buscar y qué historial conservar en una ventana compartida | **el corazón del lab** | el ensamblador de la Etapa 4 y los guiones de la Etapa 2 |
+| 5 · La conversación | Medís con qué buscar y qué historial conservar en una ventana compartida | a tu criterio: **el corazón del lab** | el ensamblador de la Etapa 4 y los guiones de la Etapa 2 |
 | 6 · Memoria entre sesiones | Construís una memoria que sobrevive a la sesión y la comparás con reproducir el historial | a tu criterio | el *loop* de la Etapa 5 (no sus experimentos) y los escenarios de la Etapa 2 |
-| 7 · Una segunda lectura | Un juez LLM calibrado y/o tu loop reimplementado en un framework | opcional, recomendada | cualquier conjunto de respuestas guardadas |
+| 7 · Una segunda lectura | Un juez LLM calibrado y/o tu loop reimplementado en un framework | opcional, recomendada | cualquier conjunto de respuestas guardadas (7a); el loop de las Etapas 5-6 (7b) |
 
 **Lo que no se negocia.**
 - Las Etapas 1 y 2 son obligatorias, y el conjunto de evaluación se **congela antes de que exista
@@ -48,7 +48,7 @@ tipear código: se evalúa qué elegiste hacer, por qué, y qué leíste en tus 
 **Cómo leer este documento.**
 - **§1** es la idea, en una página. **§2** te pide un presupuesto y un plan *antes* de escribir
   código: leelo antes de arrancar.
-- **§3** tiene las etapas, todas con la misma estructura: *Para qué* · *Entra / sale* · *Pasos* ·
+- **§3** tiene las etapas, con una estructura común: *Para qué* · *Entra / sale* · *Pasos* ·
   *Trampas* · *Preguntas para el informe*.
 - **§4-§7**: artefactos, entregables y rúbrica, logística, y todos los números concretos
   (tamaños, presupuestos, cantidades).
@@ -195,7 +195,7 @@ más?
 
 ## 3 · Las etapas
 
-Todas las etapas tienen la misma estructura:
+Cada etapa sigue la misma estructura (algunas no necesitan todas las partes):
 
 - **Para qué**: el problema que resuelve la etapa.
 - **Entra / sale**: qué artefactos lee, cuáles escribe, y qué va al informe.
@@ -356,7 +356,7 @@ Qué hacer: encontrá los casi-duplicados acá y registrá cuáles son
 - **copias**: son intercambiables.
 
 Esa distinción decide cómo etiquetás en la Etapa 2. Una pregunta que no fija una versión tiene un
-*conjunto* gold (todas las copias valen). Una pregunta que sí la fija necesita que el filtro de
+*conjunto* gold (vale cualquiera de los documentos que la responden). Una pregunta que sí la fija necesita que el filtro de
 versión sea parte del sistema.
 
 **Trampa: metadatos que mienten.** Un campo puede estar mal con total seguridad: un
@@ -406,7 +406,10 @@ informe: la descripción del conjunto y su chequeo de contaminación.
    - **Fuera del corpus**: al menos 3, y **adyacentes** -- un mes que no tenés, una función que no
      existe en tu versión --, no "¿quién ganó el Mundial de 1986?". Decidí *ahora* qué cuenta como
      respuesta correcta a una de ellas (negarse, o un "eso no existe en tu versión" fundamentado),
-     y después puntuá cada brazo con esa regla.
+     y después puntuá cada brazo con esa regla. En el schema llevan `answerable: false`, sin `gold`
+     ni `expected_verdict`; si no hay ninguna, `freeze_eval` se niega a congelar (no habría cómo
+     medir la abstención). Un "no" que el corpus sí respalda, con gold y veredicto, es un ítem con
+     respuesta, en otra categoría.
    - **Gold** a nivel de **documento y sección** en todos los ítems con respuesta; como *conjunto*
      cuando las copias son intercambiables (Etapa 1).
    - Una `answer_key` (clave de respuesta) corta donde exista, y en cada pregunta de sí/no su
@@ -420,7 +423,8 @@ informe: la descripción del conjunto y su chequeo de contaminación.
      primer turno es `standalone`; los de seguimiento son `coreference` (correferencia),
      `ellipsis` (elipsis), `topic_shift` (cambio de tema), `return` (volver a un tema anterior) o
      `unanswerable` (sin respuesta);
-   - gold y clave de respuesta;
+   - gold y clave de respuesta (salvo los turnos `unanswerable`, que llevan `answerable: false`, sin
+     gold ni veredicto);
    - la **respuesta guionada del asistente** (`assistant`). En la Etapa 5 todos los brazos reciben
      estas respuestas como historial, en lugar de las suyas, para que vean exactamente la misma
      conversación;
@@ -501,8 +505,8 @@ como una que sí.
 
 Qué hacer: a esos ítems dales un `expected_verdict` (`"yes"` / `"no"`) y puntuá el veredicto
 aparte de la clave.
-- **Leé solo la primera palabra** de la respuesta, de forma estricta. Cualquier otra cosa es
-  `unclear` (poco claro), y se cuenta como tal.
+- **Leé solo la primera palabra** de la respuesta, de forma estricta. Si no es *sí* ni *no*, el
+  veredicto es `unclear` (poco claro), y se cuenta como tal.
 - **Leela sobre el texto crudo.** La normalización que saca los acentos para la contención
   convierte *sí* en *si*, el condicional.
 - **Una abstención no es un "no".** "No lo sé" también empieza con *no*: si no lo separás, cada
@@ -557,9 +561,9 @@ informe: la tabla de filas, con cotas de ruido.
    cargada, la función **lanza una excepción** (ver el fragmento). Cada resultado registra la
    configuración que lo produjo.
 3. **Las filas.** Dos líneas de base: **solo BM25** (que además sirve como detector de
-   contaminación) y **solo denso**. A partir del denso, cada fila agrega una pieza a la anterior:
-   + prefijo → + léxico vía RRF → + rerank → + padre → + filtro de metadatos (acá, parseado de la
-   pregunta; en la Etapa 6, tomado de la memoria). HyDE, si lo probás, es una *rama etiquetada*
+   contaminación) y **solo denso**. A partir del denso, cada fila agrega una pieza a la
+   anterior: + prefijo → + léxico vía RRF → + rerank → + padre → + filtro de metadatos (acá,
+   parseado de la pregunta; en la Etapa 6, tomado de la memoria). HyDE, si lo probás, es una *rama etiquetada*
    aparte, no una fila acumulativa.
 4. **Métricas, por categoría:**
    - hit@k y MRR a nivel de documento;
@@ -683,16 +687,17 @@ LLM en `artifacts/<profile>/llm_cache/`. Va al informe: las tres filas y la tabl
 error, se trunca.
 
 **Pasos sugeridos.**
-1. **El ensamblador.** Arma prompt de sistema + pasajes delimitados (marcadores
+1. **El ensamblador.** Arma el prompt: sistema + pasajes delimitados (marcadores
    `[doc_id · section]`) + pregunta, dejando una reserva de salida igual a `num_predict`.
    - El prompt entero se cuenta con la plantilla de chat del generador:
      `llm.count_prompt_tokens(messages, model)`.
    - Para contar cada pasaje (el `count` que reciben los fragmentos de abajo) alcanza con
      `lambda t: llm.count_tokens(t, MODEL)`. Ojo: cuenta texto pelado y no ve los marcadores de
      plantilla de cada mensaje. Dejá un margen, y dejá que `llm.chat` verifique el total.
-   - Si un pasaje no entra, salteálo y seguí con el siguiente; no cortes el loop (los que vienen
+   - Si un pasaje no entra, saltealo y seguí con el siguiente; no cortes el loop (los que vienen
      pueden ser más chicos).
-   - Cada llamada registra tu cuenta *y* el `prompt_eval_count` del servidor.
+   - Cada llamada registra tu cuenta (`r.expected_prompt_tokens`) *y* el `prompt_eval_count` del
+     servidor (`r.prompt_tokens`).
 2. **La generación.** `qwen3:8b`, `think=False`, temperatura 0, un schema de Pydantic como
    `format` (`llm.structured`), y un `num_ctx` explícito en cada llamada, a través de la API
    nativa.
@@ -713,7 +718,8 @@ error, se trunca.
 
    **Una llamada con `r.error` seteado** (una respuesta que no se pudo parsear, un prompt
    truncado, un rechazo del servidor) es su **propia categoría**: nunca una abstención, nunca una
-   respuesta puntuada.
+   respuesta puntuada. Lo mismo vale para un `llm.ContextOverflow`, que no llega como `r.error`
+   sino como excepción: atrapala y registrala en esa categoría.
 4. **Tres filas sobre las mismas preguntas:**
    - **libro cerrado** (sin recuperación);
    - tu **mejor configuración** de la Etapa 3;
@@ -756,11 +762,16 @@ print(r.expected_prompt_tokens, r.prompt_tokens, r.done_reason, r.error)
 ```
 
 **Las guardas de `llm.chat`.**
-- **`ContextOverflow`**: rechaza un prompt que no entra, *antes* de mandarlo. Además le pide al
-  servidor que rechace en lugar de truncar.
-- **`SILENT_TRUNCATION`**: marca un prompt que el servidor evaluó solo en parte.
-- Las dos necesitan el tokenizer del modelo. Funcionan para los tags de `llm.HF_TOKENIZERS`; para
-  cualquier otro tag, primero agregá ahí su repo de HuggingFace.
+- **Antes de mandar:** si tu prompt + `num_predict` supera `num_ctx`, `llm.chat` lanza la
+  excepción `ContextOverflow` y no manda nada.
+- **En el servidor:** con `strict_ctx=True` (el valor por defecto), `llm.chat` le pide al servidor
+  que rechace en lugar de truncar. Un rechazo vuelve en `r.error`, como
+  `CONTEXT_OVERFLOW (server)`.
+- **Después:** `SILENT_TRUNCATION`, en `r.error`, marca un prompt que el servidor evaluó solo en
+  parte.
+- El chequeo de antes de mandar y `SILENT_TRUNCATION` necesitan el tokenizer del modelo. Funcionan
+  para los tags de `llm.HF_TOKENIZERS`; para cualquier otro tag, primero agregá ahí su repo de
+  HuggingFace.
 - **Ejercicio:** apagá la guarda una vez (`strict_ctx=False`), a propósito, con un prompt
   demasiado grande, y mirá qué vuelve.
 
@@ -886,6 +897,8 @@ def turn_messages(system: str, history: list[dict], passages: list[dict], questi
             break                                 # acá descartar los turnos MÁS VIEJOS es justamente la idea
         kept.insert(0, msg)
         used += n
+    if kept and kept[0]["role"] == "assistant":   # no arranques con una respuesta sin su pregunta
+        kept.pop(0)
     context, _ = assemble(passages, pass_budget, count)
     context_block = "\n\n".join(f"[{p['doc_id']} · {p['section']}]\n{p['text']}" for p in context)
     return ([{"role": "system", "content": system}] + kept +
@@ -991,7 +1004,7 @@ sonda. Va al informe: los resultados por habilidad.
    ensamblador de la Etapa 4, dentro de su presupuesto.
 4. **La memoria alimenta la recuperación.** Los hechos del usuario que se corresponden con metadatos
    del corpus se convierten en filtros: la versión que usa, la fecha "a la cual" pregunta, la
-   región que sigue ([corpora.md](corpora.md) nombra un gancho así por corpus). Medilo en las sondas
+   región que sigue ([corpora.md](corpora.md) propone un gancho de memoria por corpus). Medilo en las sondas
    que lo necesitan, y notá cuando el filtro *saca* justo el pasaje que le permitiría al modelo
    decir "eso no está disponible para vos".
 5. **Métricas:**
@@ -1083,7 +1096,8 @@ completo" dice si el historial entraba en la ventana, y con qué `num_ctx`.
 respuestas; el framework (7b) lee el diseño.
 
 **Entra / sale.** Entra: cualquier conjunto de respuestas guardadas (7a), o tu loop de las Etapas
-5/6 (7b). Va al informe: la auditoría del juez, si la hiciste, y la comparación con el framework.
+5/6 (7b). Sale: los veredictos del juez y su auditoría (7a); resultados por sonda con el framework
+(7b). Va al informe: la auditoría del juez, si la hiciste, y la comparación con el framework.
 
 #### 7a · Un juez
 
@@ -1333,8 +1347,8 @@ nuestros.
     dimensionado según tu historial y no según la ventana.
   - El presupuesto de historial más chico debería ser una restricción real en la mayoría de los
     turnos puntuados.
-  - Guiones reproducidos de a uno: unos pocos cientos de tokens de historial, que no restringen
-    nada por encima de eso.
+  - Guiones reproducidos de a uno: unos pocos cientos de tokens de historial; un presupuesto de
+    historial mayor que eso no restringe nada.
   - Guiones reproducidos uno detrás de otro: unos pocos miles de tokens hacia el final. Con un total
     de pasajes + historial de alrededor de 2.000-3.000 tokens, cada división restringe en algún
     punto.
@@ -1368,7 +1382,8 @@ nuestros.
     `qwen3:1.7b`). Registrá cuáles en el manifiesto.
   - `num_ctx` puede ser más chico, **siempre que cada presupuesto se derive de él**.
   - Incluí **un prompt deliberadamente demasiado grande y un id gold deliberadamente faltante**,
-    para ver saltar cada guarda.
+    para ver saltar cada guarda. Ojo: con `require_frozen=False`, `load_eval` no chequea ids; el
+    id faltante lo atrapa `schema.validate_eval`, o tu chequeo contra el índice (§4).
 - **Chequeos de cordura (no son metas):**
   - el hit@k de documento al azar es de alrededor de k / (cantidad de documentos), y el piso real
     es tu fila solo-BM25;
@@ -1409,8 +1424,9 @@ nuestros.
   con tu cantidad de preguntas. Etapa 3.
 - **Cross-encoder / reranker.** Un modelo que puntúa cada par (consulta, pasaje) de forma conjunta.
   Se usa para reordenar los candidatos que trajo una primera etapa.
-- **Dependencia (de un turno).** Por qué un turno de seguimiento no se entiende solo: correferencia,
-  elipsis, cambio de tema, vuelta a un tema anterior, o sin respuesta. Etapa 2.
+- **Dependencia (de un turno).** La etiqueta (`depends_on`) que dice cómo se relaciona un turno con
+  el historial: `standalone` (el primero), correferencia, elipsis, cambio de tema, vuelta a un tema
+  anterior, o sin respuesta. Etapa 2.
 - **Dev / test.** Dev: los ítems que mirás y ajustás mientras construís. Test: aquellos sobre los
   que reportás.
 - **Discordante.** Una pregunta cuyo resultado cambió entre dos filas. En una comparación pareada,
@@ -1432,18 +1448,21 @@ nuestros.
   la pregunta. Apéndice B.1.
 - **Libro cerrado.** El generador responde sin recuperación, con lo que aprendió en el
   entrenamiento.
-- **Línea de base.** El punto de comparación más simple: en recuperación, pegar los documentos (o la
-  fila solo-BM25); en memoria, reproducir el historial completo, o no tener memoria (el piso).
+- **Línea de base.** El punto de comparación más simple: en recuperación, pegar los documentos (o
+  las filas solo-BM25 y solo-denso); en memoria, reproducir el historial completo, o no tener memoria (el piso).
 - **Memoria de trabajo / episódica / semántica / procedimental.** El vocabulario de CoALA
   (Apéndice B.4): lo que está en la ventana ahora / experiencias pasadas / conocimiento sobre el
   mundo y sobre el usuario / cómo actuar.
-- **MRR (Mean Reciprocal Rank).** El promedio de 1 / (posición del primer gold): vale 1 si el gold
-  está primero, 0,5 si está segundo, y así.
+- **MRR (Mean Reciprocal Rank).** El promedio, sobre las preguntas, de 1 / (posición del primer
+  gold): cada pregunta aporta 1 si el gold está primero, 0,5 si está segundo, y así (0 si no
+  aparece).
 - **`num_ctx` / `num_predict`.** El tamaño de la ventana, en tokens, que le pedís a Ollama / el
-  máximo de tokens de salida. El prompt tiene que entrar en `num_ctx − num_predict`: esa diferencia
-  es la *reserva de salida*.
-- **Oráculo.** Una fila que recibe la entrada ideal: la sección gold (Etapa 4) o la reescritura
-  escrita a mano (Etapa 5). Marca el techo de lo que el resto del sistema puede lograr.
+  máximo de tokens de salida. `num_predict` es la *reserva de salida*: el prompt tiene que entrar
+  en lo que queda, `num_ctx − num_predict`.
+- **Oráculo.** Una fila que recibe la entrada que escribiste a mano como ideal: la sección gold
+  (Etapa 4) o la reescritura escrita a mano (Etapa 5). Sirve de referencia de techo, aunque en la
+  Etapa 5 no necesariamente lo es: la reescritura humana puede perder contra la del modelo
+  (Apéndice B.3).
 - **Prefijo contextual.** Texto que se antepone a cada chunk antes de indexarlo (título, sección,
   versión, año) para que el chunk se entienda solo. No confundir con los prefijos de instrucción
   de la familia e5 (`"query: "`).
