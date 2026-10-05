@@ -299,7 +299,11 @@ card y los números de la limpieza.
    es `doc_id` + un camino estructural. Nunca el orden de las filas, nunca un nombre de archivo de
    descarga.
 5. **Extraé metadatos** -- fecha, versión, estado o vigencia, orador, URL -- y *validalos contra el
-   cuerpo* (ver la trampa "metadatos que mienten").
+   cuerpo* (ver la trampa "metadatos que mienten"). Ojo con el estado: `DocMetadata.status` acepta
+   solo `current`, `superseded`, `deprecated`, `draft` o `unknown`, y cualquier otro valor (un
+   "in force" copiado de la fuente) es un error de validación. Mapeá el estado de tu fuente a uno
+   de esos, documentá el mapeo en la corpus card, y si querés conservar el valor original guardalo
+   en un campo extra (`DocMetadata` acepta claves adicionales, por ejemplo `source_status`).
 6. **Encontrá los casi-duplicados** sobre una muestra (Jaccard de shingles o coseno de
    embeddings), decidí una política y registrala en los metadatos (`version`, `canonical_id`,
    `duplicate_of`, ...).
@@ -308,6 +312,7 @@ card y los números de la limpieza.
    eliminó; y un diff antes/después sobre diez documentos.
 
 ```python
+import re
 import unicodedata
 
 from schema import Document, DocMetadata, Section, documents_hash, validate_documents
@@ -318,7 +323,11 @@ def normalize(text: str) -> str:
     # para el puntaje por coincidencia exacta, "información" pasa a ser dos cadenas distintas --
     # ningún error, solo fallos.
     text = unicodedata.normalize("NFC", text)
-    return " ".join(text.split())
+    # Colapsá espacios y tabs DENTRO de cada línea, pero conservá los saltos de línea: los
+    # encabezados y marcadores por línea son lo que usás para cortar secciones. Y normalizá ANTES
+    # de calcular los offsets de las secciones (`start`/`end` apuntan al texto ya normalizado).
+    lines = [" ".join(line.split()) for line in text.splitlines()]
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip()
 
 # Con estos dos contadores, el paso 8 ("medí qué cambió la limpieza") se reduce a un print.
 CLEANING_HITS: dict[str, int] = {}    # regla -> documentos que cambió
@@ -601,10 +610,14 @@ class RetrievalConfig:
 def retrieve(query: str, cfg: RetrievalConfig, index) -> list[dict]:
     # Lanzá una excepción, no la saltees. Una pieza que avisa y sigue produce una fila idéntica
     # a la anterior, y vas a leer "sin efecto" en una tabla que nunca corrió la pieza.
+    if cfg.prefix and index.prefixed_matrix is None:
+        raise RuntimeError("prefix=True but no embedding matrix of prefixed chunks is loaded")
     if cfg.lexical and index.bm25 is None:
         raise RuntimeError("lexical=True but no BM25 index is loaded")
     if cfg.rerank and index.reranker is None:
         raise RuntimeError("rerank=True but no reranker is loaded")
+    if cfg.parent and index.parents is None:
+        raise RuntimeError("parent=True but no child -> parent map is loaded")
     if cfg.metadata_filter and index.metadata is None:
         raise RuntimeError("metadata_filter=True but no document metadata is loaded")
     ...
