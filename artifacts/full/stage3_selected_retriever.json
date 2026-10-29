@@ -1,0 +1,25 @@
+{
+  "selected_arm": "bm25",
+  "selected_on": "dev",
+  "corpus_hash": "519330293d3b792c42325b784acc17b0495319994dcacaf90021b5f08a435a59",
+  "frozen_eval_hash": "cc727360402aa851de6b5a3b2361ce9e9664c81d44c504b563f61afbe47d19c3",
+  "index_dir": "/content/projecto_rag/artifacts/full/index/stage3_36a95c9c1551289f",
+  "dense_dir": "/content/projecto_rag/artifacts/full/embeddings/bge_m3_1818bc1802f3cda68058",
+  "dense_model": "BAAI/bge-m3",
+  "dense_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "dense_spec": {
+    "encoder": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "normalize_embeddings": true,
+    "max_seq_length": 8192,
+    "texts_sha256": "65dd3956783b59111b6d7e76f01b8acba2089abb08d5a7886d09b85d53218d74",
+    "chunk_ids_sha256": "8b3626bd6293448371f08f7f5774439e7cccb9e443e099ed2a94e74767dbf75d",
+    "corpus_hash": "519330293d3b792c42325b784acc17b0495319994dcacaf90021b5f08a435a59",
+    "profile": "full"
+  },
+  "budget_tokens": 2500,
+  "candidate_k": 100,
+  "rrf_k": 60,
+  "seed": 1337,
+  "selection_rule": "max delivered_section_hit on dev; tie break simpler retrieval architecture"
+}
