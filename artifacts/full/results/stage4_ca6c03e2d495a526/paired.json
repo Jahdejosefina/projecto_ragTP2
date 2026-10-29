@@ -1,0 +1,41 @@
+{
+  "oracle vs stage3_bm25": {
+    "metric": "correct",
+    "wins": 2,
+    "losses": 0,
+    "ties": 21,
+    "excluded_errors": 0,
+    "delta": 0.08695652173913043,
+    "delta_ci95": [
+      0.0,
+      0.21739130434782608
+    ],
+    "sign_test_p_two_sided": 0.5
+  },
+  "stage3_bm25 vs closed_book": {
+    "metric": "correct",
+    "wins": 19,
+    "losses": 0,
+    "ties": 4,
+    "excluded_errors": 0,
+    "delta": 0.8260869565217391,
+    "delta_ci95": [
+      0.6521739130434783,
+      0.9565217391304348
+    ],
+    "sign_test_p_two_sided": 3.814697265625e-06
+  },
+  "oracle vs closed_book": {
+    "metric": "correct",
+    "wins": 21,
+    "losses": 0,
+    "ties": 2,
+    "excluded_errors": 0,
+    "delta": 0.9130434782608695,
+    "delta_ci95": [
+      0.782608695652174,
+      1.0
+    ],
+    "sign_test_p_two_sided": 9.5367431640625e-07
+  }
+}

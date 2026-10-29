@@ -1,0 +1,29 @@
+[
+  {
+    "item_id": "q004",
+    "identical": false,
+    "correct_before": true,
+    "correct_again": true,
+    "answer_before": "Sí, las características prometidas en la publicidad se consideran incluidas en el contrato y obligan al oferente.",
+    "answer_again": "Sí, las características prometidas en la publicidad se consideran incluidas en el contrato y obligan al oferente.",
+    "error": null
+  },
+  {
+    "item_id": "q005",
+    "identical": false,
+    "correct_before": true,
+    "correct_again": true,
+    "answer_before": "El documento de venta debe redactarse en idioma castellano.",
+    "answer_again": "El documento de venta debe redactarse en idioma castellano.",
+    "error": null
+  },
+  {
+    "item_id": "q006",
+    "identical": false,
+    "correct_before": true,
+    "correct_again": true,
+    "answer_before": "El tiempo durante el cual el consumidor está privado del uso de la cosa en garantía, por cualquier causa relacionada con su reparación, debe computarse como prolongación del plazo de garantía legal.",
+    "answer_again": "El plazo de la garantía legal se prolonga durante el tiempo que el consumidor esté privado del uso de la cosa por reparación.",
+    "error": null
+  }
+]

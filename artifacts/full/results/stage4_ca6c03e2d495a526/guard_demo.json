@@ -1,0 +1,20 @@
+{
+  "item_id": "q004",
+  "question": "¿Las características prometidas en una publicidad obligan al oferente aunque no se repitan en el contrato?",
+  "answer_key": [
+    "obligan",
+    "obliga",
+    "vinculante",
+    "vinculantes"
+  ],
+  "passages": 52,
+  "our_count": 11768,
+  "num_ctx": 8192,
+  "num_predict": 700,
+  "strict_outcome": "ContextOverflow: prompt 11768 + num_predict 700 = 12468 > num_ctx 8192: the server would silently truncate it",
+  "server_prompt_eval_count": 4098,
+  "done_reason": "stop",
+  "error": "SILENT_TRUNCATION: the server evaluated 4098 prompt tokens, the template counts 11768; part of the prompt never reached the model",
+  "raw_reply": "{\"analysis\": \"La pregunta plantea si las características prometidas en una publicidad obligan al oferente, incluso si no se repiten en el contrato. Para responder, es necesario analizar el marco legal argentino, especialmente las leyes de contratación pública y publicidad comercial.\", \"answer\": \"Sí, las características prometidas en una publicidad pueden obligar al oferente, incluso si no se repiten explícitamente en el contrato, siempre que cumplan con ciertos requisitos legales. Según el **Artículo 15 de la Ley N° 25.716** (Ley de Contrataciones Públicas), la publicidad debe ser **veraz, clara y precisa**, y el oferente se obliga a cumplir con lo prometido, incluso si no se incluye en el contrato formal. Además, el **Artículo 12 de la Ley N° 24.240** (Ley de Protección al Consumidor) establece que las promociones y publicidades deben ser **verdaderas y no engañosas**, y el oferente puede ser responsabilizado si incumple con lo prometido. En el contexto de licitaciones públicas, el **Artículo 16 de la Ley N° 25.716** también establece que la publicidad debe contener toda la información relevante para la evaluación de las ofertas, lo que implica que las características prometidas deben ser respetadas. Por lo tanto, aunque no se repitan en el contrato, las características prometidas en la publicidad pueden constituir una obligación legal del oferente, siempre que sean claras, veraces y relevantes para el objeto del contrato.\",\"can_answer\": true,\"citations\": [\"Ley N° 25.716 - Artículo 15\",\"Ley N° 24.240 - Artículo 12\",\"Ley N° 25.716 - Artículo 16\"],\"verdict\": \"si\"}",
+  "gold_first_section": "LEY-24240#ART-8"
+}

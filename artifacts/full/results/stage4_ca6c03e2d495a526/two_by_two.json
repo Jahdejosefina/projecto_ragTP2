@@ -1,0 +1,85 @@
+{
+  "gold_delivered": {
+    "retrieval_criterion": "gold_delivered",
+    "counts": {
+      "ret_ok_ans_ok": 18,
+      "ret_ok_ans_bad": 1,
+      "ret_bad_ans_ok": 1,
+      "ret_bad_ans_bad": 1,
+      "error": 0
+    },
+    "items": {
+      "ret_ok_ans_ok": [
+        "q005",
+        "q006",
+        "q007",
+        "q008",
+        "q009",
+        "q010",
+        "q011",
+        "q012",
+        "q013",
+        "q014",
+        "q015",
+        "q017",
+        "q018",
+        "q020",
+        "q024",
+        "q025",
+        "q029",
+        "q030"
+      ],
+      "ret_ok_ans_bad": [
+        "q022"
+      ],
+      "ret_bad_ans_ok": [
+        "q004"
+      ],
+      "ret_bad_ans_bad": [
+        "q023"
+      ],
+      "error": []
+    }
+  },
+  "answer_delivered": {
+    "retrieval_criterion": "answer_delivered",
+    "counts": {
+      "ret_ok_ans_ok": 19,
+      "ret_ok_ans_bad": 1,
+      "ret_bad_ans_ok": 0,
+      "ret_bad_ans_bad": 1,
+      "error": 0
+    },
+    "items": {
+      "ret_ok_ans_ok": [
+        "q004",
+        "q005",
+        "q006",
+        "q007",
+        "q008",
+        "q009",
+        "q010",
+        "q011",
+        "q012",
+        "q013",
+        "q014",
+        "q015",
+        "q017",
+        "q018",
+        "q020",
+        "q024",
+        "q025",
+        "q029",
+        "q030"
+      ],
+      "ret_ok_ans_bad": [
+        "q022"
+      ],
+      "ret_bad_ans_ok": [],
+      "ret_bad_ans_bad": [
+        "q023"
+      ],
+      "error": []
+    }
+  }
+}

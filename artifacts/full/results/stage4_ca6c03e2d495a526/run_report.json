@@ -1,0 +1,305 @@
+{
+  "stage": "04_grounded_answers",
+  "status": "ok",
+  "profile": "full",
+  "split": "test",
+  "started_at": "2026-10-29 20:34:04",
+  "finished_at": "2026-10-29 20:43:43",
+  "run_key": "ca6c03e2d495a526d3697ed9f805d664461d9f7012ae9e245eedcb7c3d555d62",
+  "run_spec": {
+    "stage": "04_grounded_answers",
+    "profile": "full",
+    "split": "test",
+    "config": {
+      "model": "qwen3:8b",
+      "num_ctx": 8192,
+      "num_predict": 700,
+      "safety_margin": 64,
+      "passage_budget": 2500,
+      "temperature": 0.0,
+      "seed": 0,
+      "think": false,
+      "bootstrap_samples": 2000,
+      "bootstrap_seed": 1337
+    },
+    "eval": "cc727360402aa851de6b5a3b2361ce9e9664c81d44c504b563f61afbe47d19c3",
+    "corpus_hash": "519330293d3b792c42325b784acc17b0495319994dcacaf90021b5f08a435a59",
+    "stage3_run_key": "67ecda17a40b8c1805b806def23f5eac295e9eab5a52356b582194d05861c297",
+    "stage3_index_key": "36a95c9c1551289f80c2b6f006805db2b8b938749090c8cdecee485fee1e6716",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f",
+    "ollama_server": "0.34.4",
+    "prompts_sha256": "59110018a528ba009a6c0cc846258ab3219cd9cd9d100825d26c9f2d8a00b07d",
+    "implementation_sha256": "f927233db9f1c98ace7eb34e48c180b9750982f92c60b264fb7c579d0cfcf848",
+    "arms": [
+      "closed_book",
+      "stage3_bm25",
+      "oracle"
+    ],
+    "item_ids": [
+      "q004",
+      "q005",
+      "q006",
+      "q007",
+      "q008",
+      "q009",
+      "q010",
+      "q011",
+      "q012",
+      "q013",
+      "q014",
+      "q015",
+      "q017",
+      "q018",
+      "q020",
+      "q022",
+      "q023",
+      "q024",
+      "q025",
+      "q026",
+      "q027",
+      "q029",
+      "q030"
+    ]
+  },
+  "results_dir": "/content/projecto_rag/artifacts/full/results/stage4_ca6c03e2d495a526",
+  "stage3_dir": "/content/projecto_rag/artifacts/full/results/stage3_test",
+  "llm_setup": {
+    "model": "qwen3:8b",
+    "digest": "500a1f067a9f",
+    "server": "0.34.4",
+    "num_ctx": 8192,
+    "thinking": {
+      "honors_think_false": true,
+      "leaks_think_tag": false,
+      "thinking_only": false,
+      "supports_thinking": true,
+      "answer": "Paris"
+    },
+    "key_order": {
+      "order": "declaration",
+      "reply": "{\"zeta\": \"alpha\", \"alfa\": \"omega\"}",
+      "error": null
+    },
+    "calibration": {
+      "template_minus_server": [
+        -4,
+        -4,
+        -4
+      ],
+      "offset": -4,
+      "repeat_prompt_tokens": [
+        295,
+        295
+      ],
+      "repeat_cached_tokens": [
+        3,
+        294
+      ],
+      "prompt_eval_count_includes_cached": true
+    },
+    "placement": "qwen3:8b: 100% GPU · 6.3 GB · context 8192"
+  },
+  "llm_stats": {
+    "calls": 81,
+    "cache_hits": 0,
+    "errors": 1,
+    "prompt_tokens": 100526,
+    "output_tokens": 10325,
+    "silent_truncations": 1,
+    "server_refusals": 0,
+    "output_truncations": 5,
+    "think_leaks": 0,
+    "reloads": 3
+  },
+  "items": 23,
+  "summary": {
+    "closed_book": {
+      "n": 23,
+      "errors": 0,
+      "correct": 0.08695652173913043,
+      "correct_ci95_low": 0.0,
+      "correct_ci95_high": 0.21739130434782608,
+      "correct_answerable": 0.0,
+      "n_answerable": 21,
+      "abstention_ooc": 1.0,
+      "n_ooc": 2,
+      "abstained_answerable": 0.7619047619047619,
+      "key_hit": 0.0,
+      "verdict_ok": 0.0,
+      "n_yes_no": 1,
+      "cited_not_delivered": 0.0,
+      "cited_gold": 0.0,
+      "gold_delivered": null,
+      "answer_delivered": null,
+      "abstained_with_answer_in_context": null,
+      "flags": 1,
+      "verdict_field_mismatch": 0.043478260869565216,
+      "mean_passage_tokens": 0.0,
+      "mean_expected_prompt_tokens": 274.39130434782606,
+      "mean_server_prompt_tokens": 278.39130434782606,
+      "max_abs_delta_tokens": 4,
+      "mean_ms": 4559.05652173913
+    },
+    "stage3_bm25": {
+      "n": 23,
+      "errors": 0,
+      "correct": 0.9130434782608695,
+      "correct_ci95_low": 0.782608695652174,
+      "correct_ci95_high": 1.0,
+      "correct_answerable": 0.9047619047619048,
+      "n_answerable": 21,
+      "abstention_ooc": 1.0,
+      "n_ooc": 2,
+      "abstained_answerable": 0.047619047619047616,
+      "key_hit": 0.9047619047619048,
+      "verdict_ok": 1.0,
+      "n_yes_no": 1,
+      "cited_not_delivered": 0.043478260869565216,
+      "cited_gold": 0.8571428571428571,
+      "gold_delivered": 0.9047619047619048,
+      "answer_delivered": 0.9523809523809523,
+      "abstained_with_answer_in_context": 0.0,
+      "flags": 0,
+      "verdict_field_mismatch": 0.0,
+      "mean_passage_tokens": 2452.9565217391305,
+      "mean_expected_prompt_tokens": 2813.478260869565,
+      "mean_server_prompt_tokens": 2817.478260869565,
+      "max_abs_delta_tokens": 4,
+      "mean_ms": 10291.808695652175
+    },
+    "oracle": {
+      "n": 23,
+      "errors": 0,
+      "correct": 1.0,
+      "correct_ci95_low": 1.0,
+      "correct_ci95_high": 1.0,
+      "correct_answerable": 1.0,
+      "n_answerable": 21,
+      "abstention_ooc": 1.0,
+      "n_ooc": 2,
+      "abstained_answerable": 0.0,
+      "key_hit": 1.0,
+      "verdict_ok": 1.0,
+      "n_yes_no": 1,
+      "cited_not_delivered": 0.0,
+      "cited_gold": 1.0,
+      "gold_delivered": 1.0,
+      "answer_delivered": 1.0,
+      "abstained_with_answer_in_context": 0.0,
+      "flags": 0,
+      "verdict_field_mismatch": 0.0,
+      "mean_passage_tokens": 325.39130434782606,
+      "mean_expected_prompt_tokens": 686.5652173913044,
+      "mean_server_prompt_tokens": 690.5652173913044,
+      "max_abs_delta_tokens": 4,
+      "mean_ms": 5729.1173913043485
+    }
+  },
+  "two_by_two": {
+    "ret_ok_ans_ok": 18,
+    "ret_ok_ans_bad": 1,
+    "ret_bad_ans_ok": 1,
+    "ret_bad_ans_bad": 1,
+    "error": 0
+  },
+  "paired": {
+    "oracle vs stage3_bm25": {
+      "metric": "correct",
+      "wins": 2,
+      "losses": 0,
+      "ties": 21,
+      "excluded_errors": 0,
+      "delta": 0.08695652173913043,
+      "delta_ci95": [
+        0.0,
+        0.21739130434782608
+      ],
+      "sign_test_p_two_sided": 0.5
+    },
+    "stage3_bm25 vs closed_book": {
+      "metric": "correct",
+      "wins": 19,
+      "losses": 0,
+      "ties": 4,
+      "excluded_errors": 0,
+      "delta": 0.8260869565217391,
+      "delta_ci95": [
+        0.6521739130434783,
+        0.9565217391304348
+      ],
+      "sign_test_p_two_sided": 3.814697265625e-06
+    },
+    "oracle vs closed_book": {
+      "metric": "correct",
+      "wins": 21,
+      "losses": 0,
+      "ties": 2,
+      "excluded_errors": 0,
+      "delta": 0.9130434782608695,
+      "delta_ci95": [
+        0.782608695652174,
+        1.0
+      ],
+      "sign_test_p_two_sided": 9.5367431640625e-07
+    }
+  },
+  "guard_demo": {
+    "item_id": "q004",
+    "question": "¿Las características prometidas en una publicidad obligan al oferente aunque no se repitan en el contrato?",
+    "answer_key": [
+      "obligan",
+      "obliga",
+      "vinculante",
+      "vinculantes"
+    ],
+    "passages": 52,
+    "our_count": 11768,
+    "num_ctx": 8192,
+    "num_predict": 700,
+    "strict_outcome": "ContextOverflow: prompt 11768 + num_predict 700 = 12468 > num_ctx 8192: the server would silently truncate it",
+    "server_prompt_eval_count": 4098,
+    "done_reason": "stop",
+    "error": "SILENT_TRUNCATION: the server evaluated 4098 prompt tokens, the template counts 11768; part of the prompt never reached the model",
+    "raw_reply": "{\"analysis\": \"La pregunta plantea si las características prometidas en una publicidad obligan al oferente, incluso si no se repiten en el contrato. Para responder, es necesario analizar el marco legal argentino, especialmente las leyes de contratación pública y publicidad comercial.\", \"answer\": \"Sí, las características prometidas en una publicidad pueden obligar al oferente, incluso si no se repiten explícitamente en el contrato, siempre que cumplan con ciertos requisitos legales. Según el **Artículo 15 de la Ley N° 25.716** (Ley de Contrataciones Públicas), la publicidad debe ser **veraz, clara y precisa**, y el oferente se obliga a cumplir con lo prometido, incluso si no se incluye en el contrato formal. Además, el **Artículo 12 de la Ley N° 24.240** (Ley de Protección al Consumidor) establece que las promociones y publicidades deben ser **verdaderas y no engañosas**, y el oferente puede ser responsabilizado si incumple con lo prometido. En el contexto de licitaciones públicas, el **Artículo 16 de la Ley N° 25.716** también establece que la publicidad debe contener toda la información relevante para la evaluación de las ofertas, lo que implica que las características prometidas deben ser respetadas. Por lo tanto, aunque no se repitan en el contrato, las características prometidas en la publicidad pueden constituir una obligación legal del oferente, siempre que sean claras, veraces y relevantes para el objeto del contrato.\",\"can_answer\": true,\"citations\": [\"Ley N° 25.716 - Artículo 15\",\"Ley N° 24.240 - Artículo 12\",\"Ley N° 25.716 - Artículo 16\"],\"verdict\": \"si\"}",
+    "gold_first_section": "LEY-24240#ART-8"
+  },
+  "position": null,
+  "repro_check": [
+    {
+      "item_id": "q004",
+      "identical": false,
+      "correct_before": true,
+      "correct_again": true,
+      "answer_before": "Sí, las características prometidas en la publicidad se consideran incluidas en el contrato y obligan al oferente.",
+      "answer_again": "Sí, las características prometidas en la publicidad se consideran incluidas en el contrato y obligan al oferente.",
+      "error": null
+    },
+    {
+      "item_id": "q005",
+      "identical": false,
+      "correct_before": true,
+      "correct_again": true,
+      "answer_before": "El documento de venta debe redactarse en idioma castellano.",
+      "answer_again": "El documento de venta debe redactarse en idioma castellano.",
+      "error": null
+    },
+    {
+      "item_id": "q006",
+      "identical": false,
+      "correct_before": true,
+      "correct_again": true,
+      "answer_before": "El tiempo durante el cual el consumidor está privado del uso de la cosa en garantía, por cualquier causa relacionada con su reparación, debe computarse como prolongación del plazo de garantía legal.",
+      "answer_again": "El plazo de la garantía legal se prolonga durante el tiempo que el consumidor esté privado del uso de la cosa por reparación.",
+      "error": null
+    }
+  ],
+  "oracle_children_fallback": [],
+  "human_review_pending_in_notes": 23,
+  "limitations": [
+    "n=23: read the CIs",
+    "key containment is lexical; correctness is not certified",
+    "consistency flags are heuristic and only for manual inspection",
+    "oracle delivers fewer tokens than the retrieval row"
+  ]
+}
