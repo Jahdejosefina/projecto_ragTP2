@@ -1,0 +1,20 @@
+{
+  "method": "exact_sha256_and_word_5_shingle_jaccard",
+  "documents": 170,
+  "pairs_compared": 14365,
+  "exact_duplicate_groups": [],
+  "near_duplicate_threshold": 0.8,
+  "near_duplicate_candidates": [
+    {
+      "doc_a": "DNU-805-2025",
+      "doc_b": "LEY-26221",
+      "jaccard": 0.8967
+    },
+    {
+      "doc_a": "DEC-493-2025",
+      "doc_b": "DNU-805-2025",
+      "jaccard": 0.8413
+    }
+  ],
+  "policy": "Se conservan todos los documentos. La similitud textual no demuestra equivalencia jurídica. Los candidatos requieren revisión antes de cualquier eliminación."
+}

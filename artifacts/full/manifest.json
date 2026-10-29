@@ -1,0 +1,699 @@
+{
+  "corpus": "legalize-ar",
+  "source_url": "https://github.com/legalize-dev/legalize-ar",
+  "source_commit": "3d2450b5c09a",
+  "selection_keywords": [
+    "defensa del consumidor",
+    "24.240",
+    "ley 24240"
+  ],
+  "selected_documents": 170,
+  "documents_hash": "d6caf4e3b599735726a63418f9b552570014217db3f06db652fa5efb735f7cec",
+  "normalization": [
+    "Unicode NFC",
+    "Reparación de caracteres de control",
+    "Normalización de espacios y saltos de línea"
+  ],
+  "files": [
+    {
+      "path": "ar/DEC-1-2016.md",
+      "sha256": "6e2a6654c283bcd9b18db4feb31009447ba84aa6d26726832c70e0d5abb302eb"
+    },
+    {
+      "path": "ar/DEC-1013-2002.md",
+      "sha256": "0a6e29c9cffb299f5a1a196312fcbbf3214471a951d164fdf5dec0cf8e8c2681"
+    },
+    {
+      "path": "ar/DEC-1024-2024.md",
+      "sha256": "572eb4cece2cacdea0050622df3e4fa694dc23514f4dc67b130e63c59f1591c6"
+    },
+    {
+      "path": "ar/DEC-1070-2014.md",
+      "sha256": "d2e852a96c2e30a3595e349ef3977a60dcd772a9f1e4cf5b230f68283ef6be45"
+    },
+    {
+      "path": "ar/DEC-115-1997.md",
+      "sha256": "cf09b8e9141370b3c8695e61a6034ed0f73902e8eb8b5b0e40b461ea4c79fd5d"
+    },
+    {
+      "path": "ar/DEC-1183-1997.md",
+      "sha256": "840bb7ec4c943708af399347fd7c85a1c1c6a3343e8b09d5d3f30a3adeefc4d2"
+    },
+    {
+      "path": "ar/DEC-1225-2010.md",
+      "sha256": "366c4e6974d4f8f3555d9a38b7875e7adb3c895a87d33c02db455d4518ecfc4d"
+    },
+    {
+      "path": "ar/DEC-1288-2013.md",
+      "sha256": "d846779ea4e109cb8807fd3b25dd42e79dbb8377bce9d1e48dbb8c01fd2fcbe8"
+    },
+    {
+      "path": "ar/DEC-1359-2004.md",
+      "sha256": "c7af4dd55f7da683525a65ef3ae8c13792a321b9b99b0a0a064f8bafa35e802a"
+    },
+    {
+      "path": "ar/DEC-1430-2002.md",
+      "sha256": "68ab490782b874db662aacc9e6e3f13c8599f8850677e88f2931e2b8cbe04a3c"
+    },
+    {
+      "path": "ar/DEC-1442-2002.md",
+      "sha256": "3735dbef13d3df581e791dc78c067b50e845dbd916aea974fa1cd8808e89c076"
+    },
+    {
+      "path": "ar/DEC-146-2026.md",
+      "sha256": "d22e9ab949f5d15f52155421aa95ec91160d58adf559097ee38ca8238657d6a2"
+    },
+    {
+      "path": "ar/DEC-149-2009.md",
+      "sha256": "64b107d1ccf9c5551c3b310aca92a4908f4618e8f186c24fd849890093c6f82b"
+    },
+    {
+      "path": "ar/DEC-151-2022.md",
+      "sha256": "9122c62e77393f739348aa41f49ddd687f2e80ece22d5106af2fde8ea1d450c9"
+    },
+    {
+      "path": "ar/DEC-1552-2001.md",
+      "sha256": "a69e701c633acf8b3de8540a46c1fc9be6be2d43316ab04618701f8fb86b1582"
+    },
+    {
+      "path": "ar/DEC-1568-2004.md",
+      "sha256": "5421cf8356323949053c1effd8330673c4584f56118df984bb37740675412f3c"
+    },
+    {
+      "path": "ar/DEC-1594-1992.md",
+      "sha256": "13ef6a83e4e585c0efd0fd514d8a9db6af031dd1f680d562e1b8a9b84a0b1e83"
+    },
+    {
+      "path": "ar/DEC-1658-2001.md",
+      "sha256": "9ab1b4b3ed81007cc9ce93a8c657754b1a9a26b33c45b1c8f4e7f331370a4948"
+    },
+    {
+      "path": "ar/DEC-1742-1993.md",
+      "sha256": "989591f99dc109d52971fdf13bba6ea846999f560fbce4086affa0d21e7f08da"
+    },
+    {
+      "path": "ar/DEC-1798-1994.md",
+      "sha256": "38ba356f15d89ff1f112c23b120ed61119de4049cda21a8b062e66735588747b"
+    },
+    {
+      "path": "ar/DEC-1799-2007.md",
+      "sha256": "f9e2e662eafb2b754d607d8d3832b156854e70c8aa59424d94dc4d8ba4dd6413"
+    },
+    {
+      "path": "ar/DEC-1951-2002.md",
+      "sha256": "e73bfd381d46bab67dde35ef915153778adc75e958d5a9419c283668e43b94ee"
+    },
+    {
+      "path": "ar/DEC-196-2025.md",
+      "sha256": "7210dcc57e349d0d4e851dc929cada80bcdc3532810dfe7701b5de0c5c8bcc81"
+    },
+    {
+      "path": "ar/DEC-197-2000.md",
+      "sha256": "706d79916ad1a262a2663278eca97908faf9662e163e9c2ab66ddf58df1ad968"
+    },
+    {
+      "path": "ar/DEC-1993-2011.md",
+      "sha256": "585c3a3e973ee379cf6dd19541e1d3bac06ee9091857a763c6c1154c5f17b50c"
+    },
+    {
+      "path": "ar/DEC-2085-2011.md",
+      "sha256": "7b9f64346f02efcf801ddc073282918d1fde5c103f440c2d3493f6db67087db4"
+    },
+    {
+      "path": "ar/DEC-2089-1993.md",
+      "sha256": "ba4056e2dcec74cf71a0c85b5b6d02548ac422ab42554e8de097ca0d9e9b3d69"
+    },
+    {
+      "path": "ar/DEC-2095-2009.md",
+      "sha256": "a0e48f4c92a30a4dad9a4985ea0b5cbd92b1a366d46814c67e8d85c9917abcc8"
+    },
+    {
+      "path": "ar/DEC-21-2007.md",
+      "sha256": "4b6b236e3eb0b86c24357659facb8347597d238d96e2ce3800257c20f5cef2a3"
+    },
+    {
+      "path": "ar/DEC-2102-2008.md",
+      "sha256": "5a975e87556e370f8204350185efcbafe9a1a11afdf1300f4c1f11be056e16ae"
+    },
+    {
+      "path": "ar/DEC-2119-2008.md",
+      "sha256": "77a223b77c8d1425d735b6761f540c2d88b22ffeb84ea526cc2e3948d8fc894e"
+    },
+    {
+      "path": "ar/DEC-2136-2013.md",
+      "sha256": "0becee3e818a60f724e4655f26b2381dfc40b11f87be7dab93d739614ac357da"
+    },
+    {
+      "path": "ar/DEC-218-2023.md",
+      "sha256": "abbe3f04ec256a9baed83e45117ac30b834edb8d40668b98802efe62a7e31fc9"
+    },
+    {
+      "path": "ar/DEC-2194-1995.md",
+      "sha256": "3ee625f7e995b07f5ef126ef6d342e4c37d859059c9c737b091f2e8d947c9efc"
+    },
+    {
+      "path": "ar/DEC-2415-1995.md",
+      "sha256": "56d9dd89efe0718fb5143bb4bbd016933f4b7f356540a23daf51a3385fced8d9"
+    },
+    {
+      "path": "ar/DEC-2453-1993.md",
+      "sha256": "798e43cdc005217c10303fd9411624379d3cd3613ba533cc5abc3785ff81b899"
+    },
+    {
+      "path": "ar/DEC-25-2003.md",
+      "sha256": "525e47f55f92601058803dd460961db674ae79cea1dd2af55a15a7d3b6dceaf4"
+    },
+    {
+      "path": "ar/DEC-2501-2015.md",
+      "sha256": "ed22f016048823192f8fad81b2c9660e101417d4a451eabd3a03e24ea6854af2"
+    },
+    {
+      "path": "ar/DEC-2632-1991.md",
+      "sha256": "fd49c3e6020c6877b3e967d207e7f6e78e8fc34b7b5f5c223f4674ced04260d5"
+    },
+    {
+      "path": "ar/DEC-270-1997.md",
+      "sha256": "ffc81ce402b00056c7836d018b4cfb3e5d9691cabd266cd8cdc6949780e2eb75"
+    },
+    {
+      "path": "ar/DEC-2710-2013.md",
+      "sha256": "a8762bb5b913d6d9b8b6ec2f1f2a800410e53d12cd52bf104ff227698428b652"
+    },
+    {
+      "path": "ar/DEC-273-2025.md",
+      "sha256": "aedd81d5e08dba5a8b1638f1e3bc387482e1d81c1ed83ebb70c3a382391748a7"
+    },
+    {
+      "path": "ar/DEC-274-2025.md",
+      "sha256": "1779f14f2ba5ef60b59dfef6ca1a5f28fe51e547f5990e51760d331a106be86e"
+    },
+    {
+      "path": "ar/DEC-276-1998.md",
+      "sha256": "03d2847c1a07ba387fa23837e652c004b2a91c683b64b10f5dd3b8c3245adb37"
+    },
+    {
+      "path": "ar/DEC-293-2024.md",
+      "sha256": "d310434c56e65a711de5761c3c05b8c38e8add625a7fd883910046e89d7e0387"
+    },
+    {
+      "path": "ar/DEC-310-2001.md",
+      "sha256": "336ee9ea38c7b65abf19037784b4f158f5a9c4e906a23cc93f905ab616483ec3"
+    },
+    {
+      "path": "ar/DEC-311-2024.md",
+      "sha256": "3491b2e4a6cc0e0dd680e8f92d857599ed7bbadf7fbcc7adf1d45f8a06b27dfc"
+    },
+    {
+      "path": "ar/DEC-327-2002.md",
+      "sha256": "7ff09519b53aa1c02871d8c262e3ab6ebbb718d109c623f360250e3e4826bcb8"
+    },
+    {
+      "path": "ar/DEC-33-2025.md",
+      "sha256": "f202e616b3b65669de5fd70c5efd834ae852c560370e502dd5213de845b45fd1"
+    },
+    {
+      "path": "ar/DEC-337-1984.md",
+      "sha256": "d0530808432a631976ba192b0dc8e5c1352cb6641ae0f6d475317ff62ce3c29e"
+    },
+    {
+      "path": "ar/DEC-357-2002.md",
+      "sha256": "46da9790199a3f468ef0aa7eb574ff959ca0570255ce1b52cfa10697c24c69db"
+    },
+    {
+      "path": "ar/DEC-370-2002.md",
+      "sha256": "05b433564eb69c94969938e43e0815c8e740aa2f9ad70453ad9c4e6186f3912e"
+    },
+    {
+      "path": "ar/DEC-373-2001.md",
+      "sha256": "a892a0d0a99fe1c88117c291b731161cb55ef51b7eca5303abc0cac163c8a430"
+    },
+    {
+      "path": "ar/DEC-375-2021.md",
+      "sha256": "4ca767067a175156dea6a71e9b6f25d4fb032f45d42b5356dd0e9ab953d4be2b"
+    },
+    {
+      "path": "ar/DEC-380-2019.md",
+      "sha256": "941176dc9f6c57ad0fedbe254aec6631f9f4840dce37d44e8835c0618218419a"
+    },
+    {
+      "path": "ar/DEC-402-2015.md",
+      "sha256": "af35e0537dcd7abbe48700cf4ef8ac2b9d444b76f313752133de6e925ff550e5"
+    },
+    {
+      "path": "ar/DEC-404-2022.md",
+      "sha256": "07f864e77f6337d738435bf86a2a02fffe9238cae0cab5597e46bebc0c6f7764"
+    },
+    {
+      "path": "ar/DEC-405-1998.md",
+      "sha256": "e4e7830ee10b0b3d41b34d7cd90c6908c58d3e458f504126f324b27797921e25"
+    },
+    {
+      "path": "ar/DEC-407-2022.md",
+      "sha256": "d494dec03375e0901a0c84c73aa81266293fbe0eae4db4e820cf4a4a76734adf"
+    },
+    {
+      "path": "ar/DEC-42-2025.md",
+      "sha256": "0ad1bbb1bc1260b0ea86e2af30fd9e5c2dd36d0888d42cf96483a2e11c684d5e"
+    },
+    {
+      "path": "ar/DEC-420-2006.md",
+      "sha256": "eca5bef9bc0351afb1b1603391023eebe49bca29ad3fd2ada6dc33fa728683e8"
+    },
+    {
+      "path": "ar/DEC-431-2001.md",
+      "sha256": "9f50715bae6959b7d168f5f03bfb233eebc202890c3e6bd0e9eb6a04803d5d05"
+    },
+    {
+      "path": "ar/DEC-433-2001.md",
+      "sha256": "540f6679b3149eabc41b2080a92a61fe6b812379b2176fdfaa66fa8567198fbd"
+    },
+    {
+      "path": "ar/DEC-436-2002.md",
+      "sha256": "926a0e0e1d1067824d470c670f9b6a86b9274f9684021ff468dbcb8ce65481c3"
+    },
+    {
+      "path": "ar/DEC-465-2000.md",
+      "sha256": "62a907905063e6b8734b589e0322401218b33aae365cde200f3006b3e77c8e98"
+    },
+    {
+      "path": "ar/DEC-475-2002.md",
+      "sha256": "a84d0d0f808f315b17307cd5c8f66a7552e4a8341587fdcb1d15ee93417b31ca"
+    },
+    {
+      "path": "ar/DEC-476-2004.md",
+      "sha256": "87965e7dbe0bf69d2305d92672c866d88294f4c6fc896964a6855e6ebcdaf284"
+    },
+    {
+      "path": "ar/DEC-480-2022.md",
+      "sha256": "43f066a538d89b025f6fffe75cc9469448041280704c4ae177f58e7404e9dac2"
+    },
+    {
+      "path": "ar/DEC-493-2025.md",
+      "sha256": "94d87ee2eb8f2182052b5c8f236a5b11bcfc7b7fb2b792760ae421a3e56c7dbd"
+    },
+    {
+      "path": "ar/DEC-50-2019.md",
+      "sha256": "2755fd23735db92e2c2d44f3076542131c18a6558b2d0482687bb1397c3d31fd"
+    },
+    {
+      "path": "ar/DEC-507-1994.md",
+      "sha256": "6d28de5c9b4c65fa751b41a33229aa3887e0b15680dcf672efcc94bc279cdf8a"
+    },
+    {
+      "path": "ar/DEC-512-2009.md",
+      "sha256": "0fef2964e665a2a2dbc629e6587d7c388bf63e240cfa998c31de238f1bf2cf2d"
+    },
+    {
+      "path": "ar/DEC-528-2011.md",
+      "sha256": "ad875b3a542714f839468a75bf5189c0d4dec9f2e533bbcbd50b559577eec3a0"
+    },
+    {
+      "path": "ar/DEC-53-2011.md",
+      "sha256": "a4b5b0500d238b7f55216af5140fc03a34463ff80e8bbfcd1e49bbd66b242282"
+    },
+    {
+      "path": "ar/DEC-55-2025.md",
+      "sha256": "87976d21244cc2f193a921242b0ed07dd49af8119c6f9089836f138deed68d0c"
+    },
+    {
+      "path": "ar/DEC-556-2009.md",
+      "sha256": "714ac409edb3fef2af135d1b95407a4abc71adf4a9c94122c59f137804e0998d"
+    },
+    {
+      "path": "ar/DEC-561-1999.md",
+      "sha256": "d0e4ab37e2272d3fc374986466d4148f80d7c022be9513eebfecc15cae46d6dc"
+    },
+    {
+      "path": "ar/DEC-565-2008.md",
+      "sha256": "398598011308d40ca95e892d04604d5afcf2f8a1238f46b80aa4328c6412eaf1"
+    },
+    {
+      "path": "ar/DEC-567-2019.md",
+      "sha256": "fc761b7f7568c0f121efbb9cfe8c86fc62554a8daada9ebb65f6eac5baea37a8"
+    },
+    {
+      "path": "ar/DEC-58-2001.md",
+      "sha256": "2900460f6c143daba276d0024382857a6577a8a7c1567a736c8e8dfd1ec79d8a"
+    },
+    {
+      "path": "ar/DEC-603-2019.md",
+      "sha256": "37b94a436f34c3f866ec86f1f90745da264cd912e028ee69d25707a26ac760f8"
+    },
+    {
+      "path": "ar/DEC-660-1996.md",
+      "sha256": "d4f773c79a2d26934d7de0db38faeaa014452fc24ab8c38e85ec9596ba670def"
+    },
+    {
+      "path": "ar/DEC-662-2020.md",
+      "sha256": "38be831af8fc86d9bced3b782652f9a418aec01a04749b3bd7b4a319cb57c104"
+    },
+    {
+      "path": "ar/DEC-688-2009.md",
+      "sha256": "a264cfcae2cf58b8721b03de5ec9bdf417a812ab3a6d83a19b6703e7ec3f2cb4"
+    },
+    {
+      "path": "ar/DEC-70-2025.md",
+      "sha256": "6ea3a365660b8574e496c681a7f06a9026325a88af9f2e873efe6409ffc0d4d7"
+    },
+    {
+      "path": "ar/DEC-741-2015.md",
+      "sha256": "bede6bcde9d8373b4088dafe76471a951e5e0b8633670738a93d80e54941570c"
+    },
+    {
+      "path": "ar/DEC-742-2022.md",
+      "sha256": "c03c4829bf57b613a7714e038ebb25fad799960830a752cdc9b29cc7a032adcd"
+    },
+    {
+      "path": "ar/DEC-764-2000.md",
+      "sha256": "f3c2591dfabc30208514ceeaf52efdc067219a6766e65e7130f5f74e074ce66a"
+    },
+    {
+      "path": "ar/DEC-764-2024.md",
+      "sha256": "a19f961b8f5f3146993300faff9eb1b90a70745411845473fae20361345cb7d2"
+    },
+    {
+      "path": "ar/DEC-765-2002.md",
+      "sha256": "f20c43f01e306cd5eed0204132a8073a3ce197e775b1a440b5a4d28c623b67ef"
+    },
+    {
+      "path": "ar/DEC-771-2001.md",
+      "sha256": "b535584e2a934ed0a55de31e5cf1819908ef31774f84f7c3b6c1452e4f63dea7"
+    },
+    {
+      "path": "ar/DEC-788-2003.md",
+      "sha256": "f25afb10cf246a1078e3ccd6090ed43e79c0ba644518499297e934ee98dd2ca9"
+    },
+    {
+      "path": "ar/DEC-79-2003.md",
+      "sha256": "fd7257a5e7299d52a2a02ff504161e264cf6a789b0446f8dd970e507c4a790cc"
+    },
+    {
+      "path": "ar/DEC-826-2011.md",
+      "sha256": "6dcdb673e8505909a4e077f32b9a47a7bd02d321c413bb10118bdbf69f6819ab"
+    },
+    {
+      "path": "ar/DEC-853-2007.md",
+      "sha256": "b4e2eeeda7b04cf92aef759db74ff755705249e553254a3490435e3c8a468122"
+    },
+    {
+      "path": "ar/DEC-861-2022.md",
+      "sha256": "cca53942937ec20cbc465b58c2843560ee9a4e88c34c6bc6f341f98defa9cb0e"
+    },
+    {
+      "path": "ar/DEC-866-1995.md",
+      "sha256": "420781cf592162985457e769b058104d94cc9bd061cca61183541c6e1bbc2e59"
+    },
+    {
+      "path": "ar/DEC-866-2025.md",
+      "sha256": "9615d196a0107a4187f88f4a26b6b8100397dd91900c26fb94d478e45dda6a5e"
+    },
+    {
+      "path": "ar/DEC-875-2008.md",
+      "sha256": "139d270ec16b3dbe3b48120edb93573de6a25ea2289fa8535aff42c1109243d4"
+    },
+    {
+      "path": "ar/DEC-877-2006.md",
+      "sha256": "2e172c1b61d72492bff49864739dd796406ebf3248289b54dcfa84515d262a99"
+    },
+    {
+      "path": "ar/DEC-892-2025.md",
+      "sha256": "8f44fdf633a6f686998fb9bc7b0de1cb6dab53c29976e37f700389ff85311d3e"
+    },
+    {
+      "path": "ar/DEC-901-2002.md",
+      "sha256": "869aeaaf928727f5d4667c55cf75522bf60265e1bfe0487441cf5ad0b077c60b"
+    },
+    {
+      "path": "ar/DEC-92-1997.md",
+      "sha256": "81dd90683bcd9df1f9c7063e151d67c45d7127a1ad36019c97754cd52e6e7f63"
+    },
+    {
+      "path": "ar/DEC-938-2016.md",
+      "sha256": "6a357638499a77fe0f329ab3a6e38ff20f2f71f00c0cff785031c682d05c6765"
+    },
+    {
+      "path": "ar/DEC-939-2016.md",
+      "sha256": "cef00cfdedbb2850fbbe34c17261bc34666843daedc7b50d80707c33b6faeba6"
+    },
+    {
+      "path": "ar/DEC-946-1989.md",
+      "sha256": "71770e82c9a8596ea05c0bd8cd3708ca9f82430f2dc614209a3e259d7f0ec146"
+    },
+    {
+      "path": "ar/DEC-958-2018.md",
+      "sha256": "4c4d655eea32446ba80ab2a4e6d52775d35bace35b2018e0e54008a902a6233b"
+    },
+    {
+      "path": "ar/DEC-960-2017.md",
+      "sha256": "71ed74267e95bd0d4b18e7ddc5e6914ad3dc2f7475351d511d6bc83c8f9f82c8"
+    },
+    {
+      "path": "ar/DEC-987-2003.md",
+      "sha256": "fd923062dfef7e210c559064ceb5a6882d65df733e41033c37ba4487f8c3f9fe"
+    },
+    {
+      "path": "ar/DEC-991-2020.md",
+      "sha256": "c4e6408a0412c4cfc207db27f3ec50f5def4024954fc52e1c2962812879f9aaf"
+    },
+    {
+      "path": "ar/DEC-994-1991.md",
+      "sha256": "ac257650e3778df9fbd5707d4371ec93aa535997336c847b9e5addde7d4cde47"
+    },
+    {
+      "path": "ar/DNU-1283-2003.md",
+      "sha256": "5f22145a09ad58307dc2e19336bc0ebdcd2125cf9eced28435775b433df8d30a"
+    },
+    {
+      "path": "ar/DNU-13-2015.md",
+      "sha256": "223b60aa56069d8847700f56dd7365e219acb9f7fcc65ca17a83c07ab668282d"
+    },
+    {
+      "path": "ar/DNU-195-2024.md",
+      "sha256": "1d13b04981414a35df08113af34c319dd7e7961da766a5d47ddbe89487be68f1"
+    },
+    {
+      "path": "ar/DNU-202-2003.md",
+      "sha256": "2f4d801449030872b2579899d1939db226487058860d7dd4223af67b197c8c71"
+    },
+    {
+      "path": "ar/DNU-2025-2008.md",
+      "sha256": "2ae065d0660f0f45905e221ab2c66bf56b2f6425bf9c6beaf5fee24a1e58f663"
+    },
+    {
+      "path": "ar/DNU-2082-2011.md",
+      "sha256": "a4c6de3f80736e19886fe4f28e2a8113b7ffa8a4cbedf6da68d49e8fef917929"
+    },
+    {
+      "path": "ar/DNU-2156-2002.md",
+      "sha256": "3fdd0eafdb4b27e9a73cc6b1b04557728003601bfdae6d761c08a7eae072fb39"
+    },
+    {
+      "path": "ar/DNU-27-2018.md",
+      "sha256": "9de5f4db84b1652bae45310157718fc3ef9e17e9faf92feb9532cfe19daff27f"
+    },
+    {
+      "path": "ar/DNU-271-2000.md",
+      "sha256": "88fc04b74906ad96c8410647dbd0cc9bc283483fec2b5a60b0b2710486512b73"
+    },
+    {
+      "path": "ar/DNU-274-2019.md",
+      "sha256": "e630a673f6be66bac30ab3d45a82ebf14f30c2d56a484c3a9077efb0525e3d58"
+    },
+    {
+      "path": "ar/DNU-326-2022.md",
+      "sha256": "235c3aaa22e4db7cbd083f9a7be717c59add13569b36a1e216167292412c3f66"
+    },
+    {
+      "path": "ar/DNU-355-2002.md",
+      "sha256": "1e9ed50fdbdcb862213c9ae5b46d07fa30d7957f059c482d740eacb05af2576f"
+    },
+    {
+      "path": "ar/DNU-441-2015.md",
+      "sha256": "26015dae2a2055b38a9e7d5c24daf9cc7c18be0ebaa4ffd8e22600351ebdd52b"
+    },
+    {
+      "path": "ar/DNU-451-2022.md",
+      "sha256": "28984f1627844a64461d4d4033122541a308697b5647e1652c574298caca05c0"
+    },
+    {
+      "path": "ar/DNU-473-2002.md",
+      "sha256": "e97237b0c4c47f437e4459ebf0cd17c922ddbce7f9b67bee7eb6703f6982fac5"
+    },
+    {
+      "path": "ar/DNU-513-2017.md",
+      "sha256": "9179535c35d09c5a33eca9494073428505b62fa98ecbad80ead5f31fbf858705"
+    },
+    {
+      "path": "ar/DNU-532-2019.md",
+      "sha256": "2abb6fc751d384be2ff91f177da54c1093d165e55a23bd97dd129d66aca82a7c"
+    },
+    {
+      "path": "ar/DNU-575-2018.md",
+      "sha256": "2fc393f8c7d0d43b61ded8e80dc1948ebb170e8fc9f1c1b14f078454d184e56a"
+    },
+    {
+      "path": "ar/DNU-585-2024.md",
+      "sha256": "7e0962260622540ba2d94478556a4e623705320c88d89ab7d1d7dadb35f9d84b"
+    },
+    {
+      "path": "ar/DNU-7-2019.md",
+      "sha256": "0bf9a41ee031502883396fcfdfda51d7c0a4264217b0caa338298ae536c89ab4"
+    },
+    {
+      "path": "ar/DNU-706-2020.md",
+      "sha256": "bf166104d5e83c5500f7e8afd5cd46ee4f6316b473c2cbd31cb50953015a18c8"
+    },
+    {
+      "path": "ar/DNU-731-2024.md",
+      "sha256": "32fe015a419e267001acc8e133121d82cb5753db69532a2d1e21e761b8e71d54"
+    },
+    {
+      "path": "ar/DNU-743-2022.md",
+      "sha256": "a36ffd87ef4a87ab49e1de447f38691cf12cf60bc73ac94dffd8327586c296cb"
+    },
+    {
+      "path": "ar/DNU-8-2023.md",
+      "sha256": "e41b582ec0d0e4ce3778b90b013f87f5d63bba88aa703524051f7f38ed076f17"
+    },
+    {
+      "path": "ar/DNU-801-2018.md",
+      "sha256": "f7f37d634836f5131b48b2415b55d367c6c99d5c3ad5bdfde3ab5a49e6dbb057"
+    },
+    {
+      "path": "ar/DNU-805-2025.md",
+      "sha256": "e7f3734ba3357fc3b10eb41ca590c8854559419d56cbb7fe77dfde2b4bff8957"
+    },
+    {
+      "path": "ar/LEY-24240.md",
+      "sha256": "898dec1a2c4e2c3b61af01789a57a2cfb383e476b63cbec7007ce42a6b2b6822"
+    },
+    {
+      "path": "ar/LEY-24568.md",
+      "sha256": "0af83976d83c211738cca95e872a529159fb95c4e593f44331d74f23f2caf2bc"
+    },
+    {
+      "path": "ar/LEY-24787.md",
+      "sha256": "15b6085b0dee82699487aca489f4dbeb779c9191c414130f9363fc140263740e"
+    },
+    {
+      "path": "ar/LEY-24804.md",
+      "sha256": "ac3b87b25407294a2266c09cae7be42694a8c997d91967e0b3918526ce7f5b8b"
+    },
+    {
+      "path": "ar/LEY-24806.md",
+      "sha256": "ad61fe6085fd0dbd4e119fb3d8834ca7ec0d469fd8cfe59d5a55b8a51877fd9d"
+    },
+    {
+      "path": "ar/LEY-24999.md",
+      "sha256": "4ba0259590b48879860675e6d63bb437ff12ff961f1bb0a40c711c84ab8c696a"
+    },
+    {
+      "path": "ar/LEY-25065.md",
+      "sha256": "45a24af41dbfcdf81e250bae4c78ba3278be2adfd67363ec135d233e1f91b252"
+    },
+    {
+      "path": "ar/LEY-25093.md",
+      "sha256": "f1703851d5ae8706ffad2e6d8e0b7e8920b21e7a89ff90d61c6ef62de8537873"
+    },
+    {
+      "path": "ar/LEY-25174.md",
+      "sha256": "63c41db4bea0f1789ecfcfc6cc1611f693229291a237c13d600647e8aff3f80f"
+    },
+    {
+      "path": "ar/LEY-25401.md",
+      "sha256": "ba6b17581be737c594942d033cad9293624c66444a3539cacce600c6635f5111"
+    },
+    {
+      "path": "ar/LEY-25599.md",
+      "sha256": "43f7e43ccb576d54e02d42d7af6fdafc69eda5e8fe44216e801386104f379c5a"
+    },
+    {
+      "path": "ar/LEY-25649.md",
+      "sha256": "488638e8a63c4269116ab71bd54807be75bd8694489d25c0ebcd5605888d73ad"
+    },
+    {
+      "path": "ar/LEY-25651.md",
+      "sha256": "86cca8f36f80695250abe6f0d882514ba41a559d5f5ed11376c4bd6f17644df1"
+    },
+    {
+      "path": "ar/LEY-26043.md",
+      "sha256": "3806acedcfdb0a7a5961a021ac8c4cbbafaff400eb3238813b59da8bed990f98"
+    },
+    {
+      "path": "ar/LEY-26208.md",
+      "sha256": "67159c931ca060590e8c59f1282dec32f2cdfc6b94c7932e53d7880977735257"
+    },
+    {
+      "path": "ar/LEY-26221.md",
+      "sha256": "abcc72a16056bc7b5aee020e6c10587c06d5bba9881539767e20a671ce2cffcd"
+    },
+    {
+      "path": "ar/LEY-26338.md",
+      "sha256": "1da053cae67350f31253096daacb157f6a0914b5002e00082e84930c6cb791d2"
+    },
+    {
+      "path": "ar/LEY-26356.md",
+      "sha256": "6baf566efebef552cb8d05aacab0d02185ce6a367a9791305e88957736281f12"
+    },
+    {
+      "path": "ar/LEY-26361.md",
+      "sha256": "ef3f1094c16dc10a7744fe3a4ce476d2d28f42d203231d33d5a76bc788f9c9a5"
+    },
+    {
+      "path": "ar/LEY-26522.md",
+      "sha256": "386b9fcaa659d171c470f1f1367df12e2b0723a84132e2fe67b5d71e017b7d4d"
+    },
+    {
+      "path": "ar/LEY-26682.md",
+      "sha256": "30f2760dab0a83033373175be898430a84fa3444f50eec38ef97e673d4047699"
+    },
+    {
+      "path": "ar/LEY-26993.md",
+      "sha256": "16bc2d7090e8296c7bd3041e1cb3e1eebeb5b841c90c9be181b2f69f2e61e418"
+    },
+    {
+      "path": "ar/LEY-26994.md",
+      "sha256": "7659c20a23b29646a53d4d80810d4a191111cf2c5af9e2f4df4c84548a2a204c"
+    },
+    {
+      "path": "ar/LEY-27148.md",
+      "sha256": "cba82c73ce939d4d24440329d91c842f7d4e020d6311bd1adbadcfc83d2f437c"
+    },
+    {
+      "path": "ar/LEY-27250.md",
+      "sha256": "f6523ce87eefd96562942695a4963487a74ee43eb239e162a372541225dc1c67"
+    },
+    {
+      "path": "ar/LEY-27265.md",
+      "sha256": "ca642ef4db976e1aa1b0344c0331275874afd47210d3365ed9146bb7903c5ca1"
+    },
+    {
+      "path": "ar/LEY-27266.md",
+      "sha256": "de4a512c1172d80e8e2bcc8952cea6546cc5b9c0fb9188e4b6b33e0ccb02c659"
+    },
+    {
+      "path": "ar/LEY-27467.md",
+      "sha256": "9f07de080b072f0cef083a3e2da5d791a8cf2e03c61cb18c38bf3bbc2178bfbf"
+    },
+    {
+      "path": "ar/LEY-27521.md",
+      "sha256": "cc1b8a0852fedfc2603e6c322c6df9767cdb338edc5f27ed953ffecb3b03fe59"
+    },
+    {
+      "path": "ar/LEY-27545.md",
+      "sha256": "f447f89cdcf97395f6c8a2c8a677ed87834c613f9763d3de6ba9ee1fbe0ae612"
+    },
+    {
+      "path": "ar/LEY-27642.md",
+      "sha256": "5c0eed1fe6308e7567f1a40cccf0f08b31f6e683d9733e1e3439008a4a13c106"
+    },
+    {
+      "path": "ar/LEY-27665.md",
+      "sha256": "da55b7d02de6663814e7d16542daf8ff1d6896174643db5a07a8ee5e92937b78"
+    },
+    {
+      "path": "ar/LEY-27701.md",
+      "sha256": "3fe82936346d8649b5e89a29814d7f83176f50b29874f6c7a6cc341a3661f49f"
+    }
+  ]
+}
