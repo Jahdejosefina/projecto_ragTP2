@@ -1,0 +1,94 @@
+{
+  "stage": "03_retrieval",
+  "profile": "full",
+  "corpus_hash": "519330293d3b792c42325b784acc17b0495319994dcacaf90021b5f08a435a59",
+  "indexed_documents_hash": "0c8a25684ac721cf88d7efc37401a202d9d5de4e0ef703a01bf8c24ebcf15590",
+  "documents": 170,
+  "chunks": 13630,
+  "chunks_hash": "534237c6c8ac134449693fffc0ae7aa96daa51471d584c40ed19f50269821ba3",
+  "config": {
+    "name": "bm25",
+    "child_tokens": 320,
+    "overlap_fraction": 0.15,
+    "budget_tokens": 2500,
+    "candidate_k": 100,
+    "metric_ks": [
+      1,
+      3,
+      5
+    ],
+    "bm25_k1": 1.5,
+    "bm25_b": 0.75,
+    "seed": 1337,
+    "bootstrap_samples": 2000
+  },
+  "tokenizers": {
+    "generator": {
+      "model": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+    },
+    "reranker": {
+      "model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+      "revision": "1427fd652930e4ba29e8149678df786c240d8825"
+    }
+  },
+  "lexical": {
+    "method": "lucene",
+    "stemmer": "spanish",
+    "stopwords": [
+      "a",
+      "al",
+      "como",
+      "con",
+      "de",
+      "del",
+      "el",
+      "en",
+      "es",
+      "la",
+      "las",
+      "le",
+      "les",
+      "lo",
+      "los",
+      "más",
+      "no",
+      "o",
+      "para",
+      "por",
+      "que",
+      "se",
+      "su",
+      "sus",
+      "un",
+      "una",
+      "y"
+    ],
+    "identifier_normalization": "24.240 -> 24240",
+    "prefix": "doc_id | section_title"
+  },
+  "implementation_sha256": "db79824cd1794246673485c1a9d2835ed0b3bcf14a96301053c52a3312617060",
+  "packages": {
+    "bm25s": "0.3.11",
+    "PyStemmer": "3.1.0",
+    "transformers": "5.16.1",
+    "tokenizers": "0.23.3",
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "huggingface-hub": "1.29.0"
+  },
+  "project_sources": {
+    "environment": {
+      "sha256": "064be3a73e90b5ec3d6d8f5ad1189158b600a1b99915d4d30fd5ddcff1e29103"
+    },
+    "schema": {
+      "sha256": "9b70e3b9a8c969f31511208c1485ae529836352665c43639819e3eedffd1ae02"
+    },
+    "console": {
+      "sha256": "e82c226d3529fcbc438296f475ba1cb017ff455303e0f54f58565e9919a12836"
+    },
+    "store": {
+      "sha256": "5c577d9af3b147c4509ccd95c3b4d01d058449723a5b58ff27a6af83fdee10e4"
+    }
+  }
+}
