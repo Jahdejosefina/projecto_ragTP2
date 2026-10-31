@@ -1,0 +1,177 @@
+[
+  {
+    "dialogue_id": "d001",
+    "turn": 1,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d001",
+    "turn": 1,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d001",
+    "turn": 1,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d001",
+    "turn": 2,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d001",
+    "turn": 2,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d001",
+    "turn": 2,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d001",
+    "turn": 3,
+    "passage_fraction": 0.8,
+    "summary": "Según la Ley 24.240, la garantía legal para un bien mueble usado no consumible dura tres meses si no se acuerda un plazo mayor. Si el bien es reparado durante la garantía, el comprobante debe indicar las piezas reemplazadas o reparadas.",
+    "updates": [
+      {
+        "pair": 2,
+        "summary": "Según la Ley 24.240, la garantía legal para un bien mueble usado no consumible dura tres meses si no se acuerda un plazo mayor. Si el bien es reparado durante la garantía, el comprobante debe indicar las piezas reemplazadas o reparadas."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "d001",
+    "turn": 3,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d001",
+    "turn": 3,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d001",
+    "turn": 4,
+    "passage_fraction": 0.8,
+    "summary": "La Ley 24.240 establece que la garantía legal para bienes muebles usados no consumibles dura tres meses, salvo acuerdos mayores. Durante la garantía, el comprobante debe mencionar las piezas reemplazadas o reparadas. Además, no se puede cobrar por explicar las características de un producto, ya que esa información debe ser gratuita.",
+    "updates": [
+      {
+        "pair": 2,
+        "summary": "Según la Ley 24.240, la garantía legal para un bien mueble usado no consumible dura tres meses si no se acuerda un plazo mayor. Si el bien es reparado durante la garantía, el comprobante debe indicar las piezas reemplazadas o reparadas."
+      },
+      {
+        "pair": 3,
+        "summary": "La Ley 24.240 establece que la garantía legal para bienes muebles usados no consumibles dura tres meses, salvo acuerdos mayores. Durante la garantía, el comprobante debe mencionar las piezas reemplazadas o reparadas. Además, no se puede cobrar por explicar las características de un producto, ya que esa información debe ser gratuita."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "d001",
+    "turn": 4,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d001",
+    "turn": 4,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d005",
+    "turn": 1,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d005",
+    "turn": 1,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d005",
+    "turn": 1,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d005",
+    "turn": 2,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d005",
+    "turn": 2,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d005",
+    "turn": 2,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d005",
+    "turn": 3,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d005",
+    "turn": 3,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d005",
+    "turn": 3,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d005",
+    "turn": 4,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d005",
+    "turn": 4,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  }
+]

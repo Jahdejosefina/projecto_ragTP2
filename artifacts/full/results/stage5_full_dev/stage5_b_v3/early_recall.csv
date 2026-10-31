@@ -1,0 +1,19 @@
+dialogue_id,policy,passage_fraction,history_budget,status,correct,answer
+d001,full,0.8,100,not_feasible,,
+d001,recent,0.8,100,ok,0,No lo recuerdo
+d001,summary,0.8,100,ok,1,Tres meses
+d001,full,0.5,250,ok,1,Tres meses.
+d001,recent,0.5,250,ok,0,No lo recuerdo
+d001,summary,0.5,250,ok,1,Tres meses.
+d001,full,0.3,350,ok,1,Tres meses.
+d001,recent,0.3,350,ok,0,No lo recuerdo
+d001,summary,0.3,350,ok,1,Tres meses.
+d005,full,0.8,100,not_feasible,,
+d005,recent,0.8,100,ok,0,No lo recuerdo
+d005,summary,0.8,100,error,,No es factible comprimir el resumen al presupuesto.
+d005,full,0.5,250,ok,1,Debe mencionar el número de resolución por el que fue aprobada la carrera o el curso.
+d005,recent,0.5,250,ok,0,No lo recuerdo
+d005,summary,0.5,250,ok,1,Debe mencionar el número de resolución por el que fue aprobada la carrera o el curso.
+d005,full,0.3,350,ok,1,Debe mencionar el número de resolución por el que fue aprobada la carrera o el curso.
+d005,recent,0.3,350,ok,0,No lo recuerdo
+d005,summary,0.3,350,ok,1,Debe mencionar el número de resolución por el que fue aprobada la carrera o el curso.
