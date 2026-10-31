@@ -1,0 +1,10 @@
+policy,passage_fraction,n_total,n_ok,n_infeasible,n_error,accuracy,mean_prompt_tokens,mean_llm_calls
+full,0.8,24,17,7,0,0.706,777.2,1.0
+full,0.5,24,24,0,0,0.667,655.5,1.0
+full,0.3,24,24,0,0,0.167,553.2,1.0
+recent,0.8,24,24,0,0,0.792,791.5,1.0
+recent,0.5,24,24,0,0,0.667,641.5,1.0
+recent,0.3,24,24,0,0,0.125,539.2,1.0
+summary,0.8,24,24,0,0,0.792,792.4,1.33
+summary,0.5,24,24,0,0,0.667,655.5,1.0
+summary,0.3,24,24,0,0,0.167,553.2,1.0

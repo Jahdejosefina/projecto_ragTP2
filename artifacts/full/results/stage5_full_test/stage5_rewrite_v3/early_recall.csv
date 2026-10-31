@@ -1,0 +1,55 @@
+dialogue_id,policy,passage_fraction,history_budget,status,correct,answer
+d002,full,0.8,100,not_feasible,,
+d002,recent,0.8,100,ok,0,No lo recuerdo
+d002,summary,0.8,100,ok,1,La advertencia sanitaria mencionada al principio de la conversación fue: «La sobreexposición es perjudicial para la salud».
+d002,full,0.5,250,ok,1,La advertencia sanitaria mencionada al principio de la conversación fue: «La sobreexposición es perjudicial para la salud».
+d002,recent,0.5,250,ok,0,No lo recuerdo
+d002,summary,0.5,250,ok,1,La advertencia sanitaria mencionada al principio de la conversación fue: «La sobreexposición es perjudicial para la salud».
+d002,full,0.3,350,ok,1,La advertencia sanitaria mencionada al principio de la conversación fue: «La sobreexposición es perjudicial para la salud».
+d002,recent,0.3,350,ok,0,No lo recuerdo
+d002,summary,0.3,350,ok,1,La advertencia sanitaria mencionada al principio de la conversación fue: «La sobreexposición es perjudicial para la salud».
+d003,full,0.8,100,not_feasible,,
+d003,recent,0.8,100,ok,0,No lo recuerdo
+d003,summary,0.8,100,ok,1,Desde los doce años.
+d003,full,0.5,250,ok,1,Desde los doce años.
+d003,recent,0.5,250,ok,0,No lo recuerdo
+d003,summary,0.5,250,ok,1,Desde los doce años.
+d003,full,0.3,350,ok,1,Desde los doce años.
+d003,recent,0.3,350,ok,0,No lo recuerdo
+d003,summary,0.3,350,ok,1,Desde los doce años.
+d004,full,0.8,100,not_feasible,,
+d004,recent,0.8,100,ok,0,No lo recuerdo
+d004,summary,0.8,100,ok,1,El asistente indicó que los medicamentos se identifican con el nombre genérico o denominación común internacional.
+d004,full,0.5,250,ok,1,nombre genérico o denominación común internacional
+d004,recent,0.5,250,ok,0,No lo recuerdo
+d004,summary,0.5,250,ok,1,nombre genérico o denominación común internacional
+d004,full,0.3,350,ok,1,nombre genérico o denominación común internacional
+d004,recent,0.3,350,ok,0,No lo recuerdo
+d004,summary,0.3,350,ok,1,nombre genérico o denominación común internacional
+d006,full,0.8,100,not_feasible,,
+d006,recent,0.8,100,ok,1,Treinta días.
+d006,summary,0.8,100,ok,1,30 días
+d006,full,0.5,250,ok,1,Treinta días.
+d006,recent,0.5,250,ok,1,Treinta días.
+d006,summary,0.5,250,ok,1,Treinta días.
+d006,full,0.3,350,ok,1,Treinta días.
+d006,recent,0.3,350,ok,1,Treinta días.
+d006,summary,0.3,350,ok,1,Treinta días.
+d007,full,0.8,100,not_feasible,,
+d007,recent,0.8,100,ok,0,El 15 de julio de 2005.
+d007,summary,0.8,100,ok,1,El 8 de junio de 2016.
+d007,full,0.5,250,ok,1,El 8 de junio de 2016.
+d007,recent,0.5,250,ok,0,El 15 de julio de 2005.
+d007,summary,0.5,250,ok,1,El 8 de junio de 2016.
+d007,full,0.3,350,ok,1,El 8 de junio de 2016.
+d007,recent,0.3,350,ok,0,El 15 de julio de 2005.
+d007,summary,0.3,350,ok,1,El 8 de junio de 2016.
+d008,full,0.8,100,not_feasible,,
+d008,recent,0.8,100,ok,0,No lo recuerdo
+d008,summary,0.8,100,ok,1,castellano
+d008,full,0.5,250,ok,1,castellano
+d008,recent,0.5,250,ok,0,No lo recuerdo
+d008,summary,0.5,250,ok,1,castellano
+d008,full,0.3,350,ok,1,castellano
+d008,recent,0.3,350,ok,0,No lo recuerdo
+d008,summary,0.3,350,ok,1,castellano

@@ -1,0 +1,30 @@
+{
+  "stage": "05_conversation",
+  "split": "test",
+  "smoke": false,
+  "model": "qwen3:8b",
+  "num_ctx": 8192,
+  "num_predict": 700,
+  "stage3_run": "/content/projecto_rag/artifacts/full/results/stage3_67ecda17a40b8c18",
+  "stage3_index_key": "36a95c9c1551289f80c2b6f006805db2b8b938749090c8cdecee485fee1e6716",
+  "corpus_hash": "519330293d3b792c42325b784acc17b0495319994dcacaf90021b5f08a435a59",
+  "dialogues": [
+    "d002",
+    "d003",
+    "d004",
+    "d006",
+    "d007",
+    "d008"
+  ],
+  "part_a_rows": 96,
+  "part_b_rows": 216,
+  "passage_fractions": [
+    0.8,
+    0.5,
+    0.3
+  ],
+  "shared_budget": 500,
+  "pending": [
+    "evaluación final en test"
+  ]
+}

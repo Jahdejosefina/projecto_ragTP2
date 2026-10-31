@@ -1,0 +1,545 @@
+[
+  {
+    "dialogue_id": "d002",
+    "turn": 1,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d002",
+    "turn": 1,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d002",
+    "turn": 1,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d002",
+    "turn": 2,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d002",
+    "turn": 2,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d002",
+    "turn": 2,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d002",
+    "turn": 3,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d002",
+    "turn": 3,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d002",
+    "turn": 3,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d002",
+    "turn": 4,
+    "passage_fraction": 0.8,
+    "summary": "Según la Ley 26.043, los envases de videojuegos deben incluir la advertencia «La sobreexposición es perjudicial para la salud». La ley es aplicada por la Secretaría de Defensa de la Competencia, la Desregulación y de la Defensa del Consumidor. Fue sancionada el 1 de junio de 2005.",
+    "updates": [
+      {
+        "pair": 3,
+        "summary": "Según la Ley 26.043, los envases de videojuegos deben incluir la advertencia «La sobreexposición es perjudicial para la salud». La ley es aplicada por la Secretaría de Defensa de la Competencia, la Desregulación y de la Defensa del Consumidor. Fue sancionada el 1 de junio de 2005."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "d002",
+    "turn": 4,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d002",
+    "turn": 4,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d003",
+    "turn": 1,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d003",
+    "turn": 1,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d003",
+    "turn": 1,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d003",
+    "turn": 2,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d003",
+    "turn": 2,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d003",
+    "turn": 2,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d003",
+    "turn": 3,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d003",
+    "turn": 3,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d003",
+    "turn": 3,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d003",
+    "turn": 4,
+    "passage_fraction": 0.8,
+    "summary": "El Sistema Único Normalizado de Talles de Indumentaria se aplica a partir de los doce años y debe repetirse cada diez años. Los envases de videojuegos deben llevar la advertencia sanitaria: «La sobreexposición es perjudicial para la salud».",
+    "updates": [
+      {
+        "pair": 3,
+        "summary": "El Sistema Único Normalizado de Talles de Indumentaria se aplica a partir de los doce años y debe repetirse cada diez años. Los envases de videojuegos deben llevar la advertencia sanitaria: «La sobreexposición es perjudicial para la salud»."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "d003",
+    "turn": 4,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d003",
+    "turn": 4,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d004",
+    "turn": 1,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d004",
+    "turn": 1,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d004",
+    "turn": 1,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d004",
+    "turn": 2,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d004",
+    "turn": 2,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d004",
+    "turn": 2,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d004",
+    "turn": 3,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d004",
+    "turn": 3,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d004",
+    "turn": 3,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d004",
+    "turn": 4,
+    "passage_fraction": 0.8,
+    "summary": "Según la Ley 25.649, los medicamentos deben identificarse con el nombre genérico o denominación común internacional, y esta ley fue sancionada el 28 de agosto de 2002. En cuanto al turismo estudiantil, los viajes escolares que incluyen actividades del programa educativo se denominan viajes de estudios.",
+    "updates": [
+      {
+        "pair": 3,
+        "summary": "Según la Ley 25.649, los medicamentos deben identificarse con el nombre genérico o denominación común internacional, y esta ley fue sancionada el 28 de agosto de 2002. En cuanto al turismo estudiantil, los viajes escolares que incluyen actividades del programa educativo se denominan viajes de estudios."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "d004",
+    "turn": 4,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d004",
+    "turn": 4,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d006",
+    "turn": 1,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d006",
+    "turn": 1,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d006",
+    "turn": 1,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d006",
+    "turn": 2,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d006",
+    "turn": 2,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d006",
+    "turn": 2,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d006",
+    "turn": 3,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d006",
+    "turn": 3,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d006",
+    "turn": 3,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d006",
+    "turn": 4,
+    "passage_fraction": 0.8,
+    "summary": "La empresa tiene 30 días desde el reclamo para demostrar que no fue responsable de la interrupción del servicio. La garantía del contrato debe documentarse por escrito.",
+    "updates": [
+      {
+        "pair": 3,
+        "summary": "La empresa tiene 30 días desde el reclamo para demostrar que no fue responsable de la interrupción del servicio. La garantía del contrato debe documentarse por escrito."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "d006",
+    "turn": 4,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d006",
+    "turn": 4,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d007",
+    "turn": 1,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d007",
+    "turn": 1,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d007",
+    "turn": 1,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d007",
+    "turn": 2,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d007",
+    "turn": 2,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d007",
+    "turn": 2,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d007",
+    "turn": 3,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d007",
+    "turn": 3,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d007",
+    "turn": 3,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d007",
+    "turn": 4,
+    "passage_fraction": 0.8,
+    "summary": "La Ley 27.250 fue promulgada el 8 de junio de 2016. La Ley 26.043 fue promulgada el 15 de julio de 2005 y sancionada el 1 de junio de 2005.",
+    "updates": [
+      {
+        "pair": 3,
+        "summary": "La Ley 27.250 fue promulgada el 8 de junio de 2016. La Ley 26.043 fue promulgada el 15 de julio de 2005 y sancionada el 1 de junio de 2005."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "d007",
+    "turn": 4,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d007",
+    "turn": 4,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d008",
+    "turn": 1,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d008",
+    "turn": 1,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d008",
+    "turn": 1,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d008",
+    "turn": 2,
+    "passage_fraction": 0.8,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d008",
+    "turn": 2,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d008",
+    "turn": 2,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d008",
+    "turn": 3,
+    "passage_fraction": 0.8,
+    "summary": "Según la Ley 24.240, el documento de venta debe redactarse en castellano. Además, las precisiones publicitarias se consideran incluidas en el contrato y obligan al oferente, incluso si no se repiten en el contrato mismo.",
+    "updates": [
+      {
+        "pair": 2,
+        "summary": "Según la Ley 24.240, el documento de venta debe redactarse en castellano. Además, las precisiones publicitarias se consideran incluidas en el contrato y obligan al oferente, incluso si no se repiten en el contrato mismo."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "d008",
+    "turn": 3,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d008",
+    "turn": 3,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d008",
+    "turn": 4,
+    "passage_fraction": 0.8,
+    "summary": "Según la Ley 24.240, el documento de venta debe redactarse en castellano. Las precisiones publicitarias se consideran incluidas en el contrato y obligan al oferente, incluso si no se repiten en el contrato mismo. Los integrantes de la cadena comercial comparten responsabilidad solidaria por daños derivados del vicio o riesgo del producto.",
+    "updates": [
+      {
+        "pair": 2,
+        "summary": "Según la Ley 24.240, el documento de venta debe redactarse en castellano. Además, las precisiones publicitarias se consideran incluidas en el contrato y obligan al oferente, incluso si no se repiten en el contrato mismo."
+      },
+      {
+        "pair": 3,
+        "summary": "Según la Ley 24.240, el documento de venta debe redactarse en castellano. Las precisiones publicitarias se consideran incluidas en el contrato y obligan al oferente, incluso si no se repiten en el contrato mismo. Los integrantes de la cadena comercial comparten responsabilidad solidaria por daños derivados del vicio o riesgo del producto."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "d008",
+    "turn": 4,
+    "passage_fraction": 0.5,
+    "summary": "",
+    "updates": []
+  },
+  {
+    "dialogue_id": "d008",
+    "turn": 4,
+    "passage_fraction": 0.3,
+    "summary": "",
+    "updates": []
+  }
+]

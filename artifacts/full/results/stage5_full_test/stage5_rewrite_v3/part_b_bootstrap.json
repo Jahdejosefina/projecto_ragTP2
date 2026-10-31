@@ -1,0 +1,119 @@
+[
+  {
+    "policy": "full",
+    "passage_fraction": 0.8,
+    "bootstrap_by_dialogue": {
+      "n_dialogues": 6,
+      "n_turns": 17,
+      "mean": 0.706,
+      "ci95": [
+        0.5,
+        0.889
+      ]
+    }
+  },
+  {
+    "policy": "full",
+    "passage_fraction": 0.5,
+    "bootstrap_by_dialogue": {
+      "n_dialogues": 6,
+      "n_turns": 24,
+      "mean": 0.667,
+      "ci95": [
+        0.458,
+        0.875
+      ]
+    }
+  },
+  {
+    "policy": "full",
+    "passage_fraction": 0.3,
+    "bootstrap_by_dialogue": {
+      "n_dialogues": 6,
+      "n_turns": 24,
+      "mean": 0.167,
+      "ci95": [
+        0.083,
+        0.25
+      ]
+    }
+  },
+  {
+    "policy": "recent",
+    "passage_fraction": 0.8,
+    "bootstrap_by_dialogue": {
+      "n_dialogues": 6,
+      "n_turns": 24,
+      "mean": 0.792,
+      "ci95": [
+        0.667,
+        0.917
+      ]
+    }
+  },
+  {
+    "policy": "recent",
+    "passage_fraction": 0.5,
+    "bootstrap_by_dialogue": {
+      "n_dialogues": 6,
+      "n_turns": 24,
+      "mean": 0.667,
+      "ci95": [
+        0.458,
+        0.875
+      ]
+    }
+  },
+  {
+    "policy": "recent",
+    "passage_fraction": 0.3,
+    "bootstrap_by_dialogue": {
+      "n_dialogues": 6,
+      "n_turns": 24,
+      "mean": 0.125,
+      "ci95": [
+        0.042,
+        0.208
+      ]
+    }
+  },
+  {
+    "policy": "summary",
+    "passage_fraction": 0.8,
+    "bootstrap_by_dialogue": {
+      "n_dialogues": 6,
+      "n_turns": 24,
+      "mean": 0.792,
+      "ci95": [
+        0.667,
+        0.917
+      ]
+    }
+  },
+  {
+    "policy": "summary",
+    "passage_fraction": 0.5,
+    "bootstrap_by_dialogue": {
+      "n_dialogues": 6,
+      "n_turns": 24,
+      "mean": 0.667,
+      "ci95": [
+        0.458,
+        0.875
+      ]
+    }
+  },
+  {
+    "policy": "summary",
+    "passage_fraction": 0.3,
+    "bootstrap_by_dialogue": {
+      "n_dialogues": 6,
+      "n_turns": 24,
+      "mean": 0.167,
+      "ci95": [
+        0.083,
+        0.25
+      ]
+    }
+  }
+]
