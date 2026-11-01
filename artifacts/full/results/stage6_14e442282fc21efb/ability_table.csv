@@ -1,0 +1,8 @@
+ability,no_memory,full_replay,memory,memory_filter,replay_50,replay_25
+extraction,0/2,2/2,2/2,2/2,1/2,0/2
+multi_session,2/4,4/4,4/4,4/4,2/4,2/4
+temporal,0/2,2/2,2/2,2/2,2/2,0/2
+knowledge_update,0/6,6/6,6/6,6/6,5/6,0/6
+abstention,2/2,2/2,2/2,2/2,2/2,2/2
+preference,0/2,2/2,2/2,2/2,2/2,1/2
+total,4/18,18/18,18/18,18/18,14/18,5/18

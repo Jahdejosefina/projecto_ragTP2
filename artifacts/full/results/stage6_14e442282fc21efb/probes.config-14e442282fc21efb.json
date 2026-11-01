@@ -1,0 +1,77 @@
+{
+  "spec": {
+    "stage": "06_memory",
+    "profile": "full",
+    "split": "test",
+    "config": {
+      "model": "qwen3:8b",
+      "num_ctx": 8192,
+      "num_predict": 700,
+      "safety_margin": 64,
+      "passage_budget": 1500,
+      "memory_budget": 600,
+      "history_budget": 3000,
+      "memory_k": 6,
+      "recency_decay": 0.995,
+      "probe_offset_hours": 24,
+      "write_candidates": 3,
+      "write_similarity": 0.55,
+      "extract_num_predict": 800,
+      "decide_num_predict": 300,
+      "sweep_fractions": [
+        0.5,
+        0.25
+      ],
+      "temperature": 0.0,
+      "seed": 0
+    },
+    "eval": "cc727360402aa851de6b5a3b2361ce9e9664c81d44c504b563f61afbe47d19c3",
+    "corpus_hash": "519330293d3b792c42325b784acc17b0495319994dcacaf90021b5f08a435a59",
+    "stage3_index": "stage3_36a95c9c1551289f",
+    "stage3_bm25_cell_sha256": "bab627e4b64572e6943bdfde6b52f9d35deaf6a2c33063f542b7e366ff5572db",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f",
+    "ollama_server": "0.34.4",
+    "embedder": {
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "device": "cuda",
+      "max_seq_length": 512
+    },
+    "prompts_sha256": "563fc2e5c0dab573b56059a69d4ea5458acd29e126b3afd8994a173e829aa073",
+    "implementation_sha256": "cfd44c28cc055e6da6f78a3c2fee4b94142428904f6f178f063fd7d7523fa4cd",
+    "arms": [
+      "no_memory",
+      "full_replay",
+      "memory",
+      "memory_filter",
+      "replay_50",
+      "replay_25"
+    ],
+    "scenarios": {
+      "m002": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9"
+      ],
+      "m003": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9"
+      ]
+    }
+  },
+  "first_seen": "2026-11-01T21:17:43+00:00"
+}

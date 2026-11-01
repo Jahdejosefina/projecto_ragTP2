@@ -1,0 +1,275 @@
+{
+  "stage": "06_memory",
+  "status": "ok",
+  "profile": "full",
+  "split": "test",
+  "started_at": "2026-11-01 21:17:43",
+  "finished_at": "2026-11-01 21:25:48",
+  "run_key": "14e442282fc21efb5aacacacd4f65fe91bc7ad8f951314945dfe16a34e33f202",
+  "run_spec": {
+    "stage": "06_memory",
+    "profile": "full",
+    "split": "test",
+    "config": {
+      "model": "qwen3:8b",
+      "num_ctx": 8192,
+      "num_predict": 700,
+      "safety_margin": 64,
+      "passage_budget": 1500,
+      "memory_budget": 600,
+      "history_budget": 3000,
+      "memory_k": 6,
+      "recency_decay": 0.995,
+      "probe_offset_hours": 24,
+      "write_candidates": 3,
+      "write_similarity": 0.55,
+      "extract_num_predict": 800,
+      "decide_num_predict": 300,
+      "sweep_fractions": [
+        0.5,
+        0.25
+      ],
+      "temperature": 0.0,
+      "seed": 0
+    },
+    "eval": "cc727360402aa851de6b5a3b2361ce9e9664c81d44c504b563f61afbe47d19c3",
+    "corpus_hash": "519330293d3b792c42325b784acc17b0495319994dcacaf90021b5f08a435a59",
+    "stage3_index": "stage3_36a95c9c1551289f",
+    "stage3_bm25_cell_sha256": "bab627e4b64572e6943bdfde6b52f9d35deaf6a2c33063f542b7e366ff5572db",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f",
+    "ollama_server": "0.34.4",
+    "embedder": {
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "device": "cuda",
+      "max_seq_length": 512
+    },
+    "prompts_sha256": "563fc2e5c0dab573b56059a69d4ea5458acd29e126b3afd8994a173e829aa073",
+    "implementation_sha256": "cfd44c28cc055e6da6f78a3c2fee4b94142428904f6f178f063fd7d7523fa4cd",
+    "arms": [
+      "no_memory",
+      "full_replay",
+      "memory",
+      "memory_filter",
+      "replay_50",
+      "replay_25"
+    ],
+    "scenarios": {
+      "m002": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9"
+      ],
+      "m003": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9"
+      ]
+    }
+  },
+  "results_dir": "/content/projecto_rag/artifacts/full/results/stage6_14e442282fc21efb",
+  "memory_dir": "/content/projecto_rag/artifacts/full/memory/stage6_14e442282fc21efb",
+  "llm_setup": {
+    "model": "qwen3:8b",
+    "digest": "500a1f067a9f",
+    "server": "0.34.4",
+    "num_ctx": 8192,
+    "thinking": {
+      "honors_think_false": true,
+      "leaks_think_tag": false,
+      "thinking_only": false,
+      "supports_thinking": true,
+      "answer": "Paris"
+    },
+    "key_order": {
+      "order": "declaration",
+      "reply": "{\"zeta\": \"alpha\", \"alfa\": \"omega\"}",
+      "error": null
+    },
+    "calibration": {
+      "template_minus_server": [
+        -4,
+        -4,
+        -4
+      ],
+      "offset": -4,
+      "repeat_prompt_tokens": [
+        295,
+        295
+      ],
+      "repeat_cached_tokens": [
+        3,
+        294
+      ],
+      "prompt_eval_count_includes_cached": true
+    },
+    "placement": "qwen3:8b: 100% GPU · 6.3 GB · context 8192"
+  },
+  "llm_stats": {
+    "calls": 108,
+    "cache_hits": 22,
+    "errors": 0,
+    "prompt_tokens": 168743,
+    "output_tokens": 11051,
+    "silent_truncations": 0,
+    "server_refusals": 0,
+    "output_truncations": 5,
+    "think_leaks": 0,
+    "reloads": 1
+  },
+  "table": [
+    {
+      "ability": "extraction",
+      "no_memory": "0/2",
+      "full_replay": "2/2",
+      "memory": "2/2",
+      "memory_filter": "2/2",
+      "replay_50": "1/2",
+      "replay_25": "0/2"
+    },
+    {
+      "ability": "multi_session",
+      "no_memory": "2/4",
+      "full_replay": "4/4",
+      "memory": "4/4",
+      "memory_filter": "4/4",
+      "replay_50": "2/4",
+      "replay_25": "2/4"
+    },
+    {
+      "ability": "temporal",
+      "no_memory": "0/2",
+      "full_replay": "2/2",
+      "memory": "2/2",
+      "memory_filter": "2/2",
+      "replay_50": "2/2",
+      "replay_25": "0/2"
+    },
+    {
+      "ability": "knowledge_update",
+      "no_memory": "0/6",
+      "full_replay": "6/6",
+      "memory": "6/6",
+      "memory_filter": "6/6",
+      "replay_50": "5/6",
+      "replay_25": "0/6"
+    },
+    {
+      "ability": "abstention",
+      "no_memory": "2/2",
+      "full_replay": "2/2",
+      "memory": "2/2",
+      "memory_filter": "2/2",
+      "replay_50": "2/2",
+      "replay_25": "2/2"
+    },
+    {
+      "ability": "preference",
+      "no_memory": "0/2",
+      "full_replay": "2/2",
+      "memory": "2/2",
+      "memory_filter": "2/2",
+      "replay_50": "2/2",
+      "replay_25": "1/2"
+    },
+    {
+      "ability": "total",
+      "no_memory": "4/18",
+      "full_replay": "18/18",
+      "memory": "18/18",
+      "memory_filter": "18/18",
+      "replay_50": "14/18",
+      "replay_25": "5/18"
+    }
+  ],
+  "pairs": {
+    "no_memory": "0/2",
+    "full_replay": "2/2",
+    "memory": "2/2",
+    "memory_filter": "2/2",
+    "replay_50": "1/2",
+    "replay_25": "0/2"
+  },
+  "cost": {
+    "no_memory": {
+      "correct": "4/18",
+      "evidence_recall": 0.0,
+      "mean_prompt_tokens": 1894,
+      "mean_memory_tokens": 0,
+      "mean_history_tokens": 0,
+      "errors": 0
+    },
+    "full_replay": {
+      "correct": "18/18",
+      "evidence_recall": 1.0,
+      "mean_prompt_tokens": 2256,
+      "mean_memory_tokens": 0,
+      "mean_history_tokens": 340,
+      "errors": 0
+    },
+    "memory": {
+      "correct": "18/18",
+      "evidence_recall": 1.0,
+      "mean_prompt_tokens": 2193,
+      "mean_memory_tokens": 296,
+      "mean_history_tokens": 0,
+      "errors": 0
+    },
+    "memory_filter": {
+      "correct": "18/18",
+      "evidence_recall": 1.0,
+      "mean_prompt_tokens": 954,
+      "mean_memory_tokens": 296,
+      "mean_history_tokens": 0,
+      "errors": 0
+    },
+    "replay_50": {
+      "correct": "14/18",
+      "evidence_recall": 0.49,
+      "mean_prompt_tokens": 2031,
+      "mean_memory_tokens": 0,
+      "mean_history_tokens": 127,
+      "errors": 0
+    },
+    "replay_25": {
+      "correct": "5/18",
+      "evidence_recall": 0.062,
+      "mean_prompt_tokens": 1907,
+      "mean_memory_tokens": 0,
+      "mean_history_tokens": 12,
+      "errors": 0
+    }
+  },
+  "write_cost": {
+    "llm_calls": 14,
+    "prompt_tokens": 7390,
+    "output_tokens": 2435
+  },
+  "audit": {
+    "records": 22,
+    "valid": 17,
+    "think_tag": 0,
+    "hedge": 0,
+    "analysis_leak": 0,
+    "unsaid_numbers": 0,
+    "think_leaks_llm": 0
+  },
+  "limitations": [
+    "18 probes: report counts, no significance claims",
+    "stage 5 loop reused without query rewriting (probe question as query)",
+    "audit flags are heuristic; read the records"
+  ]
+}

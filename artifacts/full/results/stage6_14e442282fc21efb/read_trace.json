@@ -1,0 +1,1523 @@
+[
+  {
+    "item_id": "m002/p1",
+    "ranges": {
+      "relevance": [
+        0.3579,
+        0.5801
+      ],
+      "recency": [
+        0.8867,
+        0.8867
+      ],
+      "importance": [
+        8.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m002-s1-02",
+        "total": 2.0,
+        "relevance": 0.5801,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-03",
+        "total": 1.4451,
+        "relevance": 0.4568,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-05",
+        "total": 1.2055,
+        "relevance": 0.4036,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-04",
+        "total": 0.4538,
+        "relevance": 0.4587,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-01",
+        "total": 0.4154,
+        "relevance": 0.4502,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-07",
+        "total": 0.3407,
+        "relevance": 0.4336,
+        "recency": 0.8867,
+        "importance": 8.0
+      }
+    ],
+    "selected": [
+      "m002-s1-01",
+      "m002-s1-02",
+      "m002-s1-03",
+      "m002-s1-04",
+      "m002-s1-05",
+      "m002-s1-07"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-26043"
+      ],
+      "dates": [
+        "2005-07-18"
+      ],
+      "date_doc_ids": [
+        "LEY-26043"
+      ],
+      "source_records": [
+        "m002-s1-05",
+        "m002-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m002/p8",
+    "ranges": {
+      "relevance": [
+        0.334,
+        0.7778
+      ],
+      "recency": [
+        0.8867,
+        0.8867
+      ],
+      "importance": [
+        8.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m002-s1-05",
+        "total": 1.1837,
+        "relevance": 0.4155,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-02",
+        "total": 1.0473,
+        "relevance": 0.355,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-03",
+        "total": 1.0,
+        "relevance": 0.334,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-04",
+        "total": 1.0,
+        "relevance": 0.7778,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-07",
+        "total": 0.4268,
+        "relevance": 0.5234,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-01",
+        "total": 0.3256,
+        "relevance": 0.4785,
+        "recency": 0.8867,
+        "importance": 8.0
+      }
+    ],
+    "selected": [
+      "m002-s1-01",
+      "m002-s1-02",
+      "m002-s1-03",
+      "m002-s1-04",
+      "m002-s1-05",
+      "m002-s1-07"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-26043"
+      ],
+      "dates": [
+        "2005-07-18"
+      ],
+      "date_doc_ids": [
+        "LEY-26043"
+      ],
+      "source_records": [
+        "m002-s1-05",
+        "m002-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m002/p2",
+    "ranges": {
+      "relevance": [
+        0.3618,
+        0.71
+      ],
+      "recency": [
+        0.382,
+        0.8867
+      ],
+      "importance": [
+        7.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m002-s2-01",
+        "total": 2.5,
+        "relevance": 0.71,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-03",
+        "total": 1.7027,
+        "relevance": 0.6064,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-02",
+        "total": 1.3541,
+        "relevance": 0.4851,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s2-02",
+        "total": 1.1795,
+        "relevance": 0.4243,
+        "recency": 0.8867,
+        "importance": 7.0
+      },
+      {
+        "memory_id": "m002-s1-05",
+        "total": 1.0996,
+        "relevance": 0.3965,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-07",
+        "total": 0.8689,
+        "relevance": 0.4902,
+        "recency": 0.382,
+        "importance": 8.0
+      }
+    ],
+    "selected": [
+      "m002-s1-02",
+      "m002-s1-03",
+      "m002-s1-05",
+      "m002-s1-07",
+      "m002-s2-01",
+      "m002-s2-02"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-26043"
+      ],
+      "dates": [
+        "2005-07-18"
+      ],
+      "date_doc_ids": [
+        "LEY-26043"
+      ],
+      "source_records": [
+        "m002-s1-05",
+        "m002-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m002/p3",
+    "ranges": {
+      "relevance": [
+        0.3452,
+        0.6333
+      ],
+      "recency": [
+        0.382,
+        0.8867
+      ],
+      "importance": [
+        7.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m002-s2-02",
+        "total": 2.0,
+        "relevance": 0.6333,
+        "recency": 0.8867,
+        "importance": 7.0
+      },
+      {
+        "memory_id": "m002-s2-01",
+        "total": 1.7678,
+        "relevance": 0.4224,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-04",
+        "total": 1.4254,
+        "relevance": 0.6118,
+        "recency": 0.382,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-05",
+        "total": 1.1712,
+        "relevance": 0.3945,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-07",
+        "total": 1.0983,
+        "relevance": 0.5176,
+        "recency": 0.382,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-02",
+        "total": 1.0746,
+        "relevance": 0.3667,
+        "recency": 0.382,
+        "importance": 9.0
+      }
+    ],
+    "selected": [
+      "m002-s1-02",
+      "m002-s1-04",
+      "m002-s1-05",
+      "m002-s1-07",
+      "m002-s2-01",
+      "m002-s2-02"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-26043"
+      ],
+      "dates": [
+        "2005-07-18"
+      ],
+      "date_doc_ids": [
+        "LEY-26043"
+      ],
+      "source_records": [
+        "m002-s1-05",
+        "m002-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m002/p4",
+    "ranges": {
+      "relevance": [
+        0.3027,
+        0.7285
+      ],
+      "recency": [
+        0.382,
+        0.8867
+      ],
+      "importance": [
+        7.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m002-s2-02",
+        "total": 2.0,
+        "relevance": 0.7285,
+        "recency": 0.8867,
+        "importance": 7.0
+      },
+      {
+        "memory_id": "m002-s2-01",
+        "total": 1.6657,
+        "relevance": 0.3733,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-04",
+        "total": 1.3291,
+        "relevance": 0.6558,
+        "recency": 0.382,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-05",
+        "total": 1.2638,
+        "relevance": 0.415,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-02",
+        "total": 1.0671,
+        "relevance": 0.3313,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-03",
+        "total": 1.0,
+        "relevance": 0.3027,
+        "recency": 0.382,
+        "importance": 9.0
+      }
+    ],
+    "selected": [
+      "m002-s1-02",
+      "m002-s1-03",
+      "m002-s1-04",
+      "m002-s1-05",
+      "m002-s2-01",
+      "m002-s2-02"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-26043"
+      ],
+      "dates": [
+        "2005-07-18"
+      ],
+      "date_doc_ids": [
+        "LEY-26043"
+      ],
+      "source_records": [
+        "m002-s1-05",
+        "m002-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m002/p9",
+    "ranges": {
+      "relevance": [
+        0.334,
+        0.7778
+      ],
+      "recency": [
+        0.382,
+        0.8867
+      ],
+      "importance": [
+        7.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m002-s2-02",
+        "total": 1.8427,
+        "relevance": 0.708,
+        "recency": 0.8867,
+        "importance": 7.0
+      },
+      {
+        "memory_id": "m002-s2-01",
+        "total": 1.6667,
+        "relevance": 0.408,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-04",
+        "total": 1.5,
+        "relevance": 0.7778,
+        "recency": 0.382,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-05",
+        "total": 1.1837,
+        "relevance": 0.4155,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-02",
+        "total": 1.0473,
+        "relevance": 0.355,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-03",
+        "total": 1.0,
+        "relevance": 0.334,
+        "recency": 0.382,
+        "importance": 9.0
+      }
+    ],
+    "selected": [
+      "m002-s1-02",
+      "m002-s1-03",
+      "m002-s1-04",
+      "m002-s1-05",
+      "m002-s2-01",
+      "m002-s2-02"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-26043"
+      ],
+      "dates": [
+        "2005-07-18"
+      ],
+      "date_doc_ids": [
+        "LEY-26043"
+      ],
+      "source_records": [
+        "m002-s1-05",
+        "m002-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m002/p5",
+    "ranges": {
+      "relevance": [
+        0.3755,
+        0.6367
+      ],
+      "recency": [
+        0.1646,
+        0.8867
+      ],
+      "importance": [
+        7.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m002-s3-01",
+        "total": 2.4121,
+        "relevance": 0.6138,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-07",
+        "total": 1.5,
+        "relevance": 0.6367,
+        "recency": 0.1646,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-05",
+        "total": 1.3383,
+        "relevance": 0.4639,
+        "recency": 0.1646,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-04",
+        "total": 1.2738,
+        "relevance": 0.5776,
+        "recency": 0.1646,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s2-01",
+        "total": 1.1329,
+        "relevance": 0.4622,
+        "recency": 0.382,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-02",
+        "total": 1.0953,
+        "relevance": 0.4004,
+        "recency": 0.1646,
+        "importance": 9.0
+      }
+    ],
+    "selected": [
+      "m002-s1-02",
+      "m002-s1-04",
+      "m002-s1-05",
+      "m002-s1-07",
+      "m002-s2-01",
+      "m002-s3-01"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-26043"
+      ],
+      "dates": [
+        "2005-07-18"
+      ],
+      "date_doc_ids": [
+        "LEY-26043"
+      ],
+      "source_records": [
+        "m002-s1-05",
+        "m002-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m002/p6",
+    "ranges": {
+      "relevance": [
+        0.406,
+        0.5474
+      ],
+      "recency": [
+        0.1646,
+        0.8867
+      ],
+      "importance": [
+        7.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m002-s3-01",
+        "total": 2.0268,
+        "relevance": 0.4805,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-02",
+        "total": 1.8687,
+        "relevance": 0.5288,
+        "recency": 0.1646,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s2-01",
+        "total": 1.8011,
+        "relevance": 0.5474,
+        "recency": 0.382,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-03",
+        "total": 1.5043,
+        "relevance": 0.4773,
+        "recency": 0.1646,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-05",
+        "total": 1.4335,
+        "relevance": 0.4673,
+        "recency": 0.1646,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-04",
+        "total": 1.3135,
+        "relevance": 0.521,
+        "recency": 0.1646,
+        "importance": 8.0
+      }
+    ],
+    "selected": [
+      "m002-s1-02",
+      "m002-s1-03",
+      "m002-s1-04",
+      "m002-s1-05",
+      "m002-s2-01",
+      "m002-s3-01"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-26043"
+      ],
+      "dates": [
+        "2005-07-18"
+      ],
+      "date_doc_ids": [
+        "LEY-26043"
+      ],
+      "source_records": [
+        "m002-s1-05",
+        "m002-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m002/p7",
+    "ranges": {
+      "relevance": [
+        0.3313,
+        0.5176
+      ],
+      "recency": [
+        0.1646,
+        0.8867
+      ],
+      "importance": [
+        7.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m002-s3-01",
+        "total": 2.1619,
+        "relevance": 0.4546,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-02",
+        "total": 2.0,
+        "relevance": 0.5176,
+        "recency": 0.1646,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-03",
+        "total": 1.9869,
+        "relevance": 0.5151,
+        "recency": 0.1646,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s1-05",
+        "total": 1.5269,
+        "relevance": 0.4294,
+        "recency": 0.1646,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m002-s2-01",
+        "total": 1.2939,
+        "relevance": 0.4231,
+        "recency": 0.382,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m002-s1-07",
+        "total": 0.9862,
+        "relevance": 0.4219,
+        "recency": 0.1646,
+        "importance": 8.0
+      }
+    ],
+    "selected": [
+      "m002-s1-02",
+      "m002-s1-03",
+      "m002-s1-05",
+      "m002-s1-07",
+      "m002-s2-01",
+      "m002-s3-01"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-26043"
+      ],
+      "dates": [
+        "2005-07-18"
+      ],
+      "date_doc_ids": [
+        "LEY-26043"
+      ],
+      "source_records": [
+        "m002-s1-05",
+        "m002-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m003/p1",
+    "ranges": {
+      "relevance": [
+        0.3525,
+        0.5708
+      ],
+      "recency": [
+        0.8867,
+        0.8867
+      ],
+      "importance": [
+        8.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m003-s1-02",
+        "total": 2.0,
+        "relevance": 0.5708,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-03",
+        "total": 1.3747,
+        "relevance": 0.4343,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-05",
+        "total": 1.0716,
+        "relevance": 0.3682,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-01",
+        "total": 0.632,
+        "relevance": 0.4905,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s1-04",
+        "total": 0.4866,
+        "relevance": 0.4587,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s1-07",
+        "total": 0.2494,
+        "relevance": 0.407,
+        "recency": 0.8867,
+        "importance": 8.0
+      }
+    ],
+    "selected": [
+      "m003-s1-01",
+      "m003-s1-02",
+      "m003-s1-03",
+      "m003-s1-04",
+      "m003-s1-05",
+      "m003-s1-07"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-27521"
+      ],
+      "dates": [
+        "2019-12-20"
+      ],
+      "date_doc_ids": [
+        "DEC-50-2019",
+        "LEY-27521"
+      ],
+      "source_records": [
+        "m003-s1-05",
+        "m003-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m003/p8",
+    "ranges": {
+      "relevance": [
+        0.3281,
+        0.8374
+      ],
+      "recency": [
+        0.8867,
+        0.8867
+      ],
+      "importance": [
+        8.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m003-s1-03",
+        "total": 2.0,
+        "relevance": 0.8374,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-02",
+        "total": 1.5101,
+        "relevance": 0.5879,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-05",
+        "total": 1.0,
+        "relevance": 0.3281,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-01",
+        "total": 0.1707,
+        "relevance": 0.415,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s1-04",
+        "total": 0.0757,
+        "relevance": 0.3667,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s1-07",
+        "total": 0.058,
+        "relevance": 0.3577,
+        "recency": 0.8867,
+        "importance": 8.0
+      }
+    ],
+    "selected": [
+      "m003-s1-01",
+      "m003-s1-02",
+      "m003-s1-03",
+      "m003-s1-04",
+      "m003-s1-05",
+      "m003-s1-07"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-27521"
+      ],
+      "dates": [
+        "2019-12-20"
+      ],
+      "date_doc_ids": [
+        "DEC-50-2019",
+        "LEY-27521"
+      ],
+      "source_records": [
+        "m003-s1-05",
+        "m003-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m003/p3",
+    "ranges": {
+      "relevance": [
+        0.2798,
+        0.5679
+      ],
+      "recency": [
+        0.382,
+        0.8867
+      ],
+      "importance": [
+        8.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m003-s2-01",
+        "total": 3.0,
+        "relevance": 0.5679,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-03",
+        "total": 1.6339,
+        "relevance": 0.4624,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s2-02",
+        "total": 1.4508,
+        "relevance": 0.4097,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s1-02",
+        "total": 1.3568,
+        "relevance": 0.3826,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-05",
+        "total": 1.0992,
+        "relevance": 0.3083,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-04",
+        "total": 0.6144,
+        "relevance": 0.4568,
+        "recency": 0.382,
+        "importance": 8.0
+      }
+    ],
+    "selected": [
+      "m003-s1-02",
+      "m003-s1-03",
+      "m003-s1-04",
+      "m003-s1-05",
+      "m003-s2-01",
+      "m003-s2-02"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-27521"
+      ],
+      "dates": [
+        "2019-12-20"
+      ],
+      "date_doc_ids": [
+        "DEC-50-2019",
+        "LEY-27521"
+      ],
+      "source_records": [
+        "m003-s1-05",
+        "m003-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m003/p4",
+    "ranges": {
+      "relevance": [
+        0.2739,
+        0.7153
+      ],
+      "recency": [
+        0.382,
+        0.8867
+      ],
+      "importance": [
+        8.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m003-s2-01",
+        "total": 3.0,
+        "relevance": 0.7153,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-03",
+        "total": 1.8905,
+        "relevance": 0.667,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-02",
+        "total": 1.5962,
+        "relevance": 0.5371,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-05",
+        "total": 1.0315,
+        "relevance": 0.2878,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s2-02",
+        "total": 1.0,
+        "relevance": 0.2739,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s1-01",
+        "total": 0.1598,
+        "relevance": 0.3445,
+        "recency": 0.382,
+        "importance": 8.0
+      }
+    ],
+    "selected": [
+      "m003-s1-01",
+      "m003-s1-02",
+      "m003-s1-03",
+      "m003-s1-05",
+      "m003-s2-01",
+      "m003-s2-02"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-27521"
+      ],
+      "dates": [
+        "2019-12-20"
+      ],
+      "date_doc_ids": [
+        "DEC-50-2019",
+        "LEY-27521"
+      ],
+      "source_records": [
+        "m003-s1-05",
+        "m003-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m003/p9",
+    "ranges": {
+      "relevance": [
+        0.3193,
+        0.8374
+      ],
+      "recency": [
+        0.382,
+        0.8867
+      ],
+      "importance": [
+        8.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m003-s2-01",
+        "total": 2.9548,
+        "relevance": 0.814,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-03",
+        "total": 2.0,
+        "relevance": 0.8374,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-02",
+        "total": 1.5184,
+        "relevance": 0.5879,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-05",
+        "total": 1.017,
+        "relevance": 0.3281,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s2-02",
+        "total": 1.0,
+        "relevance": 0.3193,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s1-01",
+        "total": 0.1847,
+        "relevance": 0.415,
+        "recency": 0.382,
+        "importance": 8.0
+      }
+    ],
+    "selected": [
+      "m003-s1-01",
+      "m003-s1-02",
+      "m003-s1-03",
+      "m003-s1-05",
+      "m003-s2-01",
+      "m003-s2-02"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-27521"
+      ],
+      "dates": [
+        "2019-12-20"
+      ],
+      "date_doc_ids": [
+        "DEC-50-2019",
+        "LEY-27521"
+      ],
+      "source_records": [
+        "m003-s1-05",
+        "m003-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m003/p2",
+    "ranges": {
+      "relevance": [
+        0.3708,
+        0.6934
+      ],
+      "recency": [
+        0.1646,
+        0.8867
+      ],
+      "importance": [
+        8.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m003-s2-01",
+        "total": 2.1845,
+        "relevance": 0.6558,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s3-03",
+        "total": 2.0424,
+        "relevance": 0.3845,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s3-01",
+        "total": 2.0,
+        "relevance": 0.6934,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s3-02",
+        "total": 1.8047,
+        "relevance": 0.6304,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s1-03",
+        "total": 1.5503,
+        "relevance": 0.5483,
+        "recency": 0.1646,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-02",
+        "total": 1.38,
+        "relevance": 0.4934,
+        "recency": 0.1646,
+        "importance": 9.0
+      }
+    ],
+    "selected": [
+      "m003-s1-02",
+      "m003-s1-03",
+      "m003-s2-01",
+      "m003-s3-01",
+      "m003-s3-02",
+      "m003-s3-03"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-27521"
+      ],
+      "dates": [
+        "2019-12-20"
+      ],
+      "date_doc_ids": [
+        "DEC-50-2019",
+        "LEY-27521"
+      ],
+      "source_records": [
+        "m003-s1-05",
+        "m003-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m003/p5",
+    "ranges": {
+      "relevance": [
+        0.3462,
+        0.6069
+      ],
+      "recency": [
+        0.1646,
+        0.8867
+      ],
+      "importance": [
+        8.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m003-s3-03",
+        "total": 2.927,
+        "relevance": 0.5879,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-05",
+        "total": 1.4251,
+        "relevance": 0.457,
+        "recency": 0.1646,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s2-01",
+        "total": 1.3985,
+        "relevance": 0.3716,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s3-01",
+        "total": 1.382,
+        "relevance": 0.4458,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s3-02",
+        "total": 1.2397,
+        "relevance": 0.4087,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s1-02",
+        "total": 1.161,
+        "relevance": 0.3882,
+        "recency": 0.1646,
+        "importance": 9.0
+      }
+    ],
+    "selected": [
+      "m003-s1-02",
+      "m003-s1-05",
+      "m003-s2-01",
+      "m003-s3-01",
+      "m003-s3-02",
+      "m003-s3-03"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-27521"
+      ],
+      "dates": [
+        "2019-12-20"
+      ],
+      "date_doc_ids": [
+        "DEC-50-2019",
+        "LEY-27521"
+      ],
+      "source_records": [
+        "m003-s1-05",
+        "m003-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m003/p6",
+    "ranges": {
+      "relevance": [
+        0.4197,
+        0.54
+      ],
+      "recency": [
+        0.1646,
+        0.8867
+      ],
+      "importance": [
+        8.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m003-s3-03",
+        "total": 2.2677,
+        "relevance": 0.4519,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s3-01",
+        "total": 2.0,
+        "relevance": 0.54,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s3-02",
+        "total": 1.716,
+        "relevance": 0.5059,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s2-01",
+        "total": 1.579,
+        "relevance": 0.4531,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-02",
+        "total": 1.5375,
+        "relevance": 0.4844,
+        "recency": 0.1646,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-05",
+        "total": 1.4686,
+        "relevance": 0.4761,
+        "recency": 0.1646,
+        "importance": 9.0
+      }
+    ],
+    "selected": [
+      "m003-s1-02",
+      "m003-s1-05",
+      "m003-s2-01",
+      "m003-s3-01",
+      "m003-s3-02",
+      "m003-s3-03"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-27521"
+      ],
+      "dates": [
+        "2019-12-20"
+      ],
+      "date_doc_ids": [
+        "DEC-50-2019",
+        "LEY-27521"
+      ],
+      "source_records": [
+        "m003-s1-05",
+        "m003-s1-06"
+      ]
+    }
+  },
+  {
+    "item_id": "m003/p7",
+    "ranges": {
+      "relevance": [
+        0.3608,
+        0.4683
+      ],
+      "recency": [
+        0.1646,
+        0.8867
+      ],
+      "importance": [
+        8.0,
+        9.0
+      ]
+    },
+    "scores": [
+      {
+        "memory_id": "m003-s3-03",
+        "total": 2.8795,
+        "relevance": 0.4553,
+        "recency": 0.8867,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s1-05",
+        "total": 1.9295,
+        "relevance": 0.4607,
+        "recency": 0.1646,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s3-01",
+        "total": 1.6773,
+        "relevance": 0.4336,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s2-01",
+        "total": 1.3238,
+        "relevance": 0.3633,
+        "recency": 0.382,
+        "importance": 9.0
+      },
+      {
+        "memory_id": "m003-s3-02",
+        "total": 1.2159,
+        "relevance": 0.384,
+        "recency": 0.8867,
+        "importance": 8.0
+      },
+      {
+        "memory_id": "m003-s1-02",
+        "total": 1.1341,
+        "relevance": 0.3752,
+        "recency": 0.1646,
+        "importance": 9.0
+      }
+    ],
+    "selected": [
+      "m003-s1-02",
+      "m003-s1-05",
+      "m003-s2-01",
+      "m003-s3-01",
+      "m003-s3-02",
+      "m003-s3-03"
+    ],
+    "filter": {
+      "doc_ids": [
+        "LEY-27521"
+      ],
+      "dates": [
+        "2019-12-20"
+      ],
+      "date_doc_ids": [
+        "DEC-50-2019",
+        "LEY-27521"
+      ],
+      "source_records": [
+        "m003-s1-05",
+        "m003-s1-06"
+      ]
+    }
+  }
+]

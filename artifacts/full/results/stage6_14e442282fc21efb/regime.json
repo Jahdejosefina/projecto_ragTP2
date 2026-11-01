@@ -1,0 +1,55 @@
+{
+  "rows": [
+    {
+      "scenario": "m002",
+      "after": "s1",
+      "history_tokens": 205,
+      "history_budget": 3000,
+      "fits_budget": true,
+      "fits_window": true
+    },
+    {
+      "scenario": "m002",
+      "after": "s2",
+      "history_tokens": 316,
+      "history_budget": 3000,
+      "fits_budget": true,
+      "fits_window": true
+    },
+    {
+      "scenario": "m002",
+      "after": "s3",
+      "history_tokens": 390,
+      "history_budget": 3000,
+      "fits_budget": true,
+      "fits_window": true
+    },
+    {
+      "scenario": "m003",
+      "after": "s1",
+      "history_tokens": 203,
+      "history_budget": 3000,
+      "fits_budget": true,
+      "fits_window": true
+    },
+    {
+      "scenario": "m003",
+      "after": "s2",
+      "history_tokens": 343,
+      "history_budget": 3000,
+      "fits_budget": true,
+      "fits_window": true
+    },
+    {
+      "scenario": "m003",
+      "after": "s3",
+      "history_tokens": 460,
+      "history_budget": 3000,
+      "fits_budget": true,
+      "fits_window": true
+    }
+  ],
+  "mean_session_tokens": 141.66666666666666,
+  "window_for_history": 4812,
+  "sessions_to_overflow": 21
+}

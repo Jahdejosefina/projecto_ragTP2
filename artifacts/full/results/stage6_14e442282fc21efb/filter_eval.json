@@ -1,0 +1,92 @@
+[
+  {
+    "item_id": "m002/p7",
+    "filter": {
+      "doc_ids": [
+        "LEY-26043"
+      ],
+      "dates": [
+        "2005-07-18"
+      ],
+      "date_doc_ids": [
+        "LEY-26043"
+      ],
+      "source_records": [
+        "m002-s1-05",
+        "m002-s1-06"
+      ]
+    },
+    "sin filtro": {
+      "gold_delivered": true,
+      "gold_rank": 1,
+      "n_candidates": 100,
+      "docs_delivered": [
+        "DEC-151-2022",
+        "LEY-26043",
+        "LEY-27642"
+      ]
+    },
+    "doc_id de memoria": {
+      "gold_delivered": true,
+      "gold_rank": 1,
+      "n_candidates": 6,
+      "docs_delivered": [
+        "LEY-26043"
+      ]
+    },
+    "fecha de memoria": {
+      "gold_delivered": true,
+      "gold_rank": 1,
+      "n_candidates": 6,
+      "docs_delivered": [
+        "LEY-26043"
+      ]
+    }
+  },
+  {
+    "item_id": "m003/p7",
+    "filter": {
+      "doc_ids": [
+        "LEY-27521"
+      ],
+      "dates": [
+        "2019-12-20"
+      ],
+      "date_doc_ids": [
+        "DEC-50-2019",
+        "LEY-27521"
+      ],
+      "source_records": [
+        "m003-s1-05",
+        "m003-s1-06"
+      ]
+    },
+    "sin filtro": {
+      "gold_delivered": true,
+      "gold_rank": 1,
+      "n_candidates": 100,
+      "docs_delivered": [
+        "DEC-375-2021",
+        "DEC-92-1997",
+        "LEY-26994",
+        "LEY-27521"
+      ]
+    },
+    "doc_id de memoria": {
+      "gold_delivered": true,
+      "gold_rank": 1,
+      "n_candidates": 8,
+      "docs_delivered": [
+        "LEY-27521"
+      ]
+    },
+    "fecha de memoria": {
+      "gold_delivered": true,
+      "gold_rank": 1,
+      "n_candidates": 100,
+      "docs_delivered": [
+        "LEY-27521"
+      ]
+    }
+  }
+]

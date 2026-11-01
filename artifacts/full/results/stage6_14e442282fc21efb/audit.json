@@ -1,0 +1,237 @@
+{
+  "counts": {
+    "records": 22,
+    "valid": 17,
+    "think_tag": 0,
+    "hedge": 0,
+    "analysis_leak": 0,
+    "unsaid_numbers": 0,
+    "think_leaks_llm": 0
+  },
+  "records": {
+    "m002": [
+      {
+        "memory_id": "m002-s1-01",
+        "subject": "nombre_usuario",
+        "text": "El usuario se llama Mateo.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m002-s1-02",
+        "subject": "tienda_compra",
+        "text": "El usuario compró un videojuego en Tienda Ejemplo Beta.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m002-s1-03",
+        "subject": "precio_compra",
+        "text": "El usuario pagó 85000 pesos por el videojuego.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m002-s1-04",
+        "subject": "canal_contacto",
+        "text": "El usuario prefiere contactarse por teléfono.",
+        "valid": false,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m002-s1-05",
+        "subject": "norma_referencia",
+        "text": "El usuario indicó usar el documento LEY-26043 como referencia normativa.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m002-s1-06",
+        "subject": "fecha_norma",
+        "text": "El usuario mencionó que la fecha de publicación registrada de LEY-26043 es 2005-07-18.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m002-s1-07",
+        "subject": "formato_respuesta",
+        "text": "El usuario prefirió que las respuestas se presentaran en un párrafo.",
+        "valid": false,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m002-s2-01",
+        "subject": "costo_envio",
+        "text": "El usuario pagó 4500 pesos por el envío.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m002-s2-02",
+        "subject": "canal_contacto",
+        "text": "El canal preferido actual del usuario es el correo electrónico.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m002-s3-01",
+        "subject": "formato_respuesta",
+        "text": "El usuario solicitó que las respuestas se presenten en listas con viñetas en lugar de párrafos.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      }
+    ],
+    "m003": [
+      {
+        "memory_id": "m003-s1-01",
+        "subject": "nombre_usuario",
+        "text": "El usuario se llama Inés.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m003-s1-02",
+        "subject": "tienda_compra",
+        "text": "El usuario compró una campera en Indumentaria Ejemplo Gamma.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m003-s1-03",
+        "subject": "precio_compra",
+        "text": "El usuario pagó 64000 pesos por la campera.",
+        "valid": false,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m003-s1-04",
+        "subject": "canal_contacto",
+        "text": "El usuario prefiere contactarse por teléfono.",
+        "valid": false,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m003-s1-05",
+        "subject": "norma_referencia",
+        "text": "El usuario indicó que para consultas normativas se debe usar el documento LEY-27521.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m003-s1-06",
+        "subject": "fecha_norma",
+        "text": "El usuario mencionó que la fecha de publicación registrada de LEY-27521 es 2019-12-20.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m003-s1-07",
+        "subject": "formato_respuesta",
+        "text": "El usuario prefirió que las respuestas sobre normativa se presenten en un párrafo.",
+        "valid": false,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m003-s2-01",
+        "subject": "precio_compra",
+        "text": "El usuario corrigió el precio de la campera a 69000 pesos, reemplazando el valor anterior de 64000.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m003-s2-02",
+        "subject": "canal_contacto",
+        "text": "El usuario cambió su canal de contacto preferido a correo electrónico, reemplazando el anterior de teléfono.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m003-s3-01",
+        "subject": "costo_envio",
+        "text": "El usuario pagó 2500 pesos de envío.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m003-s3-02",
+        "subject": "precio_total",
+        "text": "El usuario pagó 71500 pesos en total.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      },
+      {
+        "memory_id": "m003-s3-03",
+        "subject": "formato_respuesta",
+        "text": "El usuario quiere respuestas con viñetas, no en un párrafo.",
+        "valid": true,
+        "think_tag": false,
+        "hedge": false,
+        "analysis_leak": false,
+        "unsaid_numbers": []
+      }
+    ]
+  }
+}
