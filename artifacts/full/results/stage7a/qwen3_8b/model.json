@@ -1,0 +1,9 @@
+{
+  "digest": "500a1f067a9f",
+  "huggingface_hub": "1.29.0",
+  "model": "qwen3:8b",
+  "ollama": "0.34.4",
+  "tokenizer_repo": "Qwen/Qwen3-8B",
+  "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "transformers": "5.16.1"
+}

@@ -1,0 +1,195 @@
+{
+  "created_at": "2026-11-01T19:30:46.264689+00:00",
+  "decision": "Conservar v2 como variante fija para una evaluación diagnóstica en test; no seguir ajustándola sobre la misma muestra de dev.",
+  "judge_acceptance": {
+    "qwen3:8b": "No aprobado como corrector automático sin supervisión.",
+    "llama3.1:8b": "No aprobado: etiquetó como correctas las 30 respuestas de dev."
+  },
+  "primary_claim": "El acuerdo de desarrollo es descriptivo. No se declara que los jueces sean fiables ni se usa su puntaje como verdad de referencia.",
+  "test_plan": "Mantener las 42 filas de auditoría de test ya seleccionadas; presentar grupos con entradas idénticas; conservar la correspondencia a cada fila. No cambiar rúbrica, modelos, parámetros ni etiquetas humanas para aumentar acuerdo después de mirar test.",
+  "retained_models": [
+    "qwen3:8b",
+    "llama3.1:8b"
+  ],
+  "parameters": {
+    "num_ctx": 8192,
+    "num_predict": 512,
+    "temperature": 0.0,
+    "seed": 42,
+    "think": false,
+    "strict_ctx": true
+  },
+  "model_fingerprints": {
+    "qwen3:8b": {
+      "digest": "500a1f067a9f",
+      "huggingface_hub": "1.29.0",
+      "model": "qwen3:8b",
+      "ollama": "0.34.4",
+      "tokenizer_repo": "Qwen/Qwen3-8B",
+      "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "transformers": "5.16.1"
+    },
+    "llama3.1:8b": {
+      "digest": "46e0c10c039e",
+      "huggingface_hub": "1.29.0",
+      "model": "llama3.1:8b",
+      "ollama": "0.34.4",
+      "tokenizer_repo": "unsloth/Meta-Llama-3.1-8B-Instruct",
+      "tokenizer_revision": "a2856192dd7c25b842431f39c179a6c2c2f627d1",
+      "transformers": "5.16.1"
+    }
+  },
+  "rubric_sha256": "ac14761244e763b79cf11fc7a76b2b46c8e072d3e4a61de782c9fc4ddaf96439",
+  "calibration_engine_sha256": "a9a6ce4f647b7902ad67c34c617f5df54a01f20a4eac33d00846284b07d0b2eb",
+  "calibration_manifest_sha256": "d16f575d74618ed708b9369eb709ed8eeb1dc999aed4a10a0ce302023df0b3f6",
+  "dev_results": {
+    "v1": {
+      "qwen3:8b": {
+        "matrix": [
+          [
+            10,
+            0
+          ],
+          [
+            12,
+            8
+          ]
+        ],
+        "n_binary": 30,
+        "judge_uncertain": 0,
+        "reference_ambiguous": 0,
+        "agreement_on_binary": 0.6,
+        "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+        "missing_judgments": 0,
+        "unique_inputs_view": {
+          "matrix": [
+            [
+              3,
+              0
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          "n_binary": 11,
+          "judge_uncertain": 0,
+          "reference_ambiguous": 0,
+          "agreement_on_binary": 0.5454545454545454,
+          "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+        }
+      },
+      "llama3.1:8b": {
+        "matrix": [
+          [
+            0,
+            10
+          ],
+          [
+            2,
+            18
+          ]
+        ],
+        "n_binary": 30,
+        "judge_uncertain": 0,
+        "reference_ambiguous": 0,
+        "agreement_on_binary": 0.6,
+        "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+        "missing_judgments": 0,
+        "unique_inputs_view": {
+          "matrix": [
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              6
+            ]
+          ],
+          "n_binary": 11,
+          "judge_uncertain": 0,
+          "reference_ambiguous": 0,
+          "agreement_on_binary": 0.5454545454545454,
+          "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+        }
+      }
+    },
+    "v2": {
+      "qwen3:8b": {
+        "matrix": [
+          [
+            10,
+            0
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        "n_binary": 30,
+        "judge_uncertain": 0,
+        "reference_ambiguous": 0,
+        "agreement_on_binary": 0.7,
+        "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+        "missing_judgments": 0,
+        "unique_inputs_view": {
+          "matrix": [
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "n_binary": 11,
+          "judge_uncertain": 0,
+          "reference_ambiguous": 0,
+          "agreement_on_binary": 0.6363636363636364,
+          "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+        }
+      },
+      "llama3.1:8b": {
+        "matrix": [
+          [
+            0,
+            10
+          ],
+          [
+            0,
+            20
+          ]
+        ],
+        "n_binary": 30,
+        "judge_uncertain": 0,
+        "reference_ambiguous": 0,
+        "agreement_on_binary": 0.6666666666666666,
+        "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+        "missing_judgments": 0,
+        "unique_inputs_view": {
+          "matrix": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              8
+            ]
+          ],
+          "n_binary": 11,
+          "judge_uncertain": 0,
+          "reference_ambiguous": 0,
+          "agreement_on_binary": 0.7272727272727273,
+          "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+        }
+      }
+    }
+  },
+  "test_judgments_used_in_decision": false,
+  "source_run": "stage7a_devcal_v2_7e88c6cf2044",
+  "rationale": "Qwen subió de 18 a 21 acuerdos y Llama de 18 a 20, pero persisten errores sistemáticos. Llama equivale al comparador trivial de siempre correcta (20/30 y 8/11). Otra modificación sobre 11 entradas aumentaría el riesgo de adaptación a esta pequeña muestra.",
+  "annotation_limitation": "La auditoría humana fue asistida y contiene repeticiones; los 30 registros no son 30 ejemplos independientes."
+}

@@ -1,0 +1,50 @@
+{
+  "stage": "7a_frozen_diagnostic_evaluation",
+  "source_commit": "321dd4a0ba746371dae93400914231c8e5b102b3",
+  "baseline_directory": "stage7a_1de02ac71afc",
+  "calibration_directory": "stage7a_devcal_v2_7e88c6cf2044",
+  "engine_sha256": "a9a6ce4f647b7902ad67c34c617f5df54a01f20a4eac33d00846284b07d0b2eb",
+  "report_controller_sha256": "b304a552864c1b6f1d2d5f87b951ec00aa918842835c028a39b806b943de3e93",
+  "freeze_sha256": "5ae8e3199085d9c3b6d77d0205518fbd846226f9705cd03496bc0252c0e80876",
+  "rubric_sha256": "ac14761244e763b79cf11fc7a76b2b46c8e072d3e4a61de782c9fc4ddaf96439",
+  "parameters": {
+    "num_ctx": 8192,
+    "num_predict": 512,
+    "temperature": 0.0,
+    "seed": 42,
+    "think": false,
+    "strict_ctx": true
+  },
+  "models": [
+    "qwen3:8b",
+    "llama3.1:8b"
+  ],
+  "model_fingerprints": {
+    "qwen3:8b": {
+      "digest": "500a1f067a9f",
+      "huggingface_hub": "1.29.0",
+      "model": "qwen3:8b",
+      "ollama": "0.34.4",
+      "tokenizer_repo": "Qwen/Qwen3-8B",
+      "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "transformers": "5.16.1"
+    },
+    "llama3.1:8b": {
+      "digest": "46e0c10c039e",
+      "huggingface_hub": "1.29.0",
+      "model": "llama3.1:8b",
+      "ollama": "0.34.4",
+      "tokenizer_repo": "unsloth/Meta-Llama-3.1-8B-Instruct",
+      "tokenizer_revision": "a2856192dd7c25b842431f39c179a6c2c2f627d1",
+      "transformers": "5.16.1"
+    }
+  },
+  "source_sha256": "c5b168ba53009e9d0944ae6250f76003ea8ac294f280540371cc79a02d06ac4f",
+  "audit_sha256": {
+    "dev": "b591984cdba9a5b884681a383af3be808205725ca9edda2cd9c57ba3ccf9ffcb",
+    "test": "ae659da6b204ac4145621b9b0398e56f2386741f0f1b5ec128f112ccf786998b"
+  },
+  "annotation_provenance_sha256": "7bd68c9b50dbd096c050fa5245d8385fcb5d2bcb5ee501ca5af9c4c61c68cea1",
+  "scope": "277 respuestas guardadas: 68 dev y 209 test. Reutiliza 30 veredictos de dev por juez.",
+  "acceptance": "Diagnóstico; ningún juez fue aprobado como corrector sin supervisión."
+}

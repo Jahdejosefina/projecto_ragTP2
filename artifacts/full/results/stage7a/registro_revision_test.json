@@ -1,0 +1,545 @@
+{
+  "created_at": "2026-11-01T19:43:25.617558+00:00",
+  "reviewer": "Alex",
+  "split": "test",
+  "raw_human_message": "van mis respuestas:\n\n1. incorrecto\n2. incorrecto\n3. incorrecto\n4. correcto\n5. incorrecto\n6. incorrecto\n7. correcto\n8. correcto\n9. correcto\n10. incorrecto\n11. incorrecto\n12. correcto\n13. correcto\n14. correcto (respuesta mas larga que la referencia)\n15. correcto\n16. incorrecto\n17. incorrecto\n18. correcto\n19. correcto\n20. incorrecto\n21. correcto\n22. correcto\n23. incorrecto\n24. correcto\n25. correcto\n26. correcto",
+  "labels_by_display_group": {
+    "1": "0",
+    "2": "0",
+    "3": "0",
+    "4": "1",
+    "5": "0",
+    "6": "0",
+    "7": "1",
+    "8": "1",
+    "9": "1",
+    "10": "0",
+    "11": "0",
+    "12": "1",
+    "13": "1",
+    "14": "1",
+    "15": "1",
+    "16": "0",
+    "17": "0",
+    "18": "1",
+    "19": "1",
+    "20": "0",
+    "21": "1",
+    "22": "1",
+    "23": "0",
+    "24": "1",
+    "25": "1",
+    "26": "1"
+  },
+  "groups": [
+    {
+      "group": 1,
+      "question": "Según la Ley 27.521 del corpus, ¿cada cuántos años debe repetirse el estudio de medidas corporales para actualizar el sistema de talles?",
+      "reference": "Cada diez años.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "source_cases": [
+        1,
+        34
+      ],
+      "row_ids": [
+        "test/d003/2/summary/0.5",
+        "test/d003/2/recent/0.8"
+      ],
+      "judge_prompt_hashes": [
+        "e0a29379f5a5f9cf1865ba9e4be1df52b17c118e485e14dd314f29d263b51457"
+      ],
+      "human_correct": "0",
+      "annotation_reason": "Etiqueta de Alex: incorrecto. Síntesis del asistente según el criterio acordado en dev: el sistema se abstiene aunque la referencia contiene la información pedida."
+    },
+    {
+      "group": 2,
+      "question": "Si se interrumpe un servicio público domiciliario, ¿cuántos días tiene la empresa desde un reclamo para demostrar que no fue responsable?",
+      "reference": "La empresa dispone de un máximo de treinta días.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "source_cases": [
+        2,
+        20
+      ],
+      "row_ids": [
+        "test/d006/1/full/0.3",
+        "test/d006/1/full/0.5"
+      ],
+      "judge_prompt_hashes": [
+        "f46066fcdc57dc2edd9a8c72b4005d10ae6a1035e4fc2d287f29121fe76a1247"
+      ],
+      "human_correct": "0",
+      "annotation_reason": "Etiqueta de Alex: incorrecto. Síntesis del asistente según el criterio acordado en dev: el sistema se abstiene aunque la referencia contiene la información pedida."
+    },
+    {
+      "group": 3,
+      "question": "¿En qué fecha fue sancionada la ley de videojuegos 26.043, según su encabezado en el corpus?",
+      "reference": "La Ley 26.043 fue sancionada el 1 de junio de 2005.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "source_cases": [
+        3
+      ],
+      "row_ids": [
+        "test/d007/3/full/0.3"
+      ],
+      "judge_prompt_hashes": [
+        "17773f29540dcd01df091e63a05571a49be3fe3a862aa9e3ed9109500b83c52d"
+      ],
+      "human_correct": "0",
+      "annotation_reason": "Etiqueta de Alex: incorrecto. Síntesis del asistente según el criterio acordado en dev: el sistema se abstiene aunque la referencia contiene la información pedida."
+    },
+    {
+      "group": 4,
+      "question": "¿Qué secretaría figura como autoridad de aplicación de la Ley 26.043 en el texto del corpus?",
+      "reference": "El texto designa a la Secretaría de Defensa de la Competencia, la Desregulación y de la Defensa del Consumidor.",
+      "candidate": "La Secretaría de Defensa de la Competencia, la Desregulación y de la Defensa del Consumidor",
+      "source_cases": [
+        4
+      ],
+      "row_ids": [
+        "test/d002/2/recent/0.8"
+      ],
+      "judge_prompt_hashes": [
+        "aec48bc703095d9afec99617383944d491d4a580da3f87fff6dad96d1210f494"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la respuesta comunica el dato central esperado con una formulación equivalente."
+    },
+    {
+      "group": 5,
+      "question": "¿En qué fecha fue sancionada la ley de videojuegos 26.043, según su encabezado en el corpus?",
+      "reference": "Fue sancionada el 1 de junio de 2005.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "source_cases": [
+        5
+      ],
+      "row_ids": [
+        "test/d002/3/full/0.3"
+      ],
+      "judge_prompt_hashes": [
+        "db541708f1607379740c5e06317fbc4726bcb7bf334748779a879e6e574cefe4"
+      ],
+      "human_correct": "0",
+      "annotation_reason": "Etiqueta de Alex: incorrecto. Síntesis del asistente según el criterio acordado en dev: el sistema se abstiene aunque la referencia contiene la información pedida."
+    },
+    {
+      "group": 6,
+      "question": "Según la Ley 25.599 del corpus, ¿cómo se llaman los viajes en los que los alumnos realizan actividades de aprendizaje que forman parte del programa escolar?",
+      "reference": "Se denominan viajes de estudios.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "source_cases": [
+        6
+      ],
+      "row_ids": [
+        "test/d004/3/recent/0.8"
+      ],
+      "judge_prompt_hashes": [
+        "500a9593533c08b07ed4fe860c356574d7b424fc8beb0235f0479d6bcc7e9c17"
+      ],
+      "human_correct": "0",
+      "annotation_reason": "Etiqueta de Alex: incorrecto. Síntesis del asistente según el criterio acordado en dev: el sistema se abstiene aunque la referencia contiene la información pedida."
+    },
+    {
+      "group": 7,
+      "question": "Según la Ley 24.240 del corpus: ¿En qué idioma debe estar redactado el documento de venta?",
+      "reference": "El documento de venta debe redactarse en castellano.",
+      "candidate": "El documento de venta debe estar redactado en idioma castellano.",
+      "source_cases": [
+        7
+      ],
+      "row_ids": [
+        "test/d008/1/full/0.8"
+      ],
+      "judge_prompt_hashes": [
+        "dae804629f21208fdae050329487852117ead8d3a4172c8cfcf0f6695b3e2336"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la respuesta comunica el dato central esperado con una formulación equivalente."
+    },
+    {
+      "group": 8,
+      "question": "Según el encabezado de la Ley 26.043 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "El 15 de julio de 2005.",
+      "candidate": "Julio 15 de 2005",
+      "source_cases": [
+        8
+      ],
+      "row_ids": [
+        "test/d007/2/summary/0.5"
+      ],
+      "judge_prompt_hashes": [
+        "a6aed3b2fc3555fb35f5a525fac1b076bc4b01110d8b219c771145d010fd0b97"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la respuesta comunica el dato central esperado con una formulación equivalente."
+    },
+    {
+      "group": 9,
+      "question": "Según la Ley 26.043 del corpus, ¿qué advertencia sobre la salud debe aparecer en los envases de videojuegos?",
+      "reference": "La advertencia es: «La sobreexposición es perjudicial para la salud».",
+      "candidate": "La leyenda 'La sobreexposición es perjudicial para la salud'.",
+      "source_cases": [
+        9
+      ],
+      "row_ids": [
+        "test/d002/1/recent/0.8"
+      ],
+      "judge_prompt_hashes": [
+        "4c62444e31c8fc0890c37323f02d35c9353afcb6d30031be1726026bfab49a1a"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la respuesta comunica el dato central esperado con una formulación equivalente."
+    },
+    {
+      "group": 10,
+      "question": "¿Las características prometidas en una publicidad obligan al oferente aunque no se repitan en el contrato?",
+      "reference": "Sí. Las precisiones publicitarias se consideran incluidas en el contrato y obligan al oferente.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "source_cases": [
+        10,
+        25,
+        35,
+        38
+      ],
+      "row_ids": [
+        "test/d008/2/recent/0.3",
+        "test/d008/2/summary/0.8",
+        "test/d008/2/summary/0.3",
+        "test/d008/2/full/0.3"
+      ],
+      "judge_prompt_hashes": [
+        "7da4d9ad9413ede4702d7071ddf1646264ae7f4dc664978dc03291cfe007f1a4"
+      ],
+      "human_correct": "0",
+      "annotation_reason": "Etiqueta de Alex: incorrecto. Síntesis del asistente según el criterio acordado en dev: el sistema se abstiene aunque la referencia contiene la información pedida."
+    },
+    {
+      "group": 11,
+      "question": "Según el encabezado de la Ley 27.250 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "La Ley 27.250 fue promulgada de hecho el 8 de junio de 2016.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "source_cases": [
+        11,
+        23,
+        32
+      ],
+      "row_ids": [
+        "test/d007/4/full/0.3",
+        "test/d007/4/summary/0.3",
+        "test/d007/1/recent/0.3"
+      ],
+      "judge_prompt_hashes": [
+        "a5d32851d786018cf740d45205f7a1a33ff27201ab43c326856fa5154c006703",
+        "12ec50e072fe81bd89587aa88e07916b49ee853b7cc152fbb1462fa7a1d6f0de"
+      ],
+      "human_correct": "0",
+      "annotation_reason": "Etiqueta de Alex: incorrecto. Síntesis del asistente según el criterio acordado en dev: el sistema se abstiene aunque la referencia contiene la información pedida."
+    },
+    {
+      "group": 12,
+      "question": "Según el encabezado de la Ley 26.043 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "El 15 de julio de 2005.",
+      "candidate": "La Ley 26.043 fue promulgada de hecho el 1 de junio de 2005.",
+      "source_cases": [
+        12
+      ],
+      "row_ids": [
+        "test/d007/2/full/0.3"
+      ],
+      "judge_prompt_hashes": [
+        "9a7cdb225c995986a0fce19c7d8fc018b8ce2c59e4ad23fc3fb936ab12cd01ef"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Nota del asistente: la referencia indica 15 de julio de 2005 y la respuesta 1 de junio de 2005. Se conserva la marca original con discrepancia señalada; Alex no explicitó un motivo para esta marca."
+    },
+    {
+      "group": 13,
+      "question": "¿Qué resolución se dictó en mi reclamo de defensa del consumidor con número de expediente PRUEBA-CONSUMO-X731?",
+      "reference": "No puedo informar una resolución concreta: ese expediente no está incluido en el corpus.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "source_cases": [
+        13,
+        15,
+        16,
+        21,
+        42
+      ],
+      "row_ids": [
+        "test/d006/4/recent/0.5",
+        "test/d006/4/summary/0.3",
+        "test/d006/4/recent/0.8",
+        "test/d006/4/full/0.5",
+        "test/d006/4/summary/0.8"
+      ],
+      "judge_prompt_hashes": [
+        "a826157533af201d8d5667625f46e3bfbe50b9cff6aaae454ecdf1840f10ee1c"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la abstención coincide con la ausencia de información indicada por la referencia."
+    },
+    {
+      "group": 14,
+      "question": "Según la Ley 24.240 del corpus: ¿De qué forma debe documentarse la garantía de un contrato de prestación de servicios?",
+      "reference": "Debe documentarse por escrito.",
+      "candidate": "La garantía debe documentarse por escrito, incluyendo la correcta individualización del trabajo realizado, el tiempo de vigencia de la garantía, la fecha de iniciación de dicho período y las condiciones de validez de la misma, así como la correcta individualización de la persona, empresa o entidad que la hará efectiva.",
+      "source_cases": [
+        14,
+        22,
+        26
+      ],
+      "row_ids": [
+        "test/d006/2/recent/0.5",
+        "test/d006/2/summary/0.5",
+        "test/d006/2/full/0.5"
+      ],
+      "judge_prompt_hashes": [
+        "7cfc350552c470b9c33d2daed4cde0d32bbb547afd85c3828932fd1d0cbb976e"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Motivo expresado por Alex: correcto (respuesta mas larga que la referencia)."
+    },
+    {
+      "group": 15,
+      "question": "¿En qué fecha fue sancionada la Ley 25.649, según su encabezado en el corpus?",
+      "reference": "Fue sancionada el 28 de agosto de 2002.",
+      "candidate": "Agosto 28 de 2002",
+      "source_cases": [
+        17
+      ],
+      "row_ids": [
+        "test/d004/2/recent/0.8"
+      ],
+      "judge_prompt_hashes": [
+        "a1b56001af819945c8a7809b26bf0d886e603a1c860f81127641850e6b2dadf3"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la respuesta comunica el dato central esperado con una formulación equivalente."
+    },
+    {
+      "group": 16,
+      "question": "Según la Ley 24.240 del corpus: ¿En qué idioma debe estar redactado el documento de venta?",
+      "reference": "En castellano.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "source_cases": [
+        18,
+        19
+      ],
+      "row_ids": [
+        "test/d008/4/summary/0.3",
+        "test/d008/4/summary/0.5"
+      ],
+      "judge_prompt_hashes": [
+        "2c94378866913e596c7af7e67f606e68569e55f102bda50f7eed297aac6c5301"
+      ],
+      "human_correct": "0",
+      "annotation_reason": "Etiqueta de Alex: incorrecto. Síntesis del asistente según el criterio acordado en dev: el sistema se abstiene aunque la referencia contiene la información pedida."
+    },
+    {
+      "group": 17,
+      "question": "Según la Ley 26.043 del corpus, ¿qué advertencia sobre la salud debe aparecer en los envases de videojuegos?",
+      "reference": "«La sobreexposición es perjudicial para la salud».",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "source_cases": [
+        24
+      ],
+      "row_ids": [
+        "test/d003/3/full/0.3"
+      ],
+      "judge_prompt_hashes": [
+        "720972516cac7ab031a12d1e28e221b1e053a49a8cad2bb99417bc2f197925cc"
+      ],
+      "human_correct": "0",
+      "annotation_reason": "Etiqueta de Alex: incorrecto. Síntesis del asistente según el criterio acordado en dev: el sistema se abstiene aunque la referencia contiene la información pedida."
+    },
+    {
+      "group": 18,
+      "question": "Según el encabezado de la Ley 26.043 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "Fue promulgada de hecho el 15 de julio de 2005.",
+      "candidate": "Julio 15 de 2005",
+      "source_cases": [
+        27
+      ],
+      "row_ids": [
+        "test/d002/4/recent/0.8"
+      ],
+      "judge_prompt_hashes": [
+        "fd9ffc12f530f82c6fe5bbd57e2ee0b3832d980896ff4d551ce3c9b18b696d59"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la respuesta comunica el dato central esperado con una formulación equivalente."
+    },
+    {
+      "group": 19,
+      "question": "¿En qué fecha fue sancionada la ley de videojuegos 26.043, según su encabezado en el corpus?",
+      "reference": "Fue sancionada el 1 de junio de 2005.",
+      "candidate": "1 de junio de 2005",
+      "source_cases": [
+        28,
+        36
+      ],
+      "row_ids": [
+        "test/d002/3/summary/0.8",
+        "test/d002/3/recent/0.5"
+      ],
+      "judge_prompt_hashes": [
+        "9ece2197562795aafdcc4a33dea49a499f01dc9e4cd11ac7e71928874fb7e8ed"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la respuesta comunica el dato central esperado con una formulación equivalente."
+    },
+    {
+      "group": 20,
+      "question": "Si se interrumpe un servicio público domiciliario, ¿cuántos días tiene la empresa desde un reclamo para demostrar que no fue responsable?",
+      "reference": "Un máximo de treinta días desde el reclamo.",
+      "candidate": "DIEZ (10) días corridos",
+      "source_cases": [
+        29
+      ],
+      "row_ids": [
+        "test/d006/3/summary/0.5"
+      ],
+      "judge_prompt_hashes": [
+        "48a9bd59d3c4d865f679af4c75542b7d9f947cd457d8d86d94c8eb3c84cc6c3f"
+      ],
+      "human_correct": "0",
+      "annotation_reason": "Etiqueta de Alex: incorrecto. Síntesis del asistente según el criterio acordado en dev: la respuesta indica diez días corridos y la referencia un máximo de treinta días."
+    },
+    {
+      "group": 21,
+      "question": "Según el encabezado de la Ley 27.250 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "La Ley 27.250 fue promulgada de hecho el 8 de junio de 2016.",
+      "candidate": "Junio 08 de 2016",
+      "source_cases": [
+        30,
+        39
+      ],
+      "row_ids": [
+        "test/d007/1/summary/0.8",
+        "test/d007/1/recent/0.5"
+      ],
+      "judge_prompt_hashes": [
+        "033f5d0811b49fdb72f519bfe7af38233c480485d2e8b8b5884eb8a26167f9e8"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la respuesta comunica el dato central esperado con una formulación equivalente."
+    },
+    {
+      "group": 22,
+      "question": "Según el encabezado de la Ley 27.250 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "La Ley 27.250 fue promulgada de hecho el 8 de junio de 2016.",
+      "candidate": "08 de junio de 2016",
+      "source_cases": [
+        31
+      ],
+      "row_ids": [
+        "test/d007/4/recent/0.8"
+      ],
+      "judge_prompt_hashes": [
+        "5479313ee11cb87134472eedab86c3f6a03f79f2c5f074db63960962dbee9d2e"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la respuesta comunica el dato central esperado con una formulación equivalente."
+    },
+    {
+      "group": 23,
+      "question": "Según la Ley 26.043 del corpus, ¿qué advertencia sobre la salud debe aparecer en los envases de videojuegos?",
+      "reference": "La advertencia es: «La sobreexposición es perjudicial para la salud».",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "source_cases": [
+        33
+      ],
+      "row_ids": [
+        "test/d002/1/full/0.3"
+      ],
+      "judge_prompt_hashes": [
+        "6dccc416505d6c106856f4ae54bda690008c129aafc0f9b10fcac8e0671d9296"
+      ],
+      "human_correct": "0",
+      "annotation_reason": "Etiqueta de Alex: incorrecto. Síntesis del asistente según el criterio acordado en dev: el sistema se abstiene aunque la referencia contiene la información pedida."
+    },
+    {
+      "group": 24,
+      "question": "¿En qué fecha fue sancionada la ley de videojuegos 26.043, según su encabezado en el corpus?",
+      "reference": "La Ley 26.043 fue sancionada el 1 de junio de 2005.",
+      "candidate": "El 1 de junio de 2005.",
+      "source_cases": [
+        37
+      ],
+      "row_ids": [
+        "test/d007/3/recent/0.5"
+      ],
+      "judge_prompt_hashes": [
+        "0bb6be8736e525f4eb96de1406315dbb9953b6c9b4aea03107ab5305974db2ca"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la respuesta comunica el dato central esperado con una formulación equivalente."
+    },
+    {
+      "group": 25,
+      "question": "¿A partir de qué edad se aplica el Sistema Único Normalizado de Talles de Indumentaria?",
+      "reference": "La población destinataria se contempla a partir de los doce años.",
+      "candidate": "A partir de los doce (12) años de edad.",
+      "source_cases": [
+        40
+      ],
+      "row_ids": [
+        "test/d003/1/recent/0.8"
+      ],
+      "judge_prompt_hashes": [
+        "f54bea41cddd9455c30f34d701620d4b7fc456cc722dddfa9e018dd47369c368"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la respuesta comunica el dato central esperado con una formulación equivalente."
+    },
+    {
+      "group": 26,
+      "question": "Según el encabezado de la Ley 27.250 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "La Ley 27.250 fue promulgada de hecho el 8 de junio de 2016.",
+      "candidate": "8 de junio de 2016",
+      "source_cases": [
+        41
+      ],
+      "row_ids": [
+        "test/d007/4/full/0.5"
+      ],
+      "judge_prompt_hashes": [
+        "0c58d724b184442c20427fd8cceee6373c330bcf75ccab540c98495580d9bcc2"
+      ],
+      "human_correct": "1",
+      "annotation_reason": "Etiqueta de Alex: correcto. Síntesis del asistente según el criterio acordado en dev: la respuesta comunica el dato central esperado con una formulación equivalente."
+    }
+  ],
+  "status": "all_labels_received_with_one_annotation_discrepancy",
+  "group_counts": {
+    "0": 11,
+    "1": 15
+  },
+  "row_counts": {
+    "0": 19,
+    "1": 23
+  },
+  "quality_flags": [
+    {
+      "group": 12,
+      "row_ids": [
+        "test/d007/2/full/0.3"
+      ],
+      "human_label_original": "1",
+      "human_label_retained": "1",
+      "reference": "El 15 de julio de 2005.",
+      "candidate": "La Ley 26.043 fue promulgada de hecho el 1 de junio de 2005.",
+      "issue": "La fecha de la respuesta difiere de la referencia, pese a la etiqueta humana correcto.",
+      "detected_by": "asistente",
+      "detected_before_test_judge_comparison": true,
+      "clarification_requested": true,
+      "clarification_answer_received": false,
+      "resolution": "Se conserva la marca explícita de Alex; no se corrige ni se imputa otra etiqueta."
+    }
+  ],
+  "annotation_method": "26 comparaciones mostradas sin veredictos de jueces; etiquetas extendidas a las 42 filas originales.",
+  "reason_provenance": "Alex solo explicitó un motivo en el grupo 14. Las demás síntesis fueron redactadas por el asistente a partir de sus marcas y del criterio acordado en dev; no fueron justificadas individualmente ni confirmadas por Alex.",
+  "human_labels_changed_by_assistant": false,
+  "rubric_changed_after_freeze": false,
+  "test_judge_comparison_done_at_annotation_time": false,
+  "grouping_note": "Igualdad literal de pregunta autocontenida, respuesta de referencia y respuesta del sistema, que son los tres campos presentados al revisor. Se conservan todas las filas y sus hashes de prompt; esta agrupación humana no modifica la caché de los jueces.",
+  "report_plan_before_test_comparison": "El acuerdo principal usa las 42 marcas originales. Una vista complementaria excluye únicamente la fila del grupo 12 señalada antes de comparar jueces; no sustituye su etiqueta ni modifica la muestra principal."
+}

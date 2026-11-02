@@ -1,0 +1,1679 @@
+{
+  "stage": "7a",
+  "time": "2026-11-01T20:07:26.656520+00:00",
+  "status": "diagnostic_report_with_annotation_flag",
+  "calibration_declared_reliable": false,
+  "freeze_decision": {
+    "created_at": "2026-11-01T19:30:46.264689+00:00",
+    "decision": "Conservar v2 como variante fija para una evaluación diagnóstica en test; no seguir ajustándola sobre la misma muestra de dev.",
+    "judge_acceptance": {
+      "qwen3:8b": "No aprobado como corrector automático sin supervisión.",
+      "llama3.1:8b": "No aprobado: etiquetó como correctas las 30 respuestas de dev."
+    },
+    "primary_claim": "El acuerdo de desarrollo es descriptivo. No se declara que los jueces sean fiables ni se usa su puntaje como verdad de referencia.",
+    "test_plan": "Mantener las 42 filas de auditoría de test ya seleccionadas; presentar grupos con entradas idénticas; conservar la correspondencia a cada fila. No cambiar rúbrica, modelos, parámetros ni etiquetas humanas para aumentar acuerdo después de mirar test.",
+    "retained_models": [
+      "qwen3:8b",
+      "llama3.1:8b"
+    ],
+    "parameters": {
+      "num_ctx": 8192,
+      "num_predict": 512,
+      "temperature": 0.0,
+      "seed": 42,
+      "think": false,
+      "strict_ctx": true
+    },
+    "model_fingerprints": {
+      "qwen3:8b": {
+        "digest": "500a1f067a9f",
+        "huggingface_hub": "1.29.0",
+        "model": "qwen3:8b",
+        "ollama": "0.34.4",
+        "tokenizer_repo": "Qwen/Qwen3-8B",
+        "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+        "transformers": "5.16.1"
+      },
+      "llama3.1:8b": {
+        "digest": "46e0c10c039e",
+        "huggingface_hub": "1.29.0",
+        "model": "llama3.1:8b",
+        "ollama": "0.34.4",
+        "tokenizer_repo": "unsloth/Meta-Llama-3.1-8B-Instruct",
+        "tokenizer_revision": "a2856192dd7c25b842431f39c179a6c2c2f627d1",
+        "transformers": "5.16.1"
+      }
+    },
+    "rubric_sha256": "ac14761244e763b79cf11fc7a76b2b46c8e072d3e4a61de782c9fc4ddaf96439",
+    "calibration_engine_sha256": "a9a6ce4f647b7902ad67c34c617f5df54a01f20a4eac33d00846284b07d0b2eb",
+    "calibration_manifest_sha256": "d16f575d74618ed708b9369eb709ed8eeb1dc999aed4a10a0ce302023df0b3f6",
+    "dev_results": {
+      "v1": {
+        "qwen3:8b": {
+          "matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              12,
+              8
+            ]
+          ],
+          "n_binary": 30,
+          "judge_uncertain": 0,
+          "reference_ambiguous": 0,
+          "agreement_on_binary": 0.6,
+          "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+          "missing_judgments": 0,
+          "unique_inputs_view": {
+            "matrix": [
+              [
+                3,
+                0
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "n_binary": 11,
+            "judge_uncertain": 0,
+            "reference_ambiguous": 0,
+            "agreement_on_binary": 0.5454545454545454,
+            "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+          }
+        },
+        "llama3.1:8b": {
+          "matrix": [
+            [
+              0,
+              10
+            ],
+            [
+              2,
+              18
+            ]
+          ],
+          "n_binary": 30,
+          "judge_uncertain": 0,
+          "reference_ambiguous": 0,
+          "agreement_on_binary": 0.6,
+          "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+          "missing_judgments": 0,
+          "unique_inputs_view": {
+            "matrix": [
+              [
+                0,
+                3
+              ],
+              [
+                2,
+                6
+              ]
+            ],
+            "n_binary": 11,
+            "judge_uncertain": 0,
+            "reference_ambiguous": 0,
+            "agreement_on_binary": 0.5454545454545454,
+            "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+          }
+        }
+      },
+      "v2": {
+        "qwen3:8b": {
+          "matrix": [
+            [
+              10,
+              0
+            ],
+            [
+              9,
+              11
+            ]
+          ],
+          "n_binary": 30,
+          "judge_uncertain": 0,
+          "reference_ambiguous": 0,
+          "agreement_on_binary": 0.7,
+          "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+          "missing_judgments": 0,
+          "unique_inputs_view": {
+            "matrix": [
+              [
+                3,
+                0
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "n_binary": 11,
+            "judge_uncertain": 0,
+            "reference_ambiguous": 0,
+            "agreement_on_binary": 0.6363636363636364,
+            "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+          }
+        },
+        "llama3.1:8b": {
+          "matrix": [
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              20
+            ]
+          ],
+          "n_binary": 30,
+          "judge_uncertain": 0,
+          "reference_ambiguous": 0,
+          "agreement_on_binary": 0.6666666666666666,
+          "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+          "missing_judgments": 0,
+          "unique_inputs_view": {
+            "matrix": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                8
+              ]
+            ],
+            "n_binary": 11,
+            "judge_uncertain": 0,
+            "reference_ambiguous": 0,
+            "agreement_on_binary": 0.7272727272727273,
+            "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+          }
+        }
+      }
+    },
+    "test_judgments_used_in_decision": false,
+    "source_run": "stage7a_devcal_v2_7e88c6cf2044",
+    "rationale": "Qwen subió de 18 a 21 acuerdos y Llama de 18 a 20, pero persisten errores sistemáticos. Llama equivale al comparador trivial de siempre correcta (20/30 y 8/11). Otra modificación sobre 11 entradas aumentaría el riesgo de adaptación a esta pequeña muestra.",
+    "annotation_limitation": "La auditoría humana fue asistida y contiene repeticiones; los 30 registros no son 30 ejemplos independientes."
+  },
+  "results": {
+    "v1": {
+      "qwen3:8b": {
+        "by_split": {
+          "dev": {
+            "eligible": 68,
+            "excluded_source": 4,
+            "verdict_counts": {
+              "incorrecto": 54,
+              "correcto": 14
+            },
+            "judge_correct_fraction_all_eligible": 0.20588235294117646,
+            "vs_automatic": {
+              "matrix": [
+                [
+                  38,
+                  0
+                ],
+                [
+                  16,
+                  14
+                ]
+              ],
+              "n_binary": 68,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.7647058823529411,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    7,
+                    0
+                  ],
+                  [
+                    5,
+                    3
+                  ]
+                ],
+                "n_binary": 15,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.6666666666666666,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 1.0,
+                "recall_correct": 0.375,
+                "balanced_accuracy": 0.6875
+              },
+              "recall_incorrect": 1.0,
+              "recall_correct": 0.4666666666666667,
+              "balanced_accuracy": 0.7333333333333334
+            },
+            "vs_human": {
+              "matrix": [
+                [
+                  10,
+                  0
+                ],
+                [
+                  12,
+                  8
+                ]
+              ],
+              "n_binary": 30,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.6,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    3,
+                    0
+                  ],
+                  [
+                    5,
+                    3
+                  ]
+                ],
+                "n_binary": 11,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.5454545454545454,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 1.0,
+                "recall_correct": 0.375,
+                "balanced_accuracy": 0.6875
+              },
+              "recall_incorrect": 1.0,
+              "recall_correct": 0.4,
+              "balanced_accuracy": 0.7
+            },
+            "audit_size": 30,
+            "audit_human_label_counts": {
+              "1": 20,
+              "0": 10
+            },
+            "human_always_correct_baseline": {
+              "matrix": [
+                [
+                  0,
+                  10
+                ],
+                [
+                  0,
+                  20
+                ]
+              ],
+              "n_binary": 30,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.6666666666666666,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+            }
+          },
+          "test": {
+            "eligible": 209,
+            "excluded_source": 7,
+            "verdict_counts": {
+              "incorrecto": 112,
+              "correcto": 97
+            },
+            "judge_correct_fraction_all_eligible": 0.46411483253588515,
+            "vs_automatic": {
+              "matrix": [
+                [
+                  100,
+                  0
+                ],
+                [
+                  12,
+                  97
+                ]
+              ],
+              "n_binary": 209,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.9425837320574163,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    21,
+                    0
+                  ],
+                  [
+                    6,
+                    29
+                  ]
+                ],
+                "n_binary": 56,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.8928571428571429,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 1.0,
+                "recall_correct": 0.8285714285714286,
+                "balanced_accuracy": 0.9142857142857144
+              },
+              "recall_incorrect": 1.0,
+              "recall_correct": 0.8899082568807339,
+              "balanced_accuracy": 0.944954128440367
+            },
+            "vs_human": {
+              "matrix": [
+                [
+                  19,
+                  0
+                ],
+                [
+                  4,
+                  19
+                ]
+              ],
+              "n_binary": 42,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.9047619047619048,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    12,
+                    0
+                  ],
+                  [
+                    2,
+                    13
+                  ]
+                ],
+                "n_binary": 27,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.9259259259259259,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 1.0,
+                "recall_correct": 0.8666666666666667,
+                "balanced_accuracy": 0.9333333333333333
+              },
+              "recall_incorrect": 1.0,
+              "recall_correct": 0.8260869565217391,
+              "balanced_accuracy": 0.9130434782608696
+            },
+            "audit_size": 42,
+            "audit_human_label_counts": {
+              "0": 19,
+              "1": 23
+            },
+            "human_always_correct_baseline": {
+              "matrix": [
+                [
+                  0,
+                  19
+                ],
+                [
+                  0,
+                  23
+                ]
+              ],
+              "n_binary": 42,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.5476190476190477,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+            },
+            "vs_human_excluding_preflagged_case_12": {
+              "matrix": [
+                [
+                  19,
+                  0
+                ],
+                [
+                  3,
+                  19
+                ]
+              ],
+              "n_binary": 41,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.926829268292683,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    12,
+                    0
+                  ],
+                  [
+                    1,
+                    13
+                  ]
+                ],
+                "n_binary": 26,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.9615384615384616,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 1.0,
+                "recall_correct": 0.9285714285714286,
+                "balanced_accuracy": 0.9642857142857143
+              },
+              "recall_incorrect": 1.0,
+              "recall_correct": 0.8636363636363636,
+              "balanced_accuracy": 0.9318181818181819
+            }
+          }
+        },
+        "model": {
+          "digest": "500a1f067a9f",
+          "huggingface_hub": "1.29.0",
+          "model": "qwen3:8b",
+          "ollama": "0.34.4",
+          "tokenizer_repo": "Qwen/Qwen3-8B",
+          "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+          "transformers": "5.16.1"
+        },
+        "same_family_as_generator": true,
+        "attempts_inference": 71,
+        "usage_inference_excludes_preflight": {
+          "prompt_tokens": 53836,
+          "output_tokens": 5454,
+          "ms": 245116.9
+        },
+        "usage_scope": "v1 original"
+      },
+      "llama3.1:8b": {
+        "by_split": {
+          "dev": {
+            "eligible": 68,
+            "excluded_source": 4,
+            "verdict_counts": {
+              "correcto": 57,
+              "incorrecto": 11
+            },
+            "judge_correct_fraction_all_eligible": 0.8382352941176471,
+            "vs_automatic": {
+              "matrix": [
+                [
+                  2,
+                  36
+                ],
+                [
+                  9,
+                  21
+                ]
+              ],
+              "n_binary": 68,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.3382352941176471,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    1,
+                    6
+                  ],
+                  [
+                    2,
+                    6
+                  ]
+                ],
+                "n_binary": 15,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.4666666666666667,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 0.14285714285714285,
+                "recall_correct": 0.75,
+                "balanced_accuracy": 0.4464285714285714
+              },
+              "recall_incorrect": 0.05263157894736842,
+              "recall_correct": 0.7,
+              "balanced_accuracy": 0.37631578947368416
+            },
+            "vs_human": {
+              "matrix": [
+                [
+                  0,
+                  10
+                ],
+                [
+                  2,
+                  18
+                ]
+              ],
+              "n_binary": 30,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.6,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    0,
+                    3
+                  ],
+                  [
+                    2,
+                    6
+                  ]
+                ],
+                "n_binary": 11,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.5454545454545454,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 0.0,
+                "recall_correct": 0.75,
+                "balanced_accuracy": 0.375
+              },
+              "recall_incorrect": 0.0,
+              "recall_correct": 0.9,
+              "balanced_accuracy": 0.45
+            },
+            "audit_size": 30,
+            "audit_human_label_counts": {
+              "1": 20,
+              "0": 10
+            },
+            "human_always_correct_baseline": {
+              "matrix": [
+                [
+                  0,
+                  10
+                ],
+                [
+                  0,
+                  20
+                ]
+              ],
+              "n_binary": 30,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.6666666666666666,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+            }
+          },
+          "test": {
+            "eligible": 209,
+            "excluded_source": 7,
+            "verdict_counts": {
+              "incorrecto": 15,
+              "correcto": 194
+            },
+            "judge_correct_fraction_all_eligible": 0.9282296650717703,
+            "vs_automatic": {
+              "matrix": [
+                [
+                  15,
+                  85
+                ],
+                [
+                  0,
+                  109
+                ]
+              ],
+              "n_binary": 209,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.5933014354066986,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    3,
+                    18
+                  ],
+                  [
+                    0,
+                    35
+                  ]
+                ],
+                "n_binary": 56,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.6785714285714286,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 0.14285714285714285,
+                "recall_correct": 1.0,
+                "balanced_accuracy": 0.5714285714285714
+              },
+              "recall_incorrect": 0.15,
+              "recall_correct": 1.0,
+              "balanced_accuracy": 0.575
+            },
+            "vs_human": {
+              "matrix": [
+                [
+                  2,
+                  17
+                ],
+                [
+                  1,
+                  22
+                ]
+              ],
+              "n_binary": 42,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.5714285714285714,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    2,
+                    10
+                  ],
+                  [
+                    1,
+                    14
+                  ]
+                ],
+                "n_binary": 27,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.5925925925925926,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 0.16666666666666666,
+                "recall_correct": 0.9333333333333333,
+                "balanced_accuracy": 0.55
+              },
+              "recall_incorrect": 0.10526315789473684,
+              "recall_correct": 0.9565217391304348,
+              "balanced_accuracy": 0.5308924485125859
+            },
+            "audit_size": 42,
+            "audit_human_label_counts": {
+              "0": 19,
+              "1": 23
+            },
+            "human_always_correct_baseline": {
+              "matrix": [
+                [
+                  0,
+                  19
+                ],
+                [
+                  0,
+                  23
+                ]
+              ],
+              "n_binary": 42,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.5476190476190477,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+            },
+            "vs_human_excluding_preflagged_case_12": {
+              "matrix": [
+                [
+                  2,
+                  17
+                ],
+                [
+                  0,
+                  22
+                ]
+              ],
+              "n_binary": 41,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.5853658536585366,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    2,
+                    10
+                  ],
+                  [
+                    0,
+                    14
+                  ]
+                ],
+                "n_binary": 26,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.6153846153846154,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 0.16666666666666666,
+                "recall_correct": 1.0,
+                "balanced_accuracy": 0.5833333333333334
+              },
+              "recall_incorrect": 0.10526315789473684,
+              "recall_correct": 1.0,
+              "balanced_accuracy": 0.5526315789473684
+            }
+          }
+        },
+        "model": {
+          "digest": "46e0c10c039e",
+          "huggingface_hub": "1.29.0",
+          "model": "llama3.1:8b",
+          "ollama": "0.34.4",
+          "tokenizer_repo": "unsloth/Meta-Llama-3.1-8B-Instruct",
+          "tokenizer_revision": "a2856192dd7c25b842431f39c179a6c2c2f627d1",
+          "transformers": "5.16.1"
+        },
+        "same_family_as_generator": false,
+        "attempts_inference": 71,
+        "usage_inference_excludes_preflight": {
+          "prompt_tokens": 52471,
+          "output_tokens": 3897,
+          "ms": 175470.4
+        },
+        "usage_scope": "v1 original"
+      }
+    },
+    "v2": {
+      "qwen3:8b": {
+        "by_split": {
+          "dev": {
+            "eligible": 68,
+            "excluded_source": 4,
+            "verdict_counts": {
+              "incorrecto": 53,
+              "correcto": 15
+            },
+            "judge_correct_fraction_all_eligible": 0.22058823529411764,
+            "vs_automatic": {
+              "matrix": [
+                [
+                  32,
+                  6
+                ],
+                [
+                  21,
+                  9
+                ]
+              ],
+              "n_binary": 68,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.6029411764705882,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    6,
+                    1
+                  ],
+                  [
+                    4,
+                    4
+                  ]
+                ],
+                "n_binary": 15,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.6666666666666666,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 0.8571428571428571,
+                "recall_correct": 0.5,
+                "balanced_accuracy": 0.6785714285714286
+              },
+              "recall_incorrect": 0.8421052631578947,
+              "recall_correct": 0.3,
+              "balanced_accuracy": 0.5710526315789474
+            },
+            "vs_human": {
+              "matrix": [
+                [
+                  10,
+                  0
+                ],
+                [
+                  9,
+                  11
+                ]
+              ],
+              "n_binary": 30,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.7,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    3,
+                    0
+                  ],
+                  [
+                    4,
+                    4
+                  ]
+                ],
+                "n_binary": 11,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.6363636363636364,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 1.0,
+                "recall_correct": 0.5,
+                "balanced_accuracy": 0.75
+              },
+              "recall_incorrect": 1.0,
+              "recall_correct": 0.55,
+              "balanced_accuracy": 0.775
+            },
+            "audit_size": 30,
+            "audit_human_label_counts": {
+              "1": 20,
+              "0": 10
+            },
+            "human_always_correct_baseline": {
+              "matrix": [
+                [
+                  0,
+                  10
+                ],
+                [
+                  0,
+                  20
+                ]
+              ],
+              "n_binary": 30,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.6666666666666666,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+            }
+          },
+          "test": {
+            "eligible": 209,
+            "excluded_source": 7,
+            "verdict_counts": {
+              "incorrecto": 121,
+              "correcto": 88
+            },
+            "judge_correct_fraction_all_eligible": 0.42105263157894735,
+            "vs_automatic": {
+              "matrix": [
+                [
+                  100,
+                  0
+                ],
+                [
+                  21,
+                  88
+                ]
+              ],
+              "n_binary": 209,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.8995215311004785,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    21,
+                    0
+                  ],
+                  [
+                    8,
+                    27
+                  ]
+                ],
+                "n_binary": 56,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.8571428571428571,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 1.0,
+                "recall_correct": 0.7714285714285715,
+                "balanced_accuracy": 0.8857142857142857
+              },
+              "recall_incorrect": 1.0,
+              "recall_correct": 0.8073394495412844,
+              "balanced_accuracy": 0.9036697247706422
+            },
+            "vs_human": {
+              "matrix": [
+                [
+                  19,
+                  0
+                ],
+                [
+                  9,
+                  14
+                ]
+              ],
+              "n_binary": 42,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.7857142857142857,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    12,
+                    0
+                  ],
+                  [
+                    5,
+                    10
+                  ]
+                ],
+                "n_binary": 27,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.8148148148148148,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 1.0,
+                "recall_correct": 0.6666666666666666,
+                "balanced_accuracy": 0.8333333333333333
+              },
+              "recall_incorrect": 1.0,
+              "recall_correct": 0.6086956521739131,
+              "balanced_accuracy": 0.8043478260869565
+            },
+            "audit_size": 42,
+            "audit_human_label_counts": {
+              "0": 19,
+              "1": 23
+            },
+            "human_always_correct_baseline": {
+              "matrix": [
+                [
+                  0,
+                  19
+                ],
+                [
+                  0,
+                  23
+                ]
+              ],
+              "n_binary": 42,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.5476190476190477,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+            },
+            "vs_human_excluding_preflagged_case_12": {
+              "matrix": [
+                [
+                  19,
+                  0
+                ],
+                [
+                  8,
+                  14
+                ]
+              ],
+              "n_binary": 41,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.8048780487804879,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    12,
+                    0
+                  ],
+                  [
+                    4,
+                    10
+                  ]
+                ],
+                "n_binary": 26,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.8461538461538461,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 1.0,
+                "recall_correct": 0.7142857142857143,
+                "balanced_accuracy": 0.8571428571428572
+              },
+              "recall_incorrect": 1.0,
+              "recall_correct": 0.6363636363636364,
+              "balanced_accuracy": 0.8181818181818181
+            }
+          }
+        },
+        "model": {
+          "digest": "500a1f067a9f",
+          "huggingface_hub": "1.29.0",
+          "model": "qwen3:8b",
+          "ollama": "0.34.4",
+          "tokenizer_repo": "Qwen/Qwen3-8B",
+          "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+          "transformers": "5.16.1"
+        },
+        "same_family_as_generator": true,
+        "attempts_inference": 71,
+        "usage_inference_excludes_preflight": {
+          "prompt_tokens": 66171,
+          "output_tokens": 4182,
+          "ms": 147566.3
+        },
+        "usage_scope": "v2 calibración dev más completado fijado"
+      },
+      "llama3.1:8b": {
+        "by_split": {
+          "dev": {
+            "eligible": 68,
+            "excluded_source": 4,
+            "verdict_counts": {
+              "correcto": 66,
+              "incorrecto": 2
+            },
+            "judge_correct_fraction_all_eligible": 0.9705882352941176,
+            "vs_automatic": {
+              "matrix": [
+                [
+                  2,
+                  36
+                ],
+                [
+                  0,
+                  30
+                ]
+              ],
+              "n_binary": 68,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.47058823529411764,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    1,
+                    6
+                  ],
+                  [
+                    0,
+                    8
+                  ]
+                ],
+                "n_binary": 15,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.6,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 0.14285714285714285,
+                "recall_correct": 1.0,
+                "balanced_accuracy": 0.5714285714285714
+              },
+              "recall_incorrect": 0.05263157894736842,
+              "recall_correct": 1.0,
+              "balanced_accuracy": 0.5263157894736842
+            },
+            "vs_human": {
+              "matrix": [
+                [
+                  0,
+                  10
+                ],
+                [
+                  0,
+                  20
+                ]
+              ],
+              "n_binary": 30,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.6666666666666666,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    0,
+                    3
+                  ],
+                  [
+                    0,
+                    8
+                  ]
+                ],
+                "n_binary": 11,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.7272727272727273,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 0.0,
+                "recall_correct": 1.0,
+                "balanced_accuracy": 0.5
+              },
+              "recall_incorrect": 0.0,
+              "recall_correct": 1.0,
+              "balanced_accuracy": 0.5
+            },
+            "audit_size": 30,
+            "audit_human_label_counts": {
+              "1": 20,
+              "0": 10
+            },
+            "human_always_correct_baseline": {
+              "matrix": [
+                [
+                  0,
+                  10
+                ],
+                [
+                  0,
+                  20
+                ]
+              ],
+              "n_binary": 30,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.6666666666666666,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+            }
+          },
+          "test": {
+            "eligible": 209,
+            "excluded_source": 7,
+            "verdict_counts": {
+              "correcto": 170,
+              "incorrecto": 39
+            },
+            "judge_correct_fraction_all_eligible": 0.8133971291866029,
+            "vs_automatic": {
+              "matrix": [
+                [
+                  21,
+                  79
+                ],
+                [
+                  18,
+                  91
+                ]
+              ],
+              "n_binary": 209,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.5358851674641149,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    3,
+                    18
+                  ],
+                  [
+                    4,
+                    31
+                  ]
+                ],
+                "n_binary": 56,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.6071428571428571,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 0.14285714285714285,
+                "recall_correct": 0.8857142857142857,
+                "balanced_accuracy": 0.5142857142857142
+              },
+              "recall_incorrect": 0.21,
+              "recall_correct": 0.8348623853211009,
+              "balanced_accuracy": 0.5224311926605505
+            },
+            "vs_human": {
+              "matrix": [
+                [
+                  5,
+                  14
+                ],
+                [
+                  8,
+                  15
+                ]
+              ],
+              "n_binary": 42,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.47619047619047616,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    2,
+                    10
+                  ],
+                  [
+                    3,
+                    12
+                  ]
+                ],
+                "n_binary": 27,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.5185185185185185,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 0.16666666666666666,
+                "recall_correct": 0.8,
+                "balanced_accuracy": 0.48333333333333334
+              },
+              "recall_incorrect": 0.2631578947368421,
+              "recall_correct": 0.6521739130434783,
+              "balanced_accuracy": 0.45766590389016015
+            },
+            "audit_size": 42,
+            "audit_human_label_counts": {
+              "0": 19,
+              "1": 23
+            },
+            "human_always_correct_baseline": {
+              "matrix": [
+                [
+                  0,
+                  19
+                ],
+                [
+                  0,
+                  23
+                ]
+              ],
+              "n_binary": 42,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.5476190476190477,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta"
+            },
+            "vs_human_excluding_preflagged_case_12": {
+              "matrix": [
+                [
+                  5,
+                  14
+                ],
+                [
+                  7,
+                  15
+                ]
+              ],
+              "n_binary": 41,
+              "judge_uncertain": 0,
+              "reference_ambiguous": 0,
+              "agreement_on_binary": 0.4878048780487805,
+              "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+              "missing_judgments": 0,
+              "unique_inputs_view": {
+                "matrix": [
+                  [
+                    2,
+                    10
+                  ],
+                  [
+                    2,
+                    12
+                  ]
+                ],
+                "n_binary": 26,
+                "judge_uncertain": 0,
+                "reference_ambiguous": 0,
+                "agreement_on_binary": 0.5384615384615384,
+                "orientation": "filas=referencia incorrecta/correcta; columnas=juez incorrecta/correcta",
+                "recall_incorrect": 0.16666666666666666,
+                "recall_correct": 0.8571428571428571,
+                "balanced_accuracy": 0.5119047619047619
+              },
+              "recall_incorrect": 0.2631578947368421,
+              "recall_correct": 0.6818181818181818,
+              "balanced_accuracy": 0.47248803827751196
+            }
+          }
+        },
+        "model": {
+          "digest": "46e0c10c039e",
+          "huggingface_hub": "1.29.0",
+          "model": "llama3.1:8b",
+          "ollama": "0.34.4",
+          "tokenizer_repo": "unsloth/Meta-Llama-3.1-8B-Instruct",
+          "tokenizer_revision": "a2856192dd7c25b842431f39c179a6c2c2f627d1",
+          "transformers": "5.16.1"
+        },
+        "same_family_as_generator": false,
+        "attempts_inference": 71,
+        "usage_inference_excludes_preflight": {
+          "prompt_tokens": 65019,
+          "output_tokens": 4233,
+          "ms": 145516.0
+        },
+        "usage_scope": "v2 calibración dev más completado fijado"
+      }
+    }
+  },
+  "test_v2_disagreements": [
+    {
+      "case": 9,
+      "row_ids": [
+        "test/d002/1/recent/0.8"
+      ],
+      "judge": "qwen3:8b",
+      "question": "Según la Ley 26.043 del corpus, ¿qué advertencia sobre la salud debe aparecer en los envases de videojuegos?",
+      "reference": "La advertencia es: «La sobreexposición es perjudicial para la salud».",
+      "candidate": "La leyenda 'La sobreexposición es perjudicial para la salud'.",
+      "human_correct": "1",
+      "v1_verdict": "correcto",
+      "v2_verdict": "incorrecto",
+      "v2_reason": "El sistema menciona correctamente la advertencia, aunque la redacta como una leyenda en lugar de una advertencia. La referencia espera que se indique que es una advertencia, no una leyenda.",
+      "annotation_flag": false
+    },
+    {
+      "case": 15,
+      "row_ids": [
+        "test/d004/2/recent/0.8"
+      ],
+      "judge": "qwen3:8b",
+      "question": "¿En qué fecha fue sancionada la Ley 25.649, según su encabezado en el corpus?",
+      "reference": "Fue sancionada el 28 de agosto de 2002.",
+      "candidate": "Agosto 28 de 2002",
+      "human_correct": "1",
+      "v1_verdict": "correcto",
+      "v2_verdict": "incorrecto",
+      "v2_reason": "El sistema proporciona una fecha equivalente pero en un formato diferente al esperado. La respuesta correcta debe mencionar la fecha exacta como '28 de agosto de 2002' o variantes similares.",
+      "annotation_flag": false
+    },
+    {
+      "case": 13,
+      "row_ids": [
+        "test/d006/4/full/0.5",
+        "test/d006/4/recent/0.5",
+        "test/d006/4/recent/0.8",
+        "test/d006/4/summary/0.3",
+        "test/d006/4/summary/0.8"
+      ],
+      "judge": "qwen3:8b",
+      "question": "¿Qué resolución se dictó en mi reclamo de defensa del consumidor con número de expediente PRUEBA-CONSUMO-X731?",
+      "reference": "No puedo informar una resolución concreta: ese expediente no está incluido en el corpus.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "human_correct": "1",
+      "v1_verdict": "correcto",
+      "v2_verdict": "incorrecto",
+      "v2_reason": "El sistema menciona falta de información, mientras que la referencia espera una respuesta de abstención por no estar el expediente en el corpus.",
+      "annotation_flag": false
+    },
+    {
+      "case": 12,
+      "row_ids": [
+        "test/d007/2/full/0.3"
+      ],
+      "judge": "qwen3:8b",
+      "question": "Según el encabezado de la Ley 26.043 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "El 15 de julio de 2005.",
+      "candidate": "La Ley 26.043 fue promulgada de hecho el 1 de junio de 2005.",
+      "human_correct": "1",
+      "v1_verdict": "incorrecto",
+      "v2_verdict": "incorrecto",
+      "v2_reason": "El sistema proporciona una fecha incorrecta (1 de junio de 2005) en lugar de la fecha correcta mencionada en la referencia (15 de julio de 2005).",
+      "annotation_flag": true
+    },
+    {
+      "case": 8,
+      "row_ids": [
+        "test/d007/2/summary/0.5"
+      ],
+      "judge": "qwen3:8b",
+      "question": "Según el encabezado de la Ley 26.043 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "El 15 de julio de 2005.",
+      "candidate": "Julio 15 de 2005",
+      "human_correct": "1",
+      "v1_verdict": "correcto",
+      "v2_verdict": "incorrecto",
+      "v2_reason": "El sistema proporciona una fecha equivalente pero en un formato diferente al esperado. La respuesta correcta debe estar en el formato '15 de julio de 2005' según la referencia.",
+      "annotation_flag": false
+    },
+    {
+      "case": 23,
+      "row_ids": [
+        "test/d002/1/full/0.3"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "Según la Ley 26.043 del corpus, ¿qué advertencia sobre la salud debe aparecer en los envases de videojuegos?",
+      "reference": "La advertencia es: «La sobreexposición es perjudicial para la salud».",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "human_correct": "0",
+      "v1_verdict": "incorrecto",
+      "v2_verdict": "correcto",
+      "v2_reason": "La respuesta del sistema es correcta porque no inventa la respuesta y se limita a expresar la falta de información en el corpus.",
+      "annotation_flag": false
+    },
+    {
+      "case": 5,
+      "row_ids": [
+        "test/d002/3/full/0.3"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "¿En qué fecha fue sancionada la ley de videojuegos 26.043, según su encabezado en el corpus?",
+      "reference": "Fue sancionada el 1 de junio de 2005.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "human_correct": "0",
+      "v1_verdict": "correcto",
+      "v2_verdict": "correcto",
+      "v2_reason": "La respuesta del sistema indica que no hay información suficiente, lo cual es una declaración clara de falta de información sin inventar la respuesta.",
+      "annotation_flag": false
+    },
+    {
+      "case": 1,
+      "row_ids": [
+        "test/d003/2/recent/0.8",
+        "test/d003/2/summary/0.5"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "Según la Ley 27.521 del corpus, ¿cada cuántos años debe repetirse el estudio de medidas corporales para actualizar el sistema de talles?",
+      "reference": "Cada diez años.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "human_correct": "0",
+      "v1_verdict": "correcto",
+      "v2_verdict": "correcto",
+      "v2_reason": "La respuesta del sistema es correcta porque no inventa la respuesta y se limita a decir que no hay información suficiente, lo cual es una declaración clara de falta de información.",
+      "annotation_flag": false
+    },
+    {
+      "case": 17,
+      "row_ids": [
+        "test/d003/3/full/0.3"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "Según la Ley 26.043 del corpus, ¿qué advertencia sobre la salud debe aparecer en los envases de videojuegos?",
+      "reference": "«La sobreexposición es perjudicial para la salud».",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "human_correct": "0",
+      "v1_verdict": "correcto",
+      "v2_verdict": "correcto",
+      "v2_reason": "La respuesta del sistema es correcta porque no inventa la respuesta y se limita a expresar la falta de información en el corpus.",
+      "annotation_flag": false
+    },
+    {
+      "case": 6,
+      "row_ids": [
+        "test/d004/3/recent/0.8"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "Según la Ley 25.599 del corpus, ¿cómo se llaman los viajes en los que los alumnos realizan actividades de aprendizaje que forman parte del programa escolar?",
+      "reference": "Se denominan viajes de estudios.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "human_correct": "0",
+      "v1_verdict": "correcto",
+      "v2_verdict": "correcto",
+      "v2_reason": "La respuesta del sistema es correcta porque no inventa la respuesta y se limita a decir que no hay información suficiente, lo cual es una declaración válida dado que la referencia indica que la respuesta no está en el corpus.",
+      "annotation_flag": false
+    },
+    {
+      "case": 2,
+      "row_ids": [
+        "test/d006/1/full/0.3",
+        "test/d006/1/full/0.5"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "Si se interrumpe un servicio público domiciliario, ¿cuántos días tiene la empresa desde un reclamo para demostrar que no fue responsable?",
+      "reference": "La empresa dispone de un máximo de treinta días.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "human_correct": "0",
+      "v1_verdict": "correcto",
+      "v2_verdict": "correcto",
+      "v2_reason": "La respuesta del sistema es correcta porque no inventa la respuesta y se limita a expresar la falta de información.",
+      "annotation_flag": false
+    },
+    {
+      "case": 13,
+      "row_ids": [
+        "test/d006/4/full/0.5",
+        "test/d006/4/recent/0.5",
+        "test/d006/4/recent/0.8",
+        "test/d006/4/summary/0.3",
+        "test/d006/4/summary/0.8"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "¿Qué resolución se dictó en mi reclamo de defensa del consumidor con número de expediente PRUEBA-CONSUMO-X731?",
+      "reference": "No puedo informar una resolución concreta: ese expediente no está incluido en el corpus.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "human_correct": "1",
+      "v1_verdict": "correcto",
+      "v2_verdict": "incorrecto",
+      "v2_reason": "La respuesta del sistema inventa la información, lo que no es correcto. La respuesta esperada es una abstención debida a la falta de información en el corpus.",
+      "annotation_flag": false
+    },
+    {
+      "case": 11,
+      "row_ids": [
+        "test/d007/1/recent/0.3"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "Según el encabezado de la Ley 27.250 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "La Ley 27.250 fue promulgada de hecho el 8 de junio de 2016.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "human_correct": "0",
+      "v1_verdict": "correcto",
+      "v2_verdict": "correcto",
+      "v2_reason": "La respuesta del sistema indica que no hay información suficiente, lo cual es correcto según la referencia.",
+      "annotation_flag": false
+    },
+    {
+      "case": 21,
+      "row_ids": [
+        "test/d007/1/recent/0.5",
+        "test/d007/1/summary/0.8"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "Según el encabezado de la Ley 27.250 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "La Ley 27.250 fue promulgada de hecho el 8 de junio de 2016.",
+      "candidate": "Junio 08 de 2016",
+      "human_correct": "1",
+      "v1_verdict": "correcto",
+      "v2_verdict": "incorrecto",
+      "v2_reason": "La respuesta del sistema es incorrecta porque no repite la fecha completa como lo hace la referencia esperada.",
+      "annotation_flag": false
+    },
+    {
+      "case": 12,
+      "row_ids": [
+        "test/d007/2/full/0.3"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "Según el encabezado de la Ley 26.043 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "El 15 de julio de 2005.",
+      "candidate": "La Ley 26.043 fue promulgada de hecho el 1 de junio de 2005.",
+      "human_correct": "1",
+      "v1_verdict": "incorrecto",
+      "v2_verdict": "incorrecto",
+      "v2_reason": "La respuesta del sistema proporciona una fecha diferente a la esperada, lo que indica que contiene un dato erróneo.",
+      "annotation_flag": true
+    },
+    {
+      "case": 3,
+      "row_ids": [
+        "test/d007/3/full/0.3"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "¿En qué fecha fue sancionada la ley de videojuegos 26.043, según su encabezado en el corpus?",
+      "reference": "La Ley 26.043 fue sancionada el 1 de junio de 2005.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "human_correct": "0",
+      "v1_verdict": "correcto",
+      "v2_verdict": "correcto",
+      "v2_reason": "La respuesta del sistema es correcta porque no inventa la respuesta y se limita a decir que no hay información suficiente, lo cual es una declaración clara de falta de información.",
+      "annotation_flag": false
+    },
+    {
+      "case": 11,
+      "row_ids": [
+        "test/d007/4/full/0.3",
+        "test/d007/4/summary/0.3"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "Según el encabezado de la Ley 27.250 del corpus, ¿en qué fecha fue promulgada de hecho?",
+      "reference": "La Ley 27.250 fue promulgada de hecho el 8 de junio de 2016.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "human_correct": "0",
+      "v1_verdict": "correcto",
+      "v2_verdict": "correcto",
+      "v2_reason": "La respuesta del sistema indica que no hay información suficiente, lo cual es una declaración correcta según la regla de abstención.",
+      "annotation_flag": false
+    },
+    {
+      "case": 16,
+      "row_ids": [
+        "test/d008/4/summary/0.3",
+        "test/d008/4/summary/0.5"
+      ],
+      "judge": "llama3.1:8b",
+      "question": "Según la Ley 24.240 del corpus: ¿En qué idioma debe estar redactado el documento de venta?",
+      "reference": "En castellano.",
+      "candidate": "No hay información suficiente en los pasajes para responder.",
+      "human_correct": "0",
+      "v1_verdict": "correcto",
+      "v2_verdict": "correcto",
+      "v2_reason": "La respuesta del sistema es correcta porque no inventa la respuesta y se limita a expresar la falta de información en los pasajes.",
+      "annotation_flag": false
+    }
+  ],
+  "annotation_quality_flags": [
+    {
+      "group": 12,
+      "row_ids": [
+        "test/d007/2/full/0.3"
+      ],
+      "human_label_original": "1",
+      "human_label_retained": "1",
+      "reference": "El 15 de julio de 2005.",
+      "candidate": "La Ley 26.043 fue promulgada de hecho el 1 de junio de 2005.",
+      "issue": "La fecha de la respuesta difiere de la referencia, pese a la etiqueta humana correcto.",
+      "detected_by": "asistente",
+      "detected_before_test_judge_comparison": true,
+      "clarification_requested": true,
+      "clarification_answer_received": false,
+      "resolution": "Se conserva la marca explícita de Alex; no se corrige ni se imputa otra etiqueta."
+    }
+  ],
+  "limitations": [
+    "Los jueces se conservan para diagnóstico; no fueron aprobados como correctores automáticos sin supervisión.",
+    "La rúbrica v2 se fijó después de revisar dev y antes de anotar test; no se adapta usando resultados de test.",
+    "La comparación humana usa las marcas explícitas de Alex: 30 filas de dev y 42 de test.",
+    "El grupo test 12 conserva la marca correcto pese a la diferencia de fechas. Se señala y se informa una vista complementaria excluyéndolo, sin sustituir la marca.",
+    "Las etiquetas son humanas; las síntesis de motivos son asistidas. Solo el motivo de test 14 fue escrito expresamente por Alex.",
+    "La auditoría fue asistida; dev incluyó ejemplos explicados por el asistente antes de anotar.",
+    "Las 42 filas de test representan 26 comparaciones mostradas y 27 prompts completos distintos. El grupo 11 reúne dos preguntas originales distintas con la misma comparación mostrada.",
+    "Los prompts idénticos reutilizan veredictos; las filas no son observaciones independientes ni muestras de variabilidad del juez.",
+    "La muestra humana incluye cobertura por tipo. Su porcentaje no es una estimación ponderada de precisión del corpus completo.",
+    "La contención de claves se usa como comparador y no como verdad humana.",
+    "Los puntajes de dev se leen como desarrollo; solo test comprueba el comportamiento de la variante ya fijada.",
+    "Se evalúan respuestas guardadas de Etapa 5B, no Etapa 6, citas ni fidelidad a pasajes recuperados.",
+    "Qwen comparte familia con el generador. La diferencia con Llama no identifica causalmente autopreferencia.",
+    "Las 11 filas not_feasible se informan por separado; no reciben veredicto semántico.",
+    "La Etapa 7b queda fuera de este reporte."
+  ]
+}

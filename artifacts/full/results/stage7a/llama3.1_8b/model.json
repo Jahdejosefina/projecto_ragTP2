@@ -1,0 +1,9 @@
+{
+  "digest": "46e0c10c039e",
+  "huggingface_hub": "1.29.0",
+  "model": "llama3.1:8b",
+  "ollama": "0.34.4",
+  "tokenizer_repo": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "tokenizer_revision": "a2856192dd7c25b842431f39c179a6c2c2f627d1",
+  "transformers": "5.16.1"
+}
