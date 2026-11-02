@@ -1,0 +1,104 @@
+[
+  {
+    "scenario_id": "m002",
+    "session_id": "s1",
+    "llm_calls": 1,
+    "prompt_tokens": 656,
+    "output_tokens": 428,
+    "ops": {
+      "ADD": 7,
+      "UPDATE": 0,
+      "NOOP": 0,
+      "INVALIDATE": 0
+    },
+    "errors": 0,
+    "think_leaks": 0,
+    "facts": 7,
+    "added_without_llm": 7
+  },
+  {
+    "scenario_id": "m002",
+    "session_id": "s2",
+    "llm_calls": 3,
+    "prompt_tokens": 1554,
+    "output_tokens": 354,
+    "ops": {
+      "ADD": 1,
+      "UPDATE": 1,
+      "NOOP": 0,
+      "INVALIDATE": 0
+    },
+    "errors": 0,
+    "think_leaks": 0,
+    "facts": 2,
+    "added_without_llm": 0
+  },
+  {
+    "scenario_id": "m002",
+    "session_id": "s3",
+    "llm_calls": 2,
+    "prompt_tokens": 955,
+    "output_tokens": 251,
+    "ops": {
+      "ADD": 0,
+      "UPDATE": 1,
+      "NOOP": 0,
+      "INVALIDATE": 0
+    },
+    "errors": 0,
+    "think_leaks": 0,
+    "facts": 1,
+    "added_without_llm": 0
+  },
+  {
+    "scenario_id": "m003",
+    "session_id": "s1",
+    "llm_calls": 1,
+    "prompt_tokens": 654,
+    "output_tokens": 464,
+    "ops": {
+      "ADD": 7,
+      "UPDATE": 0,
+      "NOOP": 0,
+      "INVALIDATE": 0
+    },
+    "errors": 0,
+    "think_leaks": 0,
+    "facts": 7,
+    "added_without_llm": 7
+  },
+  {
+    "scenario_id": "m003",
+    "session_id": "s2",
+    "llm_calls": 3,
+    "prompt_tokens": 1567,
+    "output_tokens": 417,
+    "ops": {
+      "ADD": 0,
+      "UPDATE": 2,
+      "NOOP": 0,
+      "INVALIDATE": 0
+    },
+    "errors": 0,
+    "think_leaks": 0,
+    "facts": 2,
+    "added_without_llm": 0
+  },
+  {
+    "scenario_id": "m003",
+    "session_id": "s3",
+    "llm_calls": 4,
+    "prompt_tokens": 2004,
+    "output_tokens": 520,
+    "ops": {
+      "ADD": 2,
+      "UPDATE": 1,
+      "NOOP": 0,
+      "INVALIDATE": 0
+    },
+    "errors": 0,
+    "think_leaks": 0,
+    "facts": 3,
+    "added_without_llm": 0
+  }
+]

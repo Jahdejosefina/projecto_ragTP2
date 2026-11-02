@@ -1,0 +1,26 @@
+[
+  {
+    "arm": "memory",
+    "n": 18,
+    "manual_correct": 18,
+    "langgraph_correct": 18,
+    "agreement_correct": 18,
+    "same_answer_text": 14,
+    "same_delivered": 18,
+    "same_memory_ids": 18,
+    "mean_delta_prompt_tokens": 0.0,
+    "mean_delta_output_tokens": 0.4444444444444444
+  },
+  {
+    "arm": "memory_filter",
+    "n": 18,
+    "manual_correct": 18,
+    "langgraph_correct": 18,
+    "agreement_correct": 18,
+    "same_answer_text": 16,
+    "same_delivered": 18,
+    "same_memory_ids": 18,
+    "mean_delta_prompt_tokens": 0.0,
+    "mean_delta_output_tokens": 2.5555555555555554
+  }
+]

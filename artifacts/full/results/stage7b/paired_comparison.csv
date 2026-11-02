@@ -1,0 +1,45 @@
+item_id,arm,manual_correct,langgraph_correct,manual_answer,langgraph_answer,same_answer_text,manual_prompt_tokens,langgraph_prompt_tokens,manual_output_tokens,langgraph_output_tokens,delta_prompt_tokens,delta_output_tokens,manual_memory_tokens,langgraph_memory_tokens,manual_passage_tokens,langgraph_passage_tokens,same_delivered,same_memory_ids
+m002/p1,memory,True,True,Te dije que compraste el videojuego en Tienda Ejemplo Beta.,Te dije que compraste el videojuego en Tienda Ejemplo Beta.,True,2178,2178,78,76,0,-2,265,265,1479,1479,True,True
+m002/p1,memory_filter,True,True,Te dije que compré el videojuego en Tienda Ejemplo Beta.,Te dije que compré el videojuego en Tienda Ejemplo Beta.,True,707,707,76,80,0,4,265,265,0,0,True,True
+m002/p8,memory,True,True,"Sí, el canal de contacto preferido del usuario es el teléfono.","Sí, el canal de contacto preferido del usuario es el teléfono.",True,2161,2161,78,91,0,13,265,265,1465,1465,True,True
+m002/p8,memory_filter,True,True,"Sí, tu canal de contacto preferido es el teléfono.","Sí, tu canal de contacto preferido es el teléfono.",True,704,704,76,76,0,0,265,265,0,0,True,True
+m002/p2,memory,True,True,"El usuario pagó un total de 89500 pesos, sumando el costo del videojuego (85000 pesos) y el envío (4500 pesos).","El usuario pagó un total de 89500 pesos, sumando el precio del videojuego (85000 pesos) y el costo del envío (4500 pesos).",False,2215,2215,109,112,0,3,278,278,1491,1491,True,True
+m002/p2,memory_filter,True,True,"El usuario pagó un total de 89500 pesos, sumando el costo del videojuego (85000 pesos) y el costo del envío (4500 pesos).","El usuario pagó un total de 89500 pesos, sumando el costo del videojuego (85000 pesos) y el costo del envío (4500 pesos).",True,1197,1197,113,112,0,-1,278,278,473,473,True,True
+m002/p3,memory,True,True,El canal de contacto que había elegido antes de cambiar la preferencia era el teléfono.,"Antes de cambiar su preferencia de contacto, el usuario había elegido el teléfono como canal de contacto.",False,2221,2221,88,89,0,1,289,289,1495,1495,True,True
+m002/p3,memory_filter,True,True,"Antes de cambiar su preferencia de contacto, el usuario había elegido el teléfono.","Antes de cambiar su preferencia de contacto, el usuario había elegido el teléfono.",True,892,892,92,85,0,-7,289,289,166,166,True,True
+m002/p4,memory,True,True,El correo electrónico.,El correo electrónico.,True,2212,2212,70,70,0,0,287,287,1493,1493,True,True
+m002/p4,memory_filter,True,True,El canal de contacto preferido ahora es el correo electrónico.,El canal de contacto preferido ahora es el correo electrónico.,True,727,727,91,91,0,0,287,287,0,0,True,True
+m002/p9,memory,True,True,No,No,True,2183,2183,86,86,0,0,287,287,1465,1465,True,True
+m002/p9,memory_filter,True,True,"No, el canal de contacto preferido actual del usuario es el correo electrónico.","No, el canal de contacto preferido actual del usuario es el correo electrónico.",True,726,726,94,94,0,0,287,287,0,0,True,True
+m002/p5,memory,True,True,Te pedí que uses listas con viñetas para responderme.,El usuario solicitó que las respuestas se presenten en listas con viñetas.,False,2240,2240,80,84,0,4,321,321,1486,1486,True,True
+m002/p5,memory_filter,True,True,Listas con viñetas.,Te pedí que uses listas con viñetas para responderme.,False,870,870,76,88,0,12,321,321,116,116,True,True
+m002/p6,memory,True,True,No tengo información suficiente para responder.,No tengo información suficiente para responder.,True,2195,2195,78,78,0,0,301,301,1462,1462,True,True
+m002/p6,memory_filter,True,True,No tengo información sobre el número de pedido de tu compra.,No tengo información sobre el número de pedido de tu compra.,True,741,741,81,81,0,0,301,301,0,0,True,True
+m002/p7,memory,True,True,"La advertencia sanitaria que debe llevar el envase del videojuego es la leyenda 'La sobreexposición es perjudicial para la salud', junto con la calificación correspondiente: 'Apta para todo público', 'Apta para mayores de 13 años' o 'Apta para mayores de 18 años'.","El envase del videojuego debe llevar la leyenda 'La sobreexposición es perjudicial para la salud', junto con la calificación correspondiente: 'Apta para todo público', 'Apta para mayores de 13 años' o 'Apta para mayores de 18 años'.",False,2192,2192,167,160,0,-7,310,310,1433,1433,True,True
+m002/p7,memory_filter,True,True,La advertencia sanitaria que debe llevar el envase del videojuego es la leyenda 'La sobreexposición es perjudicial para la salud'.,La advertencia sanitaria que debe llevar el envase del videojuego es la leyenda 'La sobreexposición es perjudicial para la salud'.,True,1520,1520,123,125,0,2,310,310,761,761,True,True
+m003/p1,memory,True,True,Te dije que compraste la campera en la tienda Indumentaria Ejemplo Gamma.,Te dije que compraste la campera en la tienda Indumentaria Ejemplo Gamma.,True,2184,2184,83,78,0,-5,271,271,1479,1479,True,True
+m003/p1,memory_filter,True,True,Te dije que compraste la campera en la tienda Indumentaria Ejemplo Gamma.,Te dije que compraste la campera en la tienda Indumentaria Ejemplo Gamma.,True,887,887,81,81,0,0,271,271,182,182,True,True
+m003/p8,memory,True,True,"Sí, el precio de la campera es de 64000 pesos.","Sí, el precio de la campera es de 64000 pesos.",True,2107,2107,83,83,0,0,271,271,1399,1399,True,True
+m003/p8,memory_filter,True,True,"Sí, el precio de tu campera es de 64000 pesos.","Sí, el precio de tu campera es de 64000 pesos.",True,716,716,77,77,0,0,271,271,0,0,True,True
+m003/p3,memory,True,True,64000,64000,True,2266,2266,94,95,0,1,339,339,1492,1492,True,True
+m003/p3,memory_filter,True,True,64000,64000,True,782,782,81,81,0,0,339,339,0,0,True,True
+m003/p4,memory,True,True,69000,69000,True,2198,2198,77,77,0,0,315,315,1449,1449,True,True
+m003/p4,memory_filter,True,True,69000 pesos,69000 pesos,True,757,757,98,98,0,0,315,315,0,0,True,True
+m003/p9,memory,True,True,"No, el precio de tu campera no es de 64000 pesos.","No, el precio de tu campera no es de 64000 pesos.",True,2151,2151,105,105,0,0,315,315,1399,1399,True,True
+m003/p9,memory_filter,True,True,"No, el precio de tu campera no es de 64000 pesos.","No, el precio de tu campera no es de 64000 pesos. Fue corregido a 69000 pesos.",False,760,760,90,126,0,36,315,315,0,0,True,True
+m003/p2,memory,True,True,Terminaste pagando 71500 pesos por la compra.,Terminaste pagando 71500 pesos por la compra.,True,2236,2236,94,94,0,0,310,310,1482,1482,True,True
+m003/p2,memory_filter,True,True,"- Precio corregido: 69000 pesos
+- Costo de envío: 2500 pesos
+- Total pagado: 71500 pesos","- Precio corregido: 69000 pesos
+- Costo de envío: 2500 pesos
+- Total pagado: 71500 pesos",True,1516,1516,103,103,0,0,310,310,761,761,True,True
+m003/p5,memory,True,True,"- Usar viñetas
+- Respuestas breves y directas
+- Copiar nombres, importes y fechas tal como figuran","- Usar viñetas
+- Respuestas breves y directas
+- Copiar nombres, importes y fechas tal como figuran",True,2218,2218,91,91,0,0,299,299,1486,1486,True,True
+m003/p5,memory_filter,True,True,"Te pedí que uses formato con viñetas, no en un párrafo.","Te pedí que uses formato con viñetas, no en un párrafo.",True,740,740,86,86,0,0,299,299,0,0,True,True
+m003/p6,memory,True,True,No tengo información suficiente para responder.,No tengo información suficiente para responder.,True,2193,2193,85,85,0,0,299,299,1462,1462,True,True
+m003/p6,memory_filter,True,True,No tengo información sobre el número de pedido de tu compra.,No tengo información sobre el número de pedido de tu compra.,True,913,913,98,98,0,0,299,299,182,182,True,True
+m003/p7,memory,True,True,A partir de los doce (12) años de edad.,A partir de los doce (12) años de edad.,True,2192,2192,116,116,0,0,299,299,1444,1444,True,True
+m003/p7,memory_filter,True,True,A partir de los doce (12) años de edad.,A partir de los doce (12) años de edad.,True,2082,2082,114,114,0,0,299,299,1334,1334,True,True

@@ -1,0 +1,54 @@
+{
+  "stage": "07b_langgraph",
+  "mode": "functional_parity",
+  "framework": "langgraph",
+  "version": "1.2.18",
+  "split": "test",
+  "profile": "full",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f",
+  "ollama_server": "0.34.4",
+  "config": {
+    "model": "qwen3:8b",
+    "num_ctx": 8192,
+    "num_predict": 700,
+    "safety_margin": 64,
+    "passage_budget": 1500,
+    "memory_budget": 600,
+    "history_budget": 3000,
+    "memory_k": 6,
+    "recency_decay": 0.995,
+    "probe_offset_hours": 24,
+    "write_candidates": 3,
+    "write_similarity": 0.55,
+    "extract_num_predict": 800,
+    "decide_num_predict": 300,
+    "sweep_fractions": [
+      0.5,
+      0.25
+    ],
+    "temperature": 0.0,
+    "seed": 0
+  },
+  "num_ctx_explicit": 8192,
+  "think_explicit": false,
+  "temperature": 0.0,
+  "embedder": {
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "device": "cuda",
+    "max_seq_length": 512
+  },
+  "index": "stage3_36a95c9c1551289f",
+  "index_chunks_hash": "534237c6c8ac134449693fffc0ae7aa96daa51471d584c40ed19f50269821ba3",
+  "frozen_eval": "cc727360402aa851de6b5a3b2361ce9e9664c81d44c504b563f61afbe47d19c3",
+  "prompts_sha256": "563fc2e5c0dab573b56059a69d4ea5458acd29e126b3afd8994a173e829aa073",
+  "arms": [
+    "memory",
+    "memory_filter"
+  ],
+  "mem_semantics": "Original stage6 write_session/read_memories; LangGraph persistence/orchestration only",
+  "checkpointer": "InMemorySaver, per-thread, not durable across Colab restarts",
+  "store": "InMemoryStore, cross-thread, not durable across Colab restarts",
+  "summarizer": "none"
+}
